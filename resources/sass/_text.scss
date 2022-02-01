@@ -1,0 +1,37 @@
+// Text style
+
+.font-antic-didone {
+    font-family: $font_default !important;
+}
+
+.font-dm-sherif-display {
+    font-family:  $font_header !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}

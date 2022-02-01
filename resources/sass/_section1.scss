@@ -1,0 +1,98 @@
+// Section 1
+.section-1 {
+    header {
+        height: 146px;
+        width: 100%;
+    }
+
+    main {
+        margin-top: -32px;
+        position: relative;
+        z-index: 1;
+
+        .first-text {
+            width: 53%;
+            position: absolute;
+            right: 0;
+            top: 70px;
+            color: $color_header;
+            font-size: 12px;
+            line-height: 15px;
+            padding-right: 10px;
+        }
+
+        .black-white img {
+            width: 95%;
+            margin-top: -36%;
+        }
+
+        .main-content {
+            width: 95%;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            h2 {
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .special-heading {
+        position: relative;
+        margin-left: 20px;
+        margin-top: 32px;
+        z-index: 10;
+
+        .elt {
+            position: absolute;
+            line-height: 100%;
+            text-transform: uppercase;
+
+            // 2beach club by 2futures
+            &:nth-child(1) {
+                font-size: 14px;
+                top: -5px;
+                left: 0;
+                text-transform: unset;
+            }
+            // Live
+            &:nth-child(2) {
+                font-size: 50px;
+                top: 12px;
+                left: 0;
+            }
+            // the
+            &:nth-child(3) {
+                font-size: 30px;
+                top: 55px;
+                left: 50px;
+            }
+            // 5
+            &:nth-child(4) {
+                font-size: 110px;
+                top: -0;
+                left: 108px;
+            }
+            // -star
+            &:nth-child(5) {
+                font-size: 43px;
+                top: 54px;
+                left: 168px;
+            }
+            // lifestyle
+            &:nth-child(6) {
+                font-size: 38px;
+                top: 97px;
+                left: 53px;
+            }
+            // everyday
+            &:nth-child(7) {
+                font-size: 25px;
+                top: 130px;
+                left: 155px;
+            }
+        }
+    }
+}
