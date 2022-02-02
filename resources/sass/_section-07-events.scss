@@ -1,0 +1,57 @@
+// Section 07: Events
+
+.section-7 {
+    background-color: $bg_color;
+    padding-bottom: 32px;
+
+    header {
+        .special-heading {
+            font-size: 85px;
+            line-height: 120%;
+            margin-bottom: 32px;
+            padding-left: 10px;
+        }
+    }
+
+    main {
+        p {
+            width: 80%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .section-7 {
+        background-color: $bg_color;
+        padding-top: 200px;
+
+        header {
+            .img-container {
+                &:nth-child(1) {
+                    display: block;
+                    margin-bottom: 60px;
+                    width: 100%;
+                }
+            }
+
+            .special-heading {
+                margin-bottom: 60px;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0;
+            }
+        }
+
+        main {
+            p {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0;
+            }
+        }
+    }
+}

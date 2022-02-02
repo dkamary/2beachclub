@@ -1,5 +1,7 @@
 // Default Styles
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +16,12 @@ body {
     color: $color_default;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $font_header;
     font-weight: 500;
 }
@@ -30,7 +37,7 @@ $header_height: 60px;
 
     .header-nav {
         height: $header_height;
-        background-color: $bg_header;
+        background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.7) -30%, rgba(0, 0, 0, 0) 100%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,7 +45,6 @@ $header_height: 60px;
         position: relative;
 
         .logo-container {
-
             .logo-link {
                 width: 100%;
                 height: 100%;
@@ -67,12 +73,13 @@ $header_height: 60px;
     font-family: $font_header;
     color: $color_header;
     font-weight: 500;
+    display: block;
 }
 
 .img-container {
     &.border {
         img {
-            border: solid 10px #FFF;
+            border: solid 10px #fff;
         }
     }
 
@@ -94,16 +101,101 @@ $header_height: 60px;
         border-radius: 0;
         border: solid 4px #fff;
         box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.3);
-        padding: 6px 12px;
-        font-size: 16px;
+        padding: 0px 8px;
+        font-size: 13px;
         line-height: 40px;
         text-decoration: none;
+        font-family: $font_header;
     }
 
     &.contact-button {
         a {
-            background-color: #3F9CAA;
-            color: #FFFFFF;
+            background-color: #3f9caa;
+            color: #ffffff;
+        }
+    }
+}
+
+.page-footer {
+    section {
+        &.text {
+            margin-bottom: 64px;
+
+            p {
+                font-family: $font_header;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+
+        &.copyright {
+            margin-top: 15px;
+
+            .img-container {
+                width: 25%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            p {
+                font-family: "DM Sans";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 32px;
+
+                /* or 359% */
+                text-align: center;
+
+                color: #3f9caa;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    body {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    p {
+        margin-bottom: 18px;
+    }
+
+    .header-container {
+        max-height: 42vh;
+    }
+
+    .btn-container {
+        margin-top: 42px;
+        margin-bottom: 42px;
+
+        a {
+            font-size: 33px;
+            line-height: 40px;
+            padding: 10px 20px;
+        }
+    }
+
+    .page-footer {
+        section
+        {
+            &.text {
+                p {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+
+            &.copyright {
+                p {
+                    font-size: 18px;
+                }
+            }
         }
     }
 }

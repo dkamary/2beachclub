@@ -1,0 +1,114 @@
+// Section 05: Business hub
+
+.section-5 {
+    background-color: $bg_color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .img-container {
+        display: block;
+    }
+
+    header {
+        .special-heading {
+            margin-bottom: 32px;
+            padding-left: 10px;
+
+            .elt {
+                display: block;
+                line-height: 80%;
+
+                &:nth-child(1) {
+                    font-size: 110px;
+                }
+
+                &:nth-child(2) {
+                    font-size: 110px;
+                    margin-top: -18px;
+                }
+
+                &:nth-child(3) {
+                    font-size: 110px;
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        .img-container {
+            width: 100%;
+            padding-left: 10px;
+        }
+    }
+
+    main {
+        width: 75%;
+        margin-top: 32px;
+        margin-left: 6%;
+
+        p {
+            padding-left: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .section-5 {
+        header {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                &.special-heading {
+                    order: 2;
+                    width: 460px;
+                    height: 130px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 0;
+                    margin-top: 60px;
+                    margin-bottom: 45px;
+
+                    .elt {
+                        position: relative;
+                        &:nth-child(1) {
+                            font-size: 90px;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: 70px;
+                            top: 10px;
+                            left: 30px;
+                        }
+
+                        &:nth-child(3) {
+                            font-size: 152px;
+                            top: -108px;
+                            left: 170px;
+                        }
+                    }
+                }
+            }
+
+            .img-container {
+                &:nth-child(1) {
+                    order: 1;
+                    width: 100%;
+                    border-right: inherit;
+                }
+            }
+        }
+
+        main {
+            margin-top: 45px;
+            margin-bottom: 45px;
+
+            p {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}

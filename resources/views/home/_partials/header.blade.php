@@ -10,7 +10,7 @@
         <div class="logo-container">
             <a href="#" class="logo-link">
                 <picture class="picture-container">
-                    <source media="(min-width: 320px)" srcset="{{ asset('img/2beach-club-logo.webp') }}">
+                    <source media="(max-width: 699px)" srcset="{{ asset('img/2beach-club-logo.webp') }}">
                     <img src="{{ asset('img/2beach-club-logo.png') }}" alt="2Beach-Club" width="161" height="61">
                 </picture>
             </a>

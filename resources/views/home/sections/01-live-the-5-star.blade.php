@@ -1,4 +1,4 @@
-{{-- Section 01: Live the 5-stars lifestyle everyday - MOBILE --}}
+{{-- Sectionn 1: Live the 5-star --}}
 
 <section class="section section-1">
     <header>
@@ -14,7 +14,8 @@
     </header>
     <main>
         <picture class="img-container">
-            <source media="(min-width: 320px)" srcset="{{ asset('img/section-1-1-320w.webp') }}">
+            <source media="(max-width: 699px)" srcset="{{ asset('img/section-1-1-320w.webp') }}">
+            <source media="(max-width: 1199px)" srcset="{{ asset('img/01-live-the-5-star-lifestyle-every-day-smiling-woman-1536x1310.webp') }}">
             <img src="{{ asset('img/section-1-1-640w.jpg') }}" alt='section-1-1-320w.jpg' title="Located in Grand Baie along the white sandy beach of Pereybere." width="320" height="361">
         </picture>
         <div class="first-text">

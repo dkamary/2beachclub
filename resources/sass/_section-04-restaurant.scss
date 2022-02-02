@@ -1,0 +1,85 @@
+// Section 04: Restaurant
+
+.section-4 {
+    header {
+        .img-container {
+            display: block;
+
+            &:nth-child(1) {
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                width: 90%;
+                margin-right: auto;
+                margin-left: 0px;
+                margin-top: -20%;
+            }
+        }
+
+        h2 {
+            margin: 48px 10px;
+
+            .elt {
+                display: block;
+
+                &:nth-child(1) {
+                    font-size: 110px;
+                }
+
+                &:nth-child(2) {
+                    font-size: 70px;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+
+    main {
+        p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .section-4 {
+        header {
+            .img-container {
+                &:nth-child(1) {
+                    width: 100%;
+                    height: auto;
+                }
+
+                &:nth-child(2) {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            h2.special-heading {
+                display: block;
+                margin-top: 32px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+
+                .elt {
+                    display: inline-block;
+                    font-size: 110px;
+                    line-height: 100%;
+                }
+            }
+        }
+
+        main {
+            p {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}

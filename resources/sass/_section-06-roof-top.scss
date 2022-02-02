@@ -1,0 +1,89 @@
+// Section 06: Roof top
+
+.section-6 {
+    background-color: $bg_color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    header {
+        .special-heading {
+            width: 80%;
+            padding-left: 10px;
+            display: block;
+            margin-top: 32px;
+            margin-bottom: 32px;
+
+            .elt {
+                display: block;
+                font-size: 110px;
+                line-height: 75%;
+
+                &:nth-child(2) {
+                    font-size: 80px;
+                }
+            }
+        }
+
+        .img-container {
+            display: block;
+            position: relative;
+
+            &:nth-child(1) {
+                width: 70%;
+                margin-left: auto;
+                margin-right: 10%;
+                z-index: 10;
+            }
+
+            &:nth-child(2) {
+                width: 80%;
+                margin-right: auto;
+                margin-top: -20%;
+                z-index: 20;
+            }
+        }
+    }
+
+    main {
+        p {
+            width: 80%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .section-6 {
+        // background-color: #fff;
+
+        header {
+            .img-container {
+                &:nth-child(1) {
+                    width: 70%;
+                    margin-left: 0px;
+                    margin-right: auto;
+                }
+            }
+
+            .special-heading {
+                width: 70%;
+                margin: 60px auto;
+                padding: 0;
+            }
+        }
+
+        main {
+            p {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0;
+
+                &:nth-child(1) {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

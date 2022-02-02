@@ -1,18 +1,19 @@
-{{-- Section 3 : MOBILE --}}
+{{-- Section 3: Pool bar --}}
 
 <section class="section section-3">
     <header>
         <picture class="img-container">
-            <source media="(min-width: 320px)" srcset="{{ asset('img/section-3-1-800w.webp') }}">
-            <img src="{{ asset('img/section-3-1-800w.webp') }}" alt="" width="320" height="625">
+            <source media="(max-width: 699px)" srcset="{{ asset('img/03-pool-bar-cocktail-640x1358.webp') }}">
+            <source media="(max-width: 1199px)" srcset="{{ asset('img/03-pool-bar-cocktail-1536x3002.webp') }}">
+            <img src="{{ asset('img/03-pool-bar-cocktail-640x1358.webp') }}" alt="Pool-Bar-Cocktail" width="320" height="679">
         </picture>
         <picture class="img-container border">
-            <source media="(min-width: 320px)" srcset="{{ asset('img/content-3-2.webp') }}">
-            <img src="{{ asset('img/content-3-2.webp') }}" alt="" width="320" height="261">
+            <source media="(max-width: 699px)" srcset="{{ asset('img/03-pool-bar-girl-swimming-436x356.webp') }}">
+            <img src="{{ asset('img/03-pool-bar-girl-swimming-436x356.webp') }}" alt="Pool-Bar-Girl-swimming" width="262" height="217">
         </picture>
         <picture class="img-container">
-            <source media="(min-width: 320px)" srcset="{{ asset('img/section-3-3-800w.webp') }}">
-            <img src="{{ asset('img/section-3-3-800w.webp') }}" alt="" width="320" height="241">
+            <source media="(max-width: 699px)" srcset="{{ asset('img/03-pool-bar-girls-466x494.webp') }}">
+            <img src="{{ asset('img/03-pool-bar-girls-466x494.webp') }}" alt="Pool-Bar-Girls" width="246" height="260">
         </picture>
         <h2 class="special-heading">
             <span class="elt">Pool</span>
