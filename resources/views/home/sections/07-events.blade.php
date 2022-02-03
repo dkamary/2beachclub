@@ -3,7 +3,7 @@
 <section class="section section-7">
     <header>
         @mobile
-        @else
+        @elsemobile
         <picture class="img-container">
             <source media="(max-width: 699px)" srcset="{{ asset('img/06-roof-top-people-partying-480x368.webp') }}">
             <img src="{{ asset('img/06-roof-top-people-partying-480x368.webp') }}" alt="Roof-top-people-partying">

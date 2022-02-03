@@ -12,12 +12,20 @@
             <img src="{{ asset('img/06-roof-top-people-partying-480x368.webp') }}" alt="Roof-top-people-partying">
         </picture>
         @endmobile
+        @handheld
         <h2 class="special-heading">
             <span class="elt">Roof</span>
             <span class="elt">Top</span>
         </h2>
+        @endhandheld
     </header>
     <main>
+        @desktop
+        <h2 class="special-heading">
+            <span class="elt">Roof</span>
+            <span class="elt">Top</span>
+        </h2>
+        @enddesktop
         <p>
             Who can resist a rooftop sundowner?
         </p>

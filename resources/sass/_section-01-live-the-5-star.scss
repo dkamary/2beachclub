@@ -223,3 +223,117 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .section {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .section-1 {
+        width: 100%;
+        background-color: #fff;
+
+        header {
+            width: 100%;
+            min-height: unset;
+            margin-top: 160px;
+
+            .special-heading {
+                width: 1080px;
+                height: 500px;
+                // background-color: rgba(250, 250, 185, 0.5);
+
+                .elt {
+                    &:nth-child(1) {
+                        font-size: 45px;
+                        line-height: 100%;
+                    }
+                    &:nth-child(2) {
+                        top: 24px;
+                        font-size: 170px;
+                    }
+                    &:nth-child(3) {
+                        top: 171px;
+                        left: 165px;
+                        font-size: 96px;
+                    }
+                    &:nth-child(4) {
+                        top: -17px;
+                        font-size: 365px;
+                        left: 333px;
+                    }
+                    &:nth-child(5) {
+                        left: 524px;
+                        top: 144px;
+                        font-size: 173px;
+                    }
+                    &:nth-child(6) {
+                        font-size: 138px;
+                        top: 281px;
+                        left: 177px;
+                    }
+                    &:nth-child(7) {
+                        top: 395px;
+                        left: 531px;
+                        font-size: 101px;
+                    }
+                }
+            }
+        }
+
+        main {
+            margin-top: 22px;
+
+            .img-container {
+                &:nth-child(1) {
+                    width: 100%;
+                    order: 1;
+                }
+
+                &.black-white {
+                    order: 4;
+                    margin-top: -200px;
+                }
+            }
+
+            .first-text {
+                order: 2;
+                position: absolute;
+                top: 328px;
+                right: 0;
+                margin-right: 0;
+                width: 900px;
+                font-family: "DM Serif Display";
+
+                p {
+                    font-size: 27px;
+                    line-height: 40px;
+                    font-weight: 500;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .main-content {
+                order: 3;
+
+                h2,
+                p {
+                    width: 464px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                h2 {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+}

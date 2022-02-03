@@ -5,6 +5,7 @@
         <picture class="img-container">
             <source media="(max-width: 699px)" srcset="{{ asset('img/section-2-1-320x456.webp') }}">
             <source media="(max-width: 1199px)" srcset="{{ asset('img/02-membership-1536x1178.webp') }}">
+            <source media="(min-width: 1200px)" srcset="{{ asset('img/02-membership-1524x2394.webp') }}">
             <img src="{{ asset('img/section-2-1-320x456.webp') }}" alt="" width="320" height="456">
         </picture>
         @mobile
@@ -18,10 +19,7 @@
     <main>
         <div class="title-content">
             <h2 class="special-heading">
-                <span class="elt">Mem</span>
-                <span class="elt">ber</span>
-                <span class="elt">ship</span>
-                <span class="elt">advantages</span>
+                <span class="elt">Mem</span><span class="elt">ber</span><span class="elt">ship</span><span class="elt">advantages</span>
             </h2>
         </div>
         <div class="main-content">
@@ -44,8 +42,13 @@
                 <li>Airport transfer</li>
             </ul>
         </div>
+        @desktop
+        @include('home._partials.contact-button')
+        @enddesktop
     </main>
+    @handheld
     <footer>
         @include('home._partials.contact-button')
     </footer>
+    @endhandheld
 </section>

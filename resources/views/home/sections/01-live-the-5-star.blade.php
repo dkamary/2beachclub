@@ -16,6 +16,7 @@
         <picture class="img-container">
             <source media="(max-width: 699px)" srcset="{{ asset('img/section-1-1-320w.webp') }}">
             <source media="(max-width: 1199px)" srcset="{{ asset('img/01-live-the-5-star-lifestyle-every-day-smiling-woman-1536x1310.webp') }}">
+            <source media="(min-width: 1200px)" srcset="{{ asset('img/01-live-the-5-star-lifestyle-every-day-smiling-woman-2880x1668.webp') }}">
             <img src="{{ asset('img/section-1-1-640w.jpg') }}" alt='section-1-1-320w.jpg' title="Located in Grand Baie along the white sandy beach of Pereybere." width="320" height="361">
         </picture>
         <div class="first-text">
@@ -23,7 +24,9 @@
             <p>Get exclusive access today. Find out how.</p>
         </div>
         <picture class="img-container border black-white">
-            <source media="(min-width: 320px)" srcset="{{ asset('img/content-img-bw.webp') }}">
+            <source media="(max-width: 699px)" srcset="{{ asset('img/content-img-bw.webp') }}">
+            <source media="(max-width: 1199px)" srcset="{{ asset('img/01-live-the-5-star-lifestyle-every-day-smiling-father-and-son-in-the-pool-600x902.webp') }}">
+            <source media="(min-width: 1200px)" srcset="{{ asset('img/01-live-the-5-star-lifestyle-every-day-smiling-father-and-son-in-the-pool-1228x1846.webp') }}">
             <img src="{{ asset('img/content-img-bw.jpg') }}" alt="" width="320" height="469">
         </picture>
         <div class="main-content">
@@ -42,9 +45,14 @@
             <h2>
                 This is the 2Beach Club experience.
             </h2>
+            @desktop
+                @include('home._partials.contact-button')
+            @enddesktop
         </div>
     </main>
-    <footer>
-        @include('home._partials.contact-button')
-    </footer>
+    @handheld
+        <footer>
+            @include('home._partials.contact-button')
+        </footer>
+    @endhandheld
 </section>

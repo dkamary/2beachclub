@@ -55,3 +55,50 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .section-7 {
+        background-color: transparent;
+        padding-top: 0;
+        margin-top: -100px;
+        position: relative;
+        z-index: 20;
+
+        header,
+        main {
+            width: 60%;
+            margin-left: auto;
+            margin-right: 10%;
+        }
+
+        header {
+            .img-container {
+                &:nth-child(1) {
+                    img {
+                        border: solid 10px #fff;
+                    }
+                }
+            }
+
+            .special-heading {
+                width: 100%;
+                margin-left: 0;
+                font-size: 130px;
+                line-height: 178px;
+                margin-bottom: 18px;
+            }
+        }
+
+        main {
+            p {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        .btn-container.contact-button {
+            margin-top: 90px;
+            margin-bottom: 90px;
+        }
+    }
+}

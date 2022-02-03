@@ -87,3 +87,63 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .section-6 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: transparent;
+
+        header,
+        main {
+            width: 50%;
+        }
+
+        header {
+            .img-container {
+                &:nth-child(1) {
+                    width: 100%;
+                }
+            }
+        }
+
+        main {
+            align-self: flex-start;
+            padding-left: 64px;
+            padding-right: 0;
+
+            h2 {
+                &.special-heading {
+                    margin-top: 110px;
+                    margin-bottom: 90px;
+                    width: 72%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .elt {
+                        display: block;
+
+                        &:nth-child(1) {
+                            font-size: 210px;
+                            line-height: 70%;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: 154px;
+                            line-height: 80%;
+                        }
+                    }
+                }
+            }
+            p {
+                width: 72%;
+                padding: 0;
+
+                &:nth-child(2) {
+                    font-weight: 600;
+                    margin-bottom: 64px;
+                }
+            }
+        }
+    }
+}
