@@ -277,6 +277,13 @@ $header_height: 60px;
             }
         }
     }
+
+    .section {
+        width: 100%;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (min-width: 1440px) {

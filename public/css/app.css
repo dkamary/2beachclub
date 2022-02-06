@@ -280,6 +280,13 @@ p {
     height: 75px;
     width: auto;
   }
+
+  .section {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .section-1 header {
@@ -500,17 +507,121 @@ p {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .section {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+@media screen and (min-width: 1280px) {
   .header-container {
     width: 100%;
   }
 
+  .section-1 {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 64px;
+  }
+
+  .section-1 header {
+    width: 100%;
+    min-height: unset;
+    margin-top: 160px;
+  }
+
+  .section-1 header .special-heading {
+    width: 79%;
+    height: 500px;
+  }
+
+  .section-1 header .special-heading .elt:nth-child(1) {
+    font-size: 45px;
+    line-height: 100%;
+  }
+
+  .section-1 header .special-heading .elt:nth-child(2) {
+    top: 24px;
+    font-size: 170px;
+  }
+
+  .section-1 header .special-heading .elt:nth-child(3) {
+    top: 171px;
+    left: 165px;
+    font-size: 96px;
+  }
+
+  .section-1 header .special-heading .elt:nth-child(4) {
+    top: -17px;
+    font-size: 365px;
+    left: 333px;
+  }
+
+  .section-1 header .special-heading .elt:nth-child(5) {
+    left: 524px;
+    top: 144px;
+    font-size: 173px;
+  }
+
+  .section-1 header .special-heading .elt:nth-child(6) {
+    font-size: 138px;
+    top: 281px;
+    left: 177px;
+  }
+
+  .section-1 header .special-heading .elt:nth-child(7) {
+    top: 395px;
+    left: 531px;
+    font-size: 101px;
+  }
+
+  .section-1 main {
+    margin-top: 22px;
+  }
+
+  .section-1 main .img-container:nth-child(1) {
+    width: 100%;
+    order: 1;
+  }
+
+  .section-1 main .img-container:nth-child(3) img {
+    width: 100%;
+  }
+
+  .section-1 main .img-container.black-white {
+    order: 4;
+    margin-top: -200px;
+  }
+
+  .section-1 main .first-text {
+    order: 2;
+    position: absolute;
+    top: 328px;
+    right: 0;
+    margin-right: 0;
+    width: 62%;
+    font-family: "DM Serif Display";
+  }
+
+  .section-1 main .first-text p {
+    font-size: 27px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+
+  .section-1 main .main-content {
+    order: 3;
+  }
+
+  .section-1 main .main-content h2,
+  .section-1 main .main-content p {
+    width: 464px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-1 main .main-content h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .section-1 {
     width: 100%;
     background-color: #fff;
@@ -574,6 +685,10 @@ p {
   .section-1 main .img-container:nth-child(1) {
     width: 100%;
     order: 1;
+  }
+
+  .section-1 main .img-container:nth-child(3) img {
+    width: 85%;
   }
 
   .section-1 main .img-container.black-white {
@@ -690,7 +805,6 @@ p {
   .section-2 main .title-content {
     width: 45%;
     padding-left: 30px;
-    padding-left: 30px;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -729,10 +843,112 @@ p {
     width: 50%;
   }
 
+  .section-2 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-2 header .img-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .section-2 main {
     display: flex;
     flex-wrap: wrap;
     margin-top: unset;
+  }
+
+  .section-2 main .title-content,
+  .section-2 main .main-content {
+    width: 100%;
+    padding-left: unset;
+  }
+
+  .section-2 main .title-content .special-heading,
+  .section-2 main .title-content h3,
+  .section-2 main .title-content p,
+  .section-2 main .title-content ul,
+  .section-2 main .main-content .special-heading,
+  .section-2 main .main-content h3,
+  .section-2 main .main-content p,
+  .section-2 main .main-content ul {
+    padding-left: 32px;
+  }
+
+  .section-2 main .title-content h3,
+  .section-2 main .title-content p,
+  .section-2 main .title-content ul,
+  .section-2 main .main-content h3,
+  .section-2 main .main-content p,
+  .section-2 main .main-content ul {
+    margin-bottom: 28px;
+  }
+
+  .section-2 main .title-content {
+    justify-content: start;
+  }
+
+  .section-2 main .title-content .special-heading {
+    width: unset;
+  }
+
+  .section-2 main .title-content .special-heading .elt {
+    display: inline;
+    font-size: 100px;
+  }
+
+  .section-2 main .title-content .special-heading .elt:nth-child(4) {
+    font-size: 78px;
+    display: block;
+  }
+
+  .section-2 main .main-content h3 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .section-2 main .main-content ul {
+    padding-left: 64px;
+    padding-right: 100px;
+    font-size: 25px;
+    line-height: 45px;
+    margin-bottom: unset;
+  }
+
+  .section-2 main .btn-container {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 134px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+  }
+
+  .section-2 header,
+  .section-2 main {
+    width: 50%;
+  }
+
+  .section-2 header {
+    align-items: flex-start;
+  }
+
+  .section-2 main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: unset;
+    margin-bottom: unset;
   }
 
   .section-2 main .title-content,
@@ -939,6 +1155,67 @@ p {
   }
 
   .section-3 header .img-container:nth-child(2) {
+    width: 66%;
+    margin-left: auto;
+    margin-right: 19%;
+    z-index: 5;
+  }
+
+  .section-3 main {
+    width: 85%;
+    margin-left: auto;
+    margin-top: -158px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 20;
+  }
+
+  .section-3 main .main-text {
+    width: 36%;
+    align-self: flex-end;
+    padding-right: 36px;
+  }
+
+  .section-3 main .main-text p {
+    width: 100%;
+    padding: 0;
+  }
+
+  .section-3 main .img-container {
+    width: 64%;
+  }
+
+  .section-3 main .img-container img {
+    border-right: none;
+  }
+
+  .section-3 main .btn-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-3 {
+    background-color: #fff;
+    margin-top: unset;
+    padding-top: 64px;
+  }
+
+  .section-3 header .special-heading {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-3 header .special-heading .elt:nth-child(1) {
+    font-size: 270px;
+  }
+
+  .section-3 header .special-heading .elt:nth-child(2) {
+    font-size: 170px;
+  }
+
+  .section-3 header .img-container:nth-child(2) {
     width: 56%;
     margin-left: auto;
     margin-right: 19%;
@@ -1050,6 +1327,74 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
+  .section-4 {
+    padding-bottom: 64px;
+    background-color: #fff;
+  }
+
+  .section-4 header .img-container {
+    width: 100%;
+  }
+
+  .section-4 main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -190px;
+  }
+
+  .section-4 main .img-container,
+  .section-4 main .main-text {
+    width: 50%;
+  }
+
+  .section-4 main .img-container:nth-child(1) img {
+    width: 105%;
+  }
+
+  .section-4 main .main-text {
+    padding-left: 32px;
+    align-self: flex-end;
+  }
+
+  .section-4 main .main-text .special-heading,
+  .section-4 main .main-text p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-4 main .main-text .special-heading,
+  .section-4 main .main-text p,
+  .section-4 main .main-text .btn-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-4 main .main-text .special-heading {
+    margin-bottom: 32px;
+  }
+
+  .section-4 main .main-text .special-heading .elt {
+    display: inline-block;
+    font-size: 110px;
+  }
+
+  .section-4 main .main-text p {
+    margin-bottom: 24px;
+    padding-right: 64px;
+  }
+
+  .section-4 main .main-text p:nth-child(2) {
+    font-weight: 600;
+  }
+
+  .section-4 main .main-text .btn-container {
+    margin-top: 64px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .section-4 {
     padding-bottom: 64px;
     background-color: #fff;
@@ -1220,6 +1565,72 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
+  .section-5 {
+    background-color: transparent;
+    padding-top: 90px;
+  }
+
+  .section-5 main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: unset;
+  }
+
+  .section-5 main .main-text,
+  .section-5 main .img-container {
+    width: 50%;
+  }
+
+  .section-5 main .main-text {
+    align-self: flex-end;
+  }
+
+  .section-5 .main-text .special-heading {
+    position: relative;
+    width: 580px;
+    height: 152px;
+    margin-left: 30px;
+    margin-bottom: 24px;
+  }
+
+  .section-5 .main-text .special-heading .elt {
+    position: absolute;
+  }
+
+  .section-5 .main-text .special-heading .elt:nth-child(1) {
+    font-size: 120px;
+    left: 0;
+    top: 0;
+  }
+
+  .section-5 .main-text .special-heading .elt:nth-child(2) {
+    font-size: 70px;
+    top: 75px;
+    left: 91px;
+  }
+
+  .section-5 .main-text .special-heading .elt:nth-child(3) {
+    font-size: 176px;
+    top: 39px;
+    left: 228px;
+  }
+
+  .section-5 .main-text p {
+    width: 88%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 34px;
+    margin-right: auto;
+  }
+
+  .section-5 .btn-container {
+    margin-top: 88px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .section-5 {
     background-color: transparent;
     padding-top: 90px;
@@ -1591,6 +2002,57 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
+  .section-8 main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -210px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .section-8 main .main-content {
+    width: 45%;
+    align-self: flex-end;
+  }
+
+  .section-8 main .main-content .special-heading {
+    margin-bottom: 0px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-8 main .main-content .special-heading .elt {
+    display: inline-block;
+  }
+
+  .section-8 main .main-content .special-heading .elt:nth-child(1),
+  .section-8 main .main-content .special-heading .elt:nth-child(2) {
+    font-size: 130px;
+    line-height: 178px;
+  }
+
+  .section-8 main .main-content p {
+    width: 88%;
+    margin-bottom: 24px;
+  }
+
+  .section-8 main .main-content .btn-container {
+    margin-top: 50px;
+    margin-bottom: 16px;
+  }
+
+  .section-8 main .img-container {
+    width: 55%;
+  }
+
+  .section-8 main .img-container img {
+    width: 100%;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .section-8 main {
     display: flex;
     flex-wrap: wrap;

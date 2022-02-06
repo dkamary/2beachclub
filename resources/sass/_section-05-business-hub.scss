@@ -146,6 +146,74 @@
                     position: absolute;
 
                     &:nth-child(1) {
+                        font-size: 120px;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 70px;
+                        top: 75px;
+                        left: 91px;
+                    }
+
+                    &:nth-child(3) {
+                        font-size: 176px;
+                        top: 39px;
+                        left: 228px;
+                    }
+                }
+            }
+
+            p {
+                width: 88%;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: 34px;
+                margin-right: auto;
+            }
+        }
+
+        .btn-container {
+            margin-top: 88px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section-5 {
+        background-color: transparent;
+        padding-top: 90px;
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-left: unset;
+
+            .main-text,
+            .img-container {
+                width: 50%;
+            }
+
+            .main-text {
+                align-self: flex-end;
+            }
+        }
+
+        .main-text {
+            .special-heading {
+                position: relative;
+                width: 580px;
+                height: 152px;
+                margin-left: 30px;
+                margin-bottom: 24px;
+
+                .elt {
+                    position: absolute;
+
+                    &:nth-child(1) {
                         font-size: 150px;
                         left: 0;
                         top: 0;

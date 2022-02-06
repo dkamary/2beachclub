@@ -113,6 +113,59 @@
                 align-self: flex-end;
 
                 .special-heading {
+                    margin-bottom: 0px;
+                    width: 88%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .elt {
+                        display: inline-block;
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            font-size: 130px;
+                            line-height: 178px;
+                        }
+                    }
+                }
+
+                p {
+                    width: 88%;
+                    margin-bottom: 24px;
+                }
+
+                .btn-container {
+                    margin-top: 50px;
+                    margin-bottom: 16px;
+                }
+            }
+
+            .img-container {
+                width: 55%;
+
+                img {
+                    width: 100%;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section-8 {
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: -210px;
+            position: relative;
+            z-index: 10;
+
+            .main-content {
+                width: 45%;
+                align-self: flex-end;
+
+                .special-heading {
                     margin-bottom: 90px;
                     width: 88%;
                     margin-left: auto;

@@ -25,8 +25,7 @@
         @desktop
         <div class="main-content">
             <h2 class="special-heading">
-                <span class="elt">Serv</span>
-                <span class="elt">ices</span>
+                <span class="elt">Serv</span><span class="elt">ices</span>
             </h2>
         @enddesktop
             <p>
