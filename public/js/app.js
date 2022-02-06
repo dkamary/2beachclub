@@ -94,26 +94,29 @@
 /***/ (function(module, exports) {
 
 // require('./bootstrap');
-window.addEventListener('DOMContentLoaded', function (event) {
-  console.log('DOMContentLoaded !!!');
-  lazyloadVideo();
+window.addEventListener("DOMContentLoaded", function (event) {
+  console.log("DOMContentLoaded !!!");
+  lazyloadVideo(1000);
 });
 
 var lazyloadVideo = function lazyloadVideo() {
-  console.log('Lazy load video');
-  var headerVideo = document.querySelector('#header_video');
+  var timeout = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 500;
+  setTimeout(function () {
+    console.log("Lazy load video");
+    var headerVideo = document.querySelector("#header_video");
 
-  if (headerVideo) {
-    var sources = headerVideo.querySelectorAll('source');
-    sources.forEach(function (source) {
-      source.src = source.getAttribute('data-src');
-    });
-    headerVideo.load();
-    headerVideo.play();
-    console.log('Video loaded and played!');
-  } else {
-    console.log('Video not found');
-  }
+    if (headerVideo) {
+      var sources = headerVideo.querySelectorAll("source");
+      sources.forEach(function (source) {
+        source.src = source.getAttribute("data-src");
+      });
+      headerVideo.load();
+      headerVideo.play();
+      console.log("Video loaded and played!");
+    } else {
+      console.log("Video not found");
+    }
+  }, timeout);
 };
 
 /***/ }),
