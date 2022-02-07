@@ -205,7 +205,7 @@ p {
   }
 
   .page-footer section.text p {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 35px;
   }
 
@@ -258,8 +258,8 @@ p {
   }
 
   .page-footer section.text p {
-    font-size: 35px;
-    line-height: 100%;
+    font-size: 28px;
+    line-height: 120%;
     color: #3f9caa;
   }
 
@@ -287,6 +287,25 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+#video-sound {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  background-image: url(/images/sound-muted.svg?2d28b6beb1ba541aa4e503b4a9e414ea);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  filter: invert(1);
+  transform: 0.8s;
+  cursor: pointer;
+}
+
+#video-sound.unmuted {
+  background-image: url(/images/sound-unmuted.svg?5b76366619a6cee817d896ae3177b4f5);
 }
 
 .section-1 header {

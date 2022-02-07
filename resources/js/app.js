@@ -17,8 +17,27 @@ const lazyloadVideo = (timeout = 500) => {
             headerVideo.load();
             headerVideo.play();
             console.log("Video loaded and played!");
+
+            const sound = document.querySelector('#video-sound');
+            if(sound) {
+                sound.addEventListener('click', e => {
+                    e.preventDefault();
+                    toggleMute();
+                });
+            }
         } else {
             console.log("Video not found");
         }
     }, timeout);
+};
+
+const toggleMute = () => {
+    const headerVideo = document.querySelector("#header_video");
+    if(headerVideo) {
+        headerVideo.muted = !headerVideo.muted;
+        const sound = document.querySelector('#video-sound');
+        if(sound) {
+            sound.classList.toggle('unmuted');
+        }
+    }
 };

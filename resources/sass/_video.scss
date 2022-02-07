@@ -1,0 +1,20 @@
+// Video stylesheet
+
+#video-sound {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    height: 3rem;
+    width: 3rem;
+    background-image: url(../../public/img/sound-muted.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    filter: invert(1);
+    transform: .8s;
+    cursor: pointer;
+
+    &.unmuted {
+        background-image: url(../../public/img/sound-unmuted.svg);
+    }
+}

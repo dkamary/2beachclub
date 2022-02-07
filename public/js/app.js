@@ -113,10 +113,31 @@ var lazyloadVideo = function lazyloadVideo() {
       headerVideo.load();
       headerVideo.play();
       console.log("Video loaded and played!");
+      var sound = document.querySelector('#video-sound');
+
+      if (sound) {
+        sound.addEventListener('click', function (e) {
+          e.preventDefault();
+          toggleMute();
+        });
+      }
     } else {
       console.log("Video not found");
     }
   }, timeout);
+};
+
+var toggleMute = function toggleMute() {
+  var headerVideo = document.querySelector("#header_video");
+
+  if (headerVideo) {
+    headerVideo.muted = !headerVideo.muted;
+    var sound = document.querySelector('#video-sound');
+
+    if (sound) {
+      sound.classList.toggle('unmuted');
+    }
+  }
 };
 
 /***/ }),
