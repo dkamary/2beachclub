@@ -107,7 +107,7 @@ $header_height: 60px;
         border: solid 4px #fff;
         box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.3);
         padding: 0px 8px;
-        font-size: 14px;
+        font-size: 10px;
         line-height: 40px;
         text-decoration: none;
         font-family: $font_header;
@@ -180,9 +180,9 @@ $header_height: 60px;
         margin-bottom: 42px;
 
         a {
-            font-size: 28px;
+            font-size: 20px;
             line-height: 40px;
-            padding: 5px 12px;
+            // padding: 0px 12px;
         }
     }
 
