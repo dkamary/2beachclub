@@ -1,8 +1,8 @@
 {{-- Index Header template --}}
 
 @php
-    $videoMp4 = asset('videos/2Beach-Club-Lifestyle-Video-2021.mp4');
-    $videoWebm = asset('videos/2Beach-Club-Lifestyle-Video-2021.webm');
+    $videoMp4 = asset('videos/2beach-club-lifestyle-video-full-2021.mp4');
+    $videoWebm = asset('videos/2beach-club-lifestyle-video-full-2021.webm');
 @endphp
 
 <header class="header-container">

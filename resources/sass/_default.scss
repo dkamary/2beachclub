@@ -66,6 +66,7 @@ $header_height: 60px;
 #video-2beach-club {
     margin-top: -$header_height;
     width: 100%;
+    position: relative;
 
     video {
         width: 100%;
@@ -106,10 +107,11 @@ $header_height: 60px;
         border: solid 4px #fff;
         box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.3);
         padding: 0px 8px;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 40px;
         text-decoration: none;
         font-family: $font_header;
+        letter-spacing: 1px;
     }
 
     &.contact-button {
@@ -178,9 +180,9 @@ $header_height: 60px;
         margin-bottom: 42px;
 
         a {
-            font-size: 33px;
+            font-size: 28px;
             line-height: 40px;
-            padding: 10px 20px;
+            padding: 5px 12px;
         }
     }
 
