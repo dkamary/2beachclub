@@ -153,7 +153,7 @@ p {
 }
 
 .page-footer section.text p {
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Sans", serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -181,7 +181,7 @@ p {
 }
 
 .page-footer section.copyright p {
-  font-family: "DM Sans";
+  font-family: "DM Sans", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
