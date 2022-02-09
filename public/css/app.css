@@ -159,6 +159,16 @@ p {
   line-height: 20px;
 }
 
+.page-footer section.text p a {
+  color: #3c92f1;
+}
+
+.page-footer section.text p a:link,
+.page-footer section.text p a:visited,
+.page-footer section.text p a:active {
+  color: #3c92f1;
+}
+
 .page-footer section.copyright {
   margin-top: 15px;
 }
@@ -203,6 +213,10 @@ p {
   .btn-container a {
     font-size: 20px;
     line-height: 40px;
+  }
+
+  .page-footer {
+    background-color: #fff;
   }
 
   .page-footer section.text p {
@@ -255,7 +269,7 @@ p {
   }
 
   .page-footer {
-    margin-top: 64px;
+    padding-top: 64px;
   }
 
   .page-footer section.text p {
@@ -1939,6 +1953,7 @@ p {
 
 .section-8 {
   padding-bottom: 32px;
+  background-color: #fff;
 }
 
 .section-8 header {
@@ -2018,6 +2033,10 @@ p {
     width: 70%;
     margin: 45px auto;
     padding: 0;
+  }
+
+  .section-8 header .special-heading .elt {
+    font-size: 120px;
   }
 
   .section-8 main p {

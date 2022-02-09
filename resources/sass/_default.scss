@@ -132,6 +132,16 @@ $header_height: 60px;
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 20px;
+
+                a {
+                    $color:  rgb(60, 146, 241);
+
+                    color: $color;
+
+                    &:link, &:visited, &:active {
+                        color: $color;
+                    }
+                }
             }
         }
 
@@ -182,11 +192,12 @@ $header_height: 60px;
         a {
             font-size: 20px;
             line-height: 40px;
-            // padding: 0px 12px;
         }
     }
 
     .page-footer {
+        background-color: #fff;
+
         section {
             &.text {
                 p {
@@ -247,7 +258,7 @@ $header_height: 60px;
     }
 
     .page-footer {
-        margin-top: 64px;
+        padding-top: 64px;
 
         section {
             &.text {

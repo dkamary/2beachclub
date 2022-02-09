@@ -11,6 +11,7 @@
     <section class="copyright">
         <picture class="img-container">
             <source media="(max-width: 699px)" srcset="{{ asset('img/2beach-club-blue-logo.webp') }}">
+            <source media="(min-width: 700px)" srcset="{{ asset('img/2beach-club-blue-logo-2x.webp') }}">
             <img src="{{ asset('img/2beach-club-blue-logo.webp') }}" alt="2Beach-Club">
         </picture>
         <p class="text-center">
