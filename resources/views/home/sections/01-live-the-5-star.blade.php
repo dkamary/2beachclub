@@ -40,7 +40,7 @@
                 Exclusive to 2Futures homeowners, the 2Beach Club is on the stretch of white sand of Pereybere beach.
             </p>
             <p>
-                Experience the barefoot luxury at the pool restaurant & bar with contemporary architecture style brought to you by SAOTA.
+                Experience the barefoot luxury at the pool restaurant & bar with contemporary architecture style.
             </p>
             <h2>
                 This is the 2Beach Club experience.
