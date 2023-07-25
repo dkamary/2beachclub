@@ -14,7 +14,7 @@
             <th width="20%" class="thead">
                 <h3 class="text-left">Description</h3>
             </th>
-            <th width="20%" class="membership platinium">Platinium</th>
+            <th width="20%" class="membership planitum">Planitum</th>
             <th width="20%" class="membership gold">Gold</th>
             <th width="20%" class="membership silver">Silver</th>
             {{-- <th width="20%" class="membership day-full">Day<br>(full access)</th>
@@ -28,7 +28,7 @@
         </tr>
         <tr>
             <td class="thead">Annual Fee (USD)</td>
-            <td class="membership platinium">1500</td>
+            <td class="membership planitum">1500</td>
             <td class="membership gold">1000</td>
             <td class="membership silver">300</td>
             {{-- <td class="membership day-full"></td>
@@ -37,7 +37,7 @@
         </tr>
         {{-- <tr>
             <td class="thead">Annual Fee for Ki Residences owners (80% discount)</td>
-            <td class="membership platinium">300</td>
+            <td class="membership planitum">300</td>
             <td class="membership gold"></td>
             <td class="membership silver"></td>
             <td class="membership day-full"></td>
@@ -46,7 +46,7 @@
         </tr> --}}
         {{-- <tr>
             <td class="thead">Day package fee per person (USD)</td>
-            <td class="membership platinium"></td>
+            <td class="membership planitum"></td>
             <td class="membership gold"></td>
             <td class="membership silver"></td>
             <td class="membership day-full">50</td>
@@ -55,7 +55,7 @@
         </tr> --}}
         <tr>
             <td class="thead">Number of members</td>
-            <td class="membership platinium">5</td>
+            <td class="membership planitum">5</td>
             <td class="membership gold">5</td>
             <td class="membership silver">4</td>
             {{-- <td class="membership day-full">1</td>
@@ -70,7 +70,7 @@
                 <h3>Benefits</h3>
             </td>
             <td colspan="3" style="background-color: #ffffff;">&nbsp;</td>
-            {{-- <td class="membership platinium"></td>
+            {{-- <td class="membership planitum"></td>
             <td class="membership gold"></td>
             <td class="membership silver"></td> --}}
             {{-- <td class="membership day-full"></td>
@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td class="thead">Restaurant</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold">✔</td>
             <td class="membership silver">✔</td>
             {{-- <td class="membership day-full">✔</td>
@@ -88,7 +88,7 @@
         </tr>
         <tr>
             <td class="thead">Lounge<br>(opening 2024)</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold">✔</td>
             <td class="membership silver">✔</td>
             {{-- <td class="membership day-full"><strong>-</strong></td>
@@ -97,7 +97,7 @@
         </tr>
         <tr>
             <td class="thead">Access to boardroom<br>(opening 2024)</td>
-            <td class="membership platinium">4 hours monthly</td>
+            <td class="membership planitum">4 hours monthly</td>
             <td class="membership gold">2 hours monthly</td>
             <td class="membership silver">Extra charge</td>
             {{-- <td class="membership day-full"><strong>-</strong></td>
@@ -106,7 +106,7 @@
         </tr>
         <tr>
             <td class="thead">Roof top bar</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold">✔</td>
             <td class="membership silver">✔</td>
             {{-- <td class="membership day-full">✔</td>
@@ -115,7 +115,7 @@
         </tr>
         <tr>
             <td class="thead">Pool</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold">✔</td>
             <td class="membership silver">✔</td>
             {{-- <td class="membership day-full">✔</td>
@@ -124,7 +124,7 @@
         </tr>
         <tr>
             <td class="thead">Towel service</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold">✔</td>
             <td class="membership silver" rowspan="3">Subject to minimum consumption of <br>USD 25 per person</td>
             {{-- <td class="membership day-full">✔</td>
@@ -133,7 +133,7 @@
         </tr>
         <tr>
             <td class="thead">Locker room</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold">✔</td>
             {{-- <td></td> --}}
             {{-- <td class="membership day-full">✔</td>
@@ -142,7 +142,7 @@
         </tr>
         <tr>
             <td class="thead">Beach transat</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold">✔</td>
             {{-- <td></td> --}}
             {{-- <td class="membership day-full">✔</td>
@@ -151,7 +151,7 @@
         </tr>
         <tr>
             <td class="thead">Concierge service</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold">✔</td>
             <td class="membership silver">Extra charge</td>
             {{-- <td class="membership day-full">Extra charge</td>
@@ -160,7 +160,7 @@
         </tr>
         <tr>
             <td class="thead">Shuttle service to and from 2Beach Club - 2Futures residences (Bain Boeuf to Trou aux Biches)</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold"><strong>-</strong></td>
             <td class="membership silver"><strong>-</strong></td>
             {{-- <td class="membership day-full"><strong>-</strong></td>
@@ -169,7 +169,7 @@
         </tr>
         <tr>
             <td class="thead">Guest passes</td>
-            <td class="membership platinium">5</td>
+            <td class="membership planitum">5</td>
             <td class="membership gold">5</td>
             <td class="membership silver">2</td>
             {{-- <td class="membership day-full"><strong>-</strong></td>
@@ -178,7 +178,7 @@
         </tr>
         <tr>
             <td class="thead">Access to tenants (if rented through 2Futures Holidays)</td>
-            <td class="membership platinium">✔</td>
+            <td class="membership planitum">✔</td>
             <td class="membership gold"><strong>-</strong></td>
             <td class="membership silver"><strong>-</strong></td>
             {{-- <td class="membership day-full"><strong>-</strong></td>
@@ -187,7 +187,7 @@
         </tr>
         <tr>
             <td class="thead">Discount on F&B</td>
-            <td class="membership platinium">15%</td>
+            <td class="membership planitum">15%</td>
             <td class="membership gold">10%</td>
             <td class="membership silver">5%</td>
             {{-- <td class="membership day-full">0%</td>
@@ -239,7 +239,7 @@
                 color: #ececec;
             }
 
-            .membership.platinium {
+            .membership.planitum {
                 background-color: rgb(0, 54, 95);
             }
 

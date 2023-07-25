@@ -45,6 +45,32 @@
         <div class="input-container">
             <select id="residence" name="residence" class="form-input">
                 <option value="">Place of residence</option>
+                <option value="2Beach Club">2Beach Club</option>
+                <option value="2Beach Residences">2Beach Residences</option>
+                <option value="AO Residences">AO Residences</option>
+                <option value="Cape Bay">Cape Bay</option>
+                <option value="Casa Alegria">Casa Alegria</option>
+                <option value="Element Bay Beach">Element Bay Beach</option>
+                <option value="Element Bay II">Element Bay II</option>
+                <option value="Grand Baie Business Quarters">Grand Baie Business Quarters</option>
+                <option value="Infinity by the Sea">Infinity by the Sea</option>
+                <option value="Ki Residences">Ki Residences</option>
+                <option value="Ki Resort">Ki Resort</option>
+                <option value="La Pirogue Residences">La Pirogue Residences</option>
+                <option value="La Residence">La Residence</option>
+                <option value="Le Barachois Beachfront Residences">Le Barachois Beachfront Residences</option>
+                <option value="Le Domaine de Grand Baie">Le Domaine de Grand Baie</option>
+                <option value="Les Residences de Mont Choisy">Les Residences de Mont Choisy</option>
+                <option value="Manta Cove">Manta Cove</option>
+                <option value="Marina Bay">Marina Bay</option>
+                <option value="Mont Choisy Business Quarter - IQ">Mont Choisy Business Quarter - IQ</option>
+                <option value="Mont Choisy Business Quarter - iQ 2">Mont Choisy Business Quarter - iQ 2</option>
+                <option value="Mont Choisy Le Parc">Mont Choisy Le Parc</option>
+                <option value="Ocean Grand Gaube">Ocean Grand Gaube</option>
+                <option value="Ocean Point Beachfront Residences">Ocean Point Beachfront Residences</option>
+                <option value="Serenity Villas">Serenity Villas</option>
+                <option value="Sunset Cove">Sunset Cove</option>
+
             </select>
         </div>
     </div>
