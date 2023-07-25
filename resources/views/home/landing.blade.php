@@ -27,6 +27,9 @@
             <div class="membership-table-container">
                 @include('home.sections.membership-table')
             </div>
+            <div class="contact-form-update">
+                {{-- Formulaire --}}
+            </div>
         </main>
     </section>
 @endsection

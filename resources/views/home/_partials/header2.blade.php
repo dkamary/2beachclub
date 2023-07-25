@@ -18,7 +18,7 @@
         </div>
     </nav>
     <div class="hero-section">
-        {{--  --}}
+        <img src="{{ asset('img/2beach-club-header2.webp') }}" alt="2beach-club">
     </div>
 </header>
 
@@ -26,11 +26,16 @@
     @push('head')
         <style>
             .hero-section {
-                min-height: 70vh;
+                /* min-height: 70vh; */
                 width: 100%;
                 background-size: cover;
                 background-position: bottom;
-                background-image: url({{ asset('img/hero-header-1440w.webp') }});
+                /* background-image: url(); */
+            }
+
+            .hero-section img {
+                width: 100%;
+                height: auto;
             }
 
             .header-container .header-nav {

@@ -205,8 +205,10 @@
             }
 
             .membership-table {
-                width: 100%;
+                width: 70%;
                 font-size: 0.9em;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .membership-table th {
@@ -261,6 +263,12 @@
             .membership.tenants {
                 background-color: rgb(255, 255, 255);
                 color: #333333;
+            }
+
+            @media screen and (max-width: 576px) {
+                .membership-table {
+                    width: 70%;
+                }
             }
         </style>
     @endpush
