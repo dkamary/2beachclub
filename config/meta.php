@@ -7,7 +7,7 @@ return [
             'title' => '2Beach Club by 2Futures Mauritius',
             'url' => 'https://2beachclub.mu/',
             'description' => 'Live the 5 -star lifestyle everyday',
-            'preview' => asset('img/section-1-1-2160w.webp'),
+            'preview' => 'img/section-1-1-2160w.webp' /*asset('img/section-1-1-2160w.webp')*/,
         ]
     ]
 ];

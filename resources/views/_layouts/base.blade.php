@@ -6,6 +6,7 @@
     @include('home._partials.meta')
     @include('_partials.stylesheets')
     @yield('stylesheets')
+    @stack('head')
 </head>
 
 <body>
@@ -14,6 +15,7 @@
     @yield('footer')
     @include('_partials.javascripts')
     @yield('javascripts')
+    @stack('foot')
 </body>
 
 </html>

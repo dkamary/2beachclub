@@ -8,7 +8,7 @@
 <header class="header-container">
     <nav class="header-nav">
         <div class="logo-container">
-            <a href="#" class="logo-link">
+            <a href="{{ route('home_page') }}" class="logo-link">
                 <picture class="picture-container">
                     <source media="(max-width: 699px)" srcset="{{ asset('img/2beach-club-logo.webp') }}">
                     <source media="(min-width: 1024px)" srcset="{{ asset('img/2beach-club-logo-2x.webp') }}">
