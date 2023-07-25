@@ -9,7 +9,7 @@
 @section('main')
     <section class="section landingpage-section-1">
         <header>
-            <h1>Welcome to 2Beach Club - A Beachside Heaven!</h1>
+            <h1>Welcome to 2Beach Club - A Beachside Haven!</h1>
         </header>
         <main>
             <p>
