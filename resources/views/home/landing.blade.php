@@ -28,7 +28,7 @@
                 @include('home.sections.membership-table')
             </div>
             <div class="contact-form-update">
-                {{-- Formulaire --}}
+                @include('home.forms.landing-page-contact')
             </div>
         </main>
     </section>
@@ -66,6 +66,14 @@
             .membership-table-container {
                 margin-top: 48px;
                 margin-bottom: 24px;
+            }
+
+            .contact-form-update {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 24px;
+                padding-bottom: 24px;
             }
         </style>
     @endpush

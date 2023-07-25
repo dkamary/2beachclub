@@ -1,0 +1,152 @@
+/*
+* Engagebay form stylesheet
+*/
+
+.crm-engagebay-form {
+    width: 100%;
+}
+
+.crm-engagebay-form * {
+    box-sizing: border-box;
+}
+
+.crm_engagebay_form {
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 4px #a8a8a8;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.crm_engagebay_form .form_group {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.crm_engagebay_form .form_group:last-child,
+.crm_engagebay_form .form_group.button_row {
+    margin-bottom: 0;
+}
+
+.form_group.row .input-container {
+    width: 100%;
+}
+
+.input-container .form-input {
+    display: block;
+    width: 100%;
+    border: 1px solid #eae9e9;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+    border-radius: 5px;
+    outline: 0;
+    background-color: #ffffff;
+    color: #999999;
+    transition: .5s;
+}
+
+.input-container button.form-input {
+    padding: 16px 25px;
+    background-color: var(--color-action);
+    color: #ffffff;
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container button.form-input:hover {
+    background-color: var(--color-action-dark-1);
+}
+
+.input-container select.form-input {
+    color: #999999;
+}
+
+.input-container .form-input.placeholder {
+    position: relative;
+    animation: placeholder-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.loader-container span {
+    display: inline-block;
+    width: 5px;
+    height: 14px;
+    background-color: #ffffff;
+    margin-left: 2px;
+    margin-right: 2px;
+    animation: submit-loading-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+.loader-container span:first-child,
+.loader-container span:last-child {
+    animation: submit-loading-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.loader-container span:first-child {
+    margin-left: unset;
+}
+
+.loader-container span:last-child {
+    margin-right: unset;
+}
+
+@keyframes placeholder-animation {
+    0% {
+        background-color: rgba(255, 255, 255, 1.0);
+    }
+    50% {
+        background-color: rgba(234, 233, 233, .5);
+    }
+    100% {
+        background: rgba(255, 255, 255, 1.0);
+    }
+}
+
+@keyframes submit-loading-1 {
+    0% {
+        height: 5px;
+    }
+    50% {
+        height: 14px;
+    }
+    100% {
+        height: 6px;
+    }
+}
+
+@keyframes submit-loading-2 {
+    0% {
+        height: 14px;
+    }
+    50% {
+        height: 5px;
+    }
+    100% {
+        height: 13px;
+    }
+}

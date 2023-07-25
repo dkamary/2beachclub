@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home_page');
 Route::get('/landing-page', [HomeController::class, 'landing'])->name('landing_page');
+
+Route::get('/submit-contact', [FormController::class, 'submit'])->name('form_submit');
