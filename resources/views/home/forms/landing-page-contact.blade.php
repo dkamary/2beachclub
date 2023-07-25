@@ -50,7 +50,7 @@
     </div>
     <div class="form_group button_row">
         <div class="input-container">
-            <button class="form-input" name="btn-subscribe" type="submit">SEND</button>
+            <button class="form-input" name="btn-subscribe" type="submit" disabled>SEND</button>
         </div>
     </div>
 </form>
@@ -95,7 +95,8 @@
                 width: 100%;
             }
 
-            .iti__selected-dial-code {
+            .iti__selected-dial-code,
+            .iti__country-name {
                 font-size: 14px !important;
             }
 
