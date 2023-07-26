@@ -10,9 +10,15 @@
     <div class="form_group">
         <p style="font-size: 20px;">Choose your membership, <a href="#membership-details" class="scroll-smooth">details</a></p>
         <div class="membership-container">
-            <label for="platinum"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum" checked> Platinum</label>&nbsp;
-            <label for="gold"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;
-            <label for="silver"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label>
+            @handheld
+                <label for="platinum" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum" checked> Platinum</label>&nbsp;
+                <label for="gold" class="flex-label"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;
+                <label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label>
+            @elsehandheld
+                <label for="platinum"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum" checked> Platinum</label>&nbsp;
+                <label for="gold"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;
+                <label for="silver"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label>
+            @endhandheld
         </div>
     </div>
     <div class="form_group">
@@ -134,6 +140,14 @@
 
             .iti__flag {
                 background-image: url({{ asset('img/flags.png') }});
+            }
+
+            .membership-container label.flex-label {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
             }
         </style>
     @endpush
