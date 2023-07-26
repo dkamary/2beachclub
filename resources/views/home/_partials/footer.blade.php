@@ -5,8 +5,8 @@
         <p class="text-center">
             More information? <br>
             <a href="mailto:sales@2futures.com">sales@2futures.com</a>
-            {{-- or <a href="tel:+23059774880">(+230) 5977 4880</a> --}}<br>
-            <a href="http://2futures.com">2futures.com</a>
+            {{-- or <a href="tel:+23059774880">(+230) 5977 4880</a><br>
+            <a href="http://2futures.com">2futures.com</a> --}}
         </p>
     </section>
     <section class="copyright">
