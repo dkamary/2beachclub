@@ -12,11 +12,11 @@
         </tr>
         <tr>
             <td width="50%" class="thead">Annual Fee (USD)</td>
-            <td width="50%" class="membership planitum">1500</td>
+            <td width="50%" class="membership platinum">1500</td>
         </tr>
         <tr>
             <td class="thead">Number of members</td>
-            <td class="membership planitum">5</td>
+            <td class="membership platinum">5</td>
         </tr>
         <tr>
             <td colspan="2">&nbsp;</td>
@@ -29,55 +29,55 @@
         </tr>
         <tr>
             <td class="thead">Restaurant</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Lounge<br>(opening 2024)</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Access to boardroom<br>(opening 2024)</td>
-            <td class="membership planitum">4 hours monthly</td>
+            <td class="membership platinum">4 hours monthly</td>
         </tr>
         <tr>
             <td class="thead">Roof top bar</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Pool</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Towel service</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Locker room</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Beach transat</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Concierge service</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Shuttle service to and from 2Beach Club - 2Futures residences (Bain Boeuf to Trou aux Biches)</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Guest passes</td>
-            <td class="membership planitum">5</td>
+            <td class="membership platinum">5</td>
         </tr>
         <tr>
             <td class="thead">Access to tenants <br>(if rented through 2Futures Holidays)</td>
-            <td class="membership planitum">✔</td>
+            <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Discount on F&B</td>
-            <td class="membership planitum">15%</td>
+            <td class="membership platinum">15%</td>
         </tr>
     </tbody>
 </table>
@@ -295,7 +295,7 @@
                 color: #ececec;
             }
 
-            .membership.planitum {
+            .membership.platinum {
                 background-color: rgb(0, 54, 95);
             }
 
