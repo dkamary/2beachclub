@@ -2,21 +2,30 @@
 
 <table class="membership-table">
     <thead>
-        <tr>
+        {{-- <tr>
             <th style="padding-top: 12px; padding-bottom: 12px;">
                 &nbsp;
             </th>
             <th colspan="3" style="padding-top: 12px; padding-bottom: 12px;">
                 <h3>Membership tier</h3>
             </th>
-        </tr>
+        </tr> --}}
         <tr>
             <th width="20%" class="thead">
                 <h3 class="text-left">Description</h3>
             </th>
-            <th width="20%" class="membership planitum">Planitum</th>
-            <th width="20%" class="membership gold">Gold</th>
-            <th width="20%" class="membership silver">Silver</th>
+            <th width="20%" class="membership planitum-nope">
+                {{-- <h5>Planitum</h5> --}}
+                <img src="{{ asset('img/membership-card-platinum.webp') }}" alt="platinum" />
+            </th>
+            <th width="20%" class="membership gold-nope">
+                {{-- <h5>Gold</h5> --}}
+                <img src="{{ asset('img/membership-card-gold.webp') }}" alt="gold" />
+            </th>
+            <th width="20%" class="membership silver-nope">
+                {{-- <h5>Silver</h5> --}}
+                <img src="{{ asset('img/membership-card-silver.webp') }}" alt="silver" />
+            </th>
             {{-- <th width="20%" class="membership day-full">Day<br>(full access)</th>
             <th width="20%" class="membership day-resto">Day<br>(restaurant)</th> --}}
             {{-- <th width="20%" class="membership tenants">Tenants<br>(2Futures Holidays)</th> --}}
@@ -177,7 +186,7 @@
             <td class="membership tenants"><strong>-</strong></td> --}}
         </tr>
         <tr>
-            <td class="thead">Access to tenants (if rented through 2Futures Holidays)</td>
+            <td class="thead">Access to tenants <br>(if rented through 2Futures Holidays)</td>
             <td class="membership planitum">✔</td>
             <td class="membership gold"><strong>-</strong></td>
             <td class="membership silver"><strong>-</strong></td>
@@ -205,7 +214,7 @@
             }
 
             .membership-table {
-                width: 70%;
+                width: 95%;
                 font-size: 0.9em;
                 margin-left: auto;
                 margin-right: auto;
@@ -214,6 +223,7 @@
             .membership-table th {
                 vertical-align: middle;
                 text-align: center;
+                background-color: #ffffff;
             }
 
             .membership-table td {
@@ -226,6 +236,13 @@
                 padding-bottom: 6px;
                 padding-left: 3px;
                 padding-right: 3px;
+            }
+
+            .membership-table th img {
+                width: auto;
+                height: 7rem;
+                /* max-width: 150px; */
+                margin-top: 10px;
             }
 
             .membership-table .thead {

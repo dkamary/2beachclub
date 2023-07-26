@@ -6,9 +6,9 @@
     $form_id = '4632344205459456';
 @endphp
 
-<form action="{{ $form_submit }}" method="POST" class="crm_engagebay_form" id="form-{{ $id }}">
+<form action="{{ $form_submit }}" method="POST" class="crm_engagebay_form position-sticky" id="form-{{ $id }}">
     <div class="form_group">
-        <p style="font-size: 22px;">Choose your membership:</p>
+        <p style="font-size: 20px;">Choose your membership, <a href="#membership-details" class="scroll-smooth">details</a></p>
         <div class="membership-container">
             <label for="platinum"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum" checked> Platinum</label>&nbsp;
             <label for="gold"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;
@@ -38,21 +38,16 @@
     </div>
     <div class="form_group">
         <div class="input-container">
-            <input class="form-input" data-type="text" type="text" id="unit_number" name="unit_number" placeholder="Unit Number" required="">
-        </div>
-    </div>
-    <div class="form_group">
-        <div class="input-container">
-            <select id="residence" name="residence" class="form-input">
+            <select id="residence" name="residence" class="form-input" required>
                 <option value="">Place of residence</option>
-                <option value="2Beach Club">2Beach Club</option>
+                {{-- <option value="2Beach Club">2Beach Club</option> --}}
                 <option value="2Beach Residences">2Beach Residences</option>
                 <option value="AO Residences">AO Residences</option>
                 <option value="Cape Bay">Cape Bay</option>
                 <option value="Casa Alegria">Casa Alegria</option>
                 <option value="Element Bay Beach">Element Bay Beach</option>
                 <option value="Element Bay II">Element Bay II</option>
-                <option value="Grand Baie Business Quarters">Grand Baie Business Quarters</option>
+                {{-- <option value="Grand Baie Business Quarters">Grand Baie Business Quarters</option> --}}
                 <option value="Infinity by the Sea">Infinity by the Sea</option>
                 <option value="Ki Residences">Ki Residences</option>
                 <option value="Ki Resort">Ki Resort</option>
@@ -63,8 +58,8 @@
                 <option value="Les Residences de Mont Choisy">Les Residences de Mont Choisy</option>
                 <option value="Manta Cove">Manta Cove</option>
                 <option value="Marina Bay">Marina Bay</option>
-                <option value="Mont Choisy Business Quarter - IQ">Mont Choisy Business Quarter - IQ</option>
-                <option value="Mont Choisy Business Quarter - iQ 2">Mont Choisy Business Quarter - iQ 2</option>
+                {{-- <option value="Mont Choisy Business Quarter - IQ">Mont Choisy Business Quarter - IQ</option>
+                <option value="Mont Choisy Business Quarter - iQ 2">Mont Choisy Business Quarter - iQ 2</option> --}}
                 <option value="Mont Choisy Le Parc">Mont Choisy Le Parc</option>
                 <option value="Ocean Grand Gaube">Ocean Grand Gaube</option>
                 <option value="Ocean Point Beachfront Residences">Ocean Point Beachfront Residences</option>
@@ -72,6 +67,11 @@
                 <option value="Sunset Cove">Sunset Cove</option>
 
             </select>
+        </div>
+    </div>
+    <div class="form_group">
+        <div class="input-container">
+            <input class="form-input" data-type="text" type="text" id="unit_number" name="unit_number" placeholder="Unit Number" required="">
         </div>
     </div>
     <div class="form_group button_row">
@@ -86,6 +86,11 @@
         <link rel="stylesheet" href="{{ asset('css/intlTelInput.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/engagebay-form.css') }}" />
         <style>
+            .crm_engagebay_form {
+                background-color: #ffffff;
+                margin-top: 0px !important;
+            }
+
             .input-container button.form-input {
                 padding: 16px 25px;
                 background-color: rgb(0, 54, 95);
@@ -122,7 +127,8 @@
             }
 
             .iti__selected-dial-code,
-            .iti__country-name {
+            .iti__country-name,
+            .iti__dial-code {
                 font-size: 14px !important;
             }
 
@@ -198,6 +204,20 @@
 
                 input.addEventListener("keyup", handleChange);
                 input.addEventListener("change", handleChange);
+            });
+        </script>
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                const scrollSmooth = document.querySelectorAll(".scroll-smooth");
+                if (scrollSmooth && scrollSmooth.length > 0) {
+                    scrollSmooth.forEach(element => {
+                        element.addEventListener("click", e => {
+                            e.preventDefault();
+                            const target = document.querySelector(element.getAttribute("href"));
+                            if (target) target.scrollIntoView({ behavior: 'smooth' });
+                        });
+                    });
+                }
             });
         </script>
     @endpush
