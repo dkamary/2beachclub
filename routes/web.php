@@ -17,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home_page');
 Route::get('/landing-page', [HomeController::class, 'landing'])->name('landing_page');
+Route::get('/thank-you', [HomeController::class, 'landing_thankyou'])->name('landing_thankyou');
 
-Route::get('/submit-contact', [FormController::class, 'submit'])->name('form_submit');
+Route::post('/submit-contact', [FormController::class, 'submit'])->name('form_submit');

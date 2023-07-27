@@ -40,6 +40,7 @@
     <div class="form_group">
         <div class="input-container">
             <input class="form-input" data-type="phone" type="phone" id="phone" name="phone" placeholder="Phone number" required="">
+            <input type="hidden" name="phone_number" id="phone_number" value="">
         </div>
     </div>
     <div class="form_group">
@@ -82,9 +83,10 @@
     </div>
     <div class="form_group button_row">
         <div class="input-container">
-            <button class="form-input" name="btn-subscribe" type="submit" disabled>SEND</button>
+            <button class="form-input" name="btn-subscribe" type="submit">SEND</button>
         </div>
     </div>
+    @csrf
 </form>
 
 @once
@@ -212,7 +214,10 @@
                         value
                     });
 
-                    hidden.value = value;
+                    const hidden = document.querySelector("#phone_number");
+                    if (hidden) {
+                        hidden.value = value;
+                    }
                     console.groupEnd();
                 };
 

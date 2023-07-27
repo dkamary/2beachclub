@@ -16,4 +16,9 @@ class HomeController extends Controller
     {
         return view('home.landing');
     }
+
+    public function landing_thankyou() : View
+    {
+        return view('home.thankyou');
+    }
 }
