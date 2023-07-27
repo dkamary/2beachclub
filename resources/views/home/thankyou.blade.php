@@ -16,7 +16,15 @@
         </header>
         <main>
             <p>
-                Thank you for expressing your interest in 2Beach Club.
+                Thank you for expressing your interest in 2Beach Club. We hope you have a marvellous experience!
+            </p>
+            <p style="margin-top: ">
+                See you soon.
+            </p>
+            <p>
+                <a href="{{ route('home_page') }}">
+                    <img src="{{ asset('img/2beach-club-01.webp') }}" alt="2Beach Club" style="width: 100%; height: auto;">
+                </a>
             </p>
         </main>
     </section>
@@ -29,35 +37,10 @@
 @once
     @push('head')
         <style>
-            .landingpage-section-1 ol li {
-                margin-bottom: 12px;
-            }
-
-            .membership-table-container {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .membership-table-container .left-side,
-            .membership-table-container .right-side {
-                position: relative;
-            }
-
-            .membership-table-container .left-side {
-                width: 70%;
-            }
-
-            .membership-table-container .right-side {
-                width: 30%;
-            }
-
-            .membership-table-container .position-sticky {
-                position: sticky;
-                top: 16px;
-            }
 
             .landingpage-section-1 {
                 padding: 45px 10px;
+                text-align: center;
             }
 
             .landingpage-section-1 h1 {
@@ -73,38 +56,6 @@
                 margin-bottom: 24px;
             }
 
-            .landingpage-section-1 ol {
-                padding-left: 3rem;
-                padding-right: 3rem;
-            }
-
-            .membership-table-container {
-                margin-top: 48px;
-                margin-bottom: 24px;
-            }
-
-            .contact-form-update {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-top: 24px;
-                padding-bottom: 24px;
-            }
-
-            @media screen and (max-width: 576px) {
-                .membership-table-container .left-side,
-                .membership-table-container .right-side {
-                    width: 100%;
-                }
-
-                .membership-table-container .left-side {
-                    order: 2;
-                }
-
-                .membership-table-container .right-side {
-                    order: 1;
-                }
-            }
         </style>
     @endpush
 @endonce
