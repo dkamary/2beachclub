@@ -23,7 +23,7 @@
                 As you step into a world of coastal luxury and indulgence, we are delighted to offer you the
                 opportunity to become a part of our esteemed membership community.
             </p>
-            <h2>Membership Categories:</h2>
+            <h2>Membership tiers:</h2>
             <p>Discover three enticing categories of membership, tailored to suit your desires and elevate your beach club experience:</p>
             <ol>
                 <li><strong>Platinum Membership</strong>: Our most prestigious offering, granting you full access to all facilities and an array of personalized benefits for an extraordinary coastal lifestyle.</li>

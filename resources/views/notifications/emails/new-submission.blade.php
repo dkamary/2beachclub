@@ -55,8 +55,12 @@
                 <td width='70%'><strong>{{ strtoupper($membership) }}</strong></td>
             </tr>
             <tr>
-                <th>Name</th>
-                <td>{{ ucwords($firstname .' ' .$lastname) }}</td>
+                <th>First name</th>
+                <td>{{ ucfirst($firstname) }}</td>
+            </tr>
+            <tr>
+                <th>Last name</th>
+                <td>{{ ucfirst($lastname) }}</td>
             </tr>
             <tr>
                 <th>Email</th>
