@@ -39,7 +39,7 @@
             <td class="thead">Annual Fee (USD)</td>
             <td class="membership platinum">1500</td>
             <td class="membership gold">1000</td>
-            <td class="membership silver">300</td>
+            <td class="membership silver">500</td>
             {{-- <td class="membership day-full"></td>
             <td class="membership day-resto"></td> --}}
             {{-- <td class="membership tenants"></td> --}}
@@ -95,26 +95,26 @@
             <td class="membership day-resto">✔</td>
             <td class="membership tenants">✔</td> --}}
         </tr>
-        <tr>
+        {{-- <tr>
             <td class="thead">Lounge<br>(opening 2024)</td>
             <td class="membership platinum">✔</td>
             <td class="membership gold">✔</td>
             <td class="membership silver">✔</td>
-            {{-- <td class="membership day-full"><strong>-</strong></td>
+            <td class="membership day-full"><strong>-</strong></td>
             <td class="membership day-resto"><strong>-</strong></td>
-            <td class="membership tenants"><strong>-</strong></td> --}}
+            <td class="membership tenants"><strong>-</strong></td>
         </tr>
         <tr>
             <td class="thead">Access to boardroom<br>(opening 2024)</td>
             <td class="membership platinum">4 hours monthly</td>
             <td class="membership gold">2 hours monthly</td>
             <td class="membership silver">Extra charge</td>
-            {{-- <td class="membership day-full"><strong>-</strong></td>
+            <td class="membership day-full"><strong>-</strong></td>
             <td class="membership day-resto"><strong>-</strong></td>
-            <td class="membership tenants"><strong>-</strong></td> --}}
-        </tr>
+            <td class="membership tenants"><strong>-</strong></td>
+        </tr> --}}
         <tr>
-            <td class="thead">Roof top bar</td>
+            <td class="thead">Rooftop bar</td>
             <td class="membership platinum">✔</td>
             <td class="membership gold">✔</td>
             <td class="membership silver">✔</td>
@@ -168,7 +168,7 @@
             <td class="membership tenants">Extra charge</td> --}}
         </tr>
         <tr>
-            <td class="thead">Shuttle service to and from 2Beach Club - 2Futures residences (Bain Boeuf to Trou aux Biches)</td>
+            <td class="thead">Shuttle: between 2Beach Club and 2Futures' residences (Bain Boeuf - Trou aux Biches)</td>
             <td class="membership platinum">✔</td>
             <td class="membership gold"><strong>-</strong></td>
             <td class="membership silver"><strong>-</strong></td>

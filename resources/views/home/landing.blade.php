@@ -51,8 +51,17 @@
 @endsection
 
 @once
+    @push('body_class')
+        landing-page
+    @endpush
     @push('head')
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
         <style>
+            body.landing-page {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+            }
+
             .landingpage-section-1 ol li {
                 margin-bottom: 12px;
             }

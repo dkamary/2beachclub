@@ -31,16 +31,16 @@
             <td class="thead">Restaurant</td>
             <td class="membership platinum">✔</td>
         </tr>
-        <tr>
+        {{-- <tr>
             <td class="thead">Lounge<br>(opening 2024)</td>
             <td class="membership platinum">✔</td>
         </tr>
         <tr>
             <td class="thead">Access to boardroom<br>(opening 2024)</td>
             <td class="membership platinum">4 hours monthly</td>
-        </tr>
+        </tr> --}}
         <tr>
-            <td class="thead">Roof top bar</td>
+            <td class="thead">Rooftop bar</td>
             <td class="membership platinum">✔</td>
         </tr>
         <tr>
@@ -64,7 +64,7 @@
             <td class="membership platinum">✔</td>
         </tr>
         <tr>
-            <td class="thead">Shuttle service to and from 2Beach Club - 2Futures residences (Bain Boeuf to Trou aux Biches)</td>
+            <td class="thead">Shuttle: between 2Beach Club and 2Futures' residences (Bain Boeuf - Trou aux Biches)</td>
             <td class="membership platinum">✔</td>
         </tr>
         <tr>
@@ -112,16 +112,16 @@
             <td class="thead">Restaurant</td>
             <td class="membership gold">✔</td>
         </tr>
-        <tr>
+        {{-- <tr>
             <td class="thead">Lounge<br>(opening 2024)</td>
             <td class="membership gold">✔</td>
         </tr>
         <tr>
             <td class="thead">Access to boardroom<br>(opening 2024)</td>
             <td class="membership gold">2 hours monthly</td>
-        </tr>
+        </tr> --}}
         <tr>
-            <td class="thead">Roof top bar</td>
+            <td class="thead">Rooftop bar</td>
             <td class="membership gold">✔</td>
         </tr>
         <tr>
@@ -145,7 +145,7 @@
             <td class="membership gold">✔</td>
         </tr>
         <tr>
-            <td class="thead">Shuttle service to and from 2Beach Club - 2Futures residences (Bain Boeuf to Trou aux Biches)</td>
+            <td class="thead">Shuttle: between 2Beach Club and 2Futures' residences (Bain Boeuf - Trou aux Biches)</td>
             <td class="membership gold"><strong>-</strong></td>
         </tr>
         <tr>
@@ -175,7 +175,7 @@
         </tr>
         <tr>
             <td width="50%" class="thead">Annual Fee (USD)</td>
-            <td width="50%" class="membership silver">300</td>
+            <td width="50%" class="membership silver">500</td>
         </tr>
         <tr>
             <td class="thead">Number of members</td>
@@ -194,16 +194,16 @@
             <td class="thead">Restaurant</td>
             <td class="membership silver">✔</td>
         </tr>
-        <tr>
+        {{-- <tr>
             <td class="thead">Lounge<br>(opening 2024)</td>
             <td class="membership silver">✔</td>
         </tr>
         <tr>
             <td class="thead">Access to boardroom<br>(opening 2024)</td>
             <td class="membership silver">Extra charge</td>
-        </tr>
+        </tr> --}}
         <tr>
-            <td class="thead">Roof top bar</td>
+            <td class="thead">Rooftop bar</td>
             <td class="membership silver">✔</td>
         </tr>
         <tr>
@@ -227,7 +227,7 @@
             <td class="membership silver">Extra charge</td>
         </tr>
         <tr>
-            <td class="thead">Shuttle service to and from 2Beach Club - 2Futures residences (Bain Boeuf to Trou aux Biches)</td>
+            <td class="thead">Shuttle: between 2Beach Club and 2Futures' residences (Bain Boeuf - Trou aux Biches)</td>
             <td class="membership silver"><strong>-</strong></td>
         </tr>
         <tr>

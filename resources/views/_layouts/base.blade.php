@@ -9,7 +9,7 @@
     @stack('head')
 </head>
 
-<body>
+<body class="@stack('body_class')">
     @yield('header')
     @yield('main')
     @yield('footer')

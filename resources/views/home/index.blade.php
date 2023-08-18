@@ -20,3 +20,14 @@
 @section('footer')
     @include('home._partials.footer')
 @endsection
+
+@once
+    @push('head')
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap"
+        as="style"
+        rel="preload"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    @endpush
+@endonce
