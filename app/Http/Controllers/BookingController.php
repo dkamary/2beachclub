@@ -23,12 +23,12 @@ class BookingController extends Controller
         $directory = public_path('tracking');
         if (!is_dir($directory)) {
             mkdir($directory, 0777, true);
-            $gitignore = fopen($directory. DIRECTORY_SEPARATOR . '.gitignore', 'a+');
+            $gitignore = fopen($directory. DIRECTORY_SEPARATOR . '.gitignore', 'w+');
             fputs($gitignore, "*\n!.gitignore");
             fclose($gitignore);
         }
         $filename = $directory. DIRECTORY_SEPARATOR . 'tracker-' . config('app.name') . '.log';
-        $tracker = fopen($filename, 'w+');
+        $tracker = fopen($filename, 'a+');
 
         return $tracker;
     }
