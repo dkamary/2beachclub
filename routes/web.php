@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -20,3 +21,7 @@ Route::get('/landing-page', [HomeController::class, 'landing'])->name('landing_p
 Route::get('/thank-you', [HomeController::class, 'landing_thankyou'])->name('landing_thankyou');
 
 Route::post('/submit-contact', [FormController::class, 'submit'])->name('form_submit');
+
+Route::prefix('booking')->group(function(){
+    Route::get('/tracking', [BookingController::class, 'tracking'])->name('booking_tracking');
+});
