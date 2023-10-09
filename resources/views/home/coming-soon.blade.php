@@ -2,19 +2,10 @@
 
 @extends('_layouts.base')
 
-{{-- @section('header')
-    @include('home._partials.header3')
-@endsection --}}
-
 @section('main')
     <section id="coming-soon">
         <header style="text-align: center; margin: 2rem auto;">
-            <a href="{{ route('landing_page') }}" class="logo-link">
-                {{-- <picture class="picture-container">
-                    <source media="(max-width: 699px)" srcset="{{ asset('img/2beach-club-logo.webp') }}">
-                    <source media="(min-width: 1024px)" srcset="{{ asset('img/2beach-club-logo-2x.webp') }}">
-                    <img src="{{ asset('img/2beach-club-logo.png') }}" alt="2Beach-Club" width="161" height="61">
-                </picture> --}}
+            <a href="{{ route('home_page') }}" class="logo-link">
                 <img src="{{ asset('img/2beach-club-blue-logo-2x.webp') }}" alt="2Beach-Club" title="2Beach Club" width="400" height="" style="width: 400px; height: auto; max-width: 100%;" />
             </a>
         </header>
@@ -31,10 +22,6 @@
         </main>
     </section>
 @endsection
-
-{{-- @section('footer')
-    @include('home._partials.footer')
-@endsection --}}
 
 @once
     @push('head')
@@ -58,29 +45,6 @@
 
             .landingpage-section-1 ol li {
                 margin-bottom: 12px;
-            }
-
-            .membership-table-container {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .membership-table-container .left-side,
-            .membership-table-container .right-side {
-                position: relative;
-            }
-
-            .membership-table-container .left-side {
-                width: 70%;
-            }
-
-            .membership-table-container .right-side {
-                width: 30%;
-            }
-
-            .membership-table-container .position-sticky {
-                position: sticky;
-                top: 16px;
             }
 
             .landingpage-section-1 {

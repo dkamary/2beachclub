@@ -9,21 +9,37 @@ class HomeController extends Controller
 {
     public function index(): View
     {
-        return view('home.index');
-    }
+        if (request()->input('old')) {
+            return view('home.index');
+        }
 
-    public function coming_soon(): View
-    {
         return view('home.coming-soon');
     }
 
-    public function landing(): View
+    public function coming_soon()
     {
-        return view('home.landing');
+        if (request()->input('old')) {
+            return view('home.coming-soon');
+        }
+
+        return redirect()->route('home_page');
     }
 
-    public function landing_thankyou() : View
+    public function landing()
     {
-        return view('home.thankyou');
+        if (request()->input('old')) {
+            return view('home.landing');
+        }
+
+        return redirect()->route('home_page');
+    }
+
+    public function landing_thankyou()
+    {
+        if (request()->input('old')) {
+            return view('home.thankyou');
+        }
+
+        return redirect()->route('home_page');
     }
 }
