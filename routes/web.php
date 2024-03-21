@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AssetController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
@@ -26,3 +27,5 @@ Route::post('/submit-contact', [FormController::class, 'submit'])->name('form_su
 Route::prefix('booking')->group(function(){
     Route::get('/tracking', [BookingController::class, 'tracking'])->name('booking_tracking');
 });
+
+Route::get('/restaurant/menu.pdf', [AssetController::class, 'downloadMenu'])->name('download_menu');
