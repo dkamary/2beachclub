@@ -29,3 +29,5 @@ Route::prefix('booking')->group(function(){
 });
 
 Route::get('/restaurant/menu.pdf', [AssetController::class, 'downloadMenu'])->name('download_menu');
+Route::get('/restaurant/menu-marideal.pdf', [AssetController::class, 'menuMarideal'])->name('menu_marideal');
+Route::get('/restaurant/menu-easter-brunch.pdf', [AssetController::class, 'menuEaster'])->name('menu_easter');
