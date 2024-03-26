@@ -19,7 +19,7 @@ class AssetController extends Controller
     }
 
     public function menuMarideal() {
-        $filepath = public_path('downloads/2024-03-18-2BC-menus_Marideal.pdf');
+        $filepath = public_path('downloads/2024-03-18-2BC-menus-Mari-deal-Web.pdf');
 
         if (file_exists($filepath)) {
 
