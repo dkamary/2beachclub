@@ -1,0 +1,14 @@
+/* Lazy load styles */
+
+.lazy-load-image {
+    width: 100%;
+    height: auto;
+    filter: blur(14px);
+    transition: blur 1.2s;
+}
+
+.lazy-load-image.loaded {
+    width: auto;
+    height: auto;
+    filter: blur(0px);
+}

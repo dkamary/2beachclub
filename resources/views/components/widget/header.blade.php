@@ -1,8 +1,8 @@
-{{-- Index Header template --}}
+{{-- Header --}}
 
 @php
-    $videoMp4 = asset('videos/2beach-club-lifestyle-video-full-2021.mp4');
-    $videoWebm = asset('videos/2beach-club-lifestyle-video-full-2021.webm');
+    $videoMp4 = asset($videoMp4 ?? 'videos/2beach-club-lifestyle-video-full-2021.mp4');
+    $videoWebm = asset($videoWebm ?? 'videos/2beach-club-lifestyle-video-full-2021.webm');
 @endphp
 
 <header class="header-container">
@@ -52,5 +52,7 @@
         @endtablet
 
         <div id="video-sound" class="muted"></div>
+
+        {{ $slot }}
     </div>
 </header>
