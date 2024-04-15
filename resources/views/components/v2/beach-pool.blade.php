@@ -16,13 +16,13 @@
 
     <div class="row">
         <div class="col-12 p-0 mb-n5">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/160x90/" data-src="https://fakeimg.pl/1600x900/?text=Beach+and+Pool" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-beach-pool-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-beach-pool.webp') }}" alt="">
         </div>
     </div>
 
     <div class="row">
         <div class="col-12 col-md-6">
-            <img class="img-fluid lazy-load-image border border-5 border-light" src="https://fakeimg.pl/90x160/" data-src="https://fakeimg.pl/900x1200/" alt="" style="border-color: #fff !important; border-width: 12px !important;">
+            <img class="img-fluid lazy-load-image border border-5 border-light" src="{{ asset('v2/img/2beach-club-beach-pool-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-areal-view.webp') }}" alt="" style="border-color: #fff !important; border-width: 12px !important;">
         </div>
         <div class="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column" style="margin-top: 3.5rem">
             <p>
@@ -36,22 +36,22 @@
 
     <div class="row g-3 px-0 my-5">
         <div class="col-6 col-sm-4">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/90x90/" data-src="https://fakeimg.pl/600x600/" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-gallery-001-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-001.webp') }}" alt="">
         </div>
         <div class="col-6 col-sm-4">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/90x90/" data-src="https://fakeimg.pl/600x600/" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-gallery-002-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-002.webp') }}" alt="">
         </div>
         <div class="col-6 col-sm-4">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/90x90/" data-src="https://fakeimg.pl/600x600/" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-gallery-003-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-003.webp') }}" alt="">
         </div>
         <div class="col-6 col-sm-4">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/90x90/" data-src="https://fakeimg.pl/600x600/" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-gallery-004-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-004.webp') }}" alt="">
         </div>
         <div class="col-6 col-sm-4">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/90x90/" data-src="https://fakeimg.pl/600x600/" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-gallery-005-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-005.webp') }}" alt="">
         </div>
         <div class="col-6 col-sm-4 ">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/90x90/" data-src="https://fakeimg.pl/600x600/" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-gallery-006-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-006.webp') }}" alt="">
         </div>
         {{-- <div class="col-6 col-sm-4 col-md-3">
             <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/90x90/" data-src="https://fakeimg.pl/600x600/?text=Photo-7" alt="">

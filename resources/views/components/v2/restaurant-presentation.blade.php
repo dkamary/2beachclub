@@ -14,7 +14,7 @@
 
     <div class="row">
         <div class="col-12 p-0">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/160x90/" data-src="https://fakeimg.pl/1600x900/?text=Nice+photos+of+dishes+and+ambience" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-nice-food-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-nice-food.webp') }}" alt="">
         </div>
     </div>
 

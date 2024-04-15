@@ -33,7 +33,7 @@ Route::get('/restaurant/menu-marideal.pdf', [AssetController::class, 'menuMaride
 Route::get('/restaurant/menu-easter-brunch.pdf', [AssetController::class, 'menuEaster'])->name('menu_easter');
 
 // Second version
-Route::prefix('v2')->group(function(){
+Route::prefix('new')->group(function(){
 
     include 'v2/routes.php';
 
