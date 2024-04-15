@@ -14,7 +14,7 @@
 
     <div class="row mb-3">
         <div class="col-12 col-md-12 col-lg-6">
-            <img class="img-fluid lazy-load-image" src="https://fakeimg.pl/90x90/" data-src="https://fakeimg.pl/900x900/" alt="">
+            <img class="img-fluid lazy-load-image" src="{{ asset('v2/img/2beach-club-intro.webp') }}" data-src="{{ asset('v2/img/2beach-club-intro-mini.webp') }}" alt="">
         </div>
         <div class="col-12 col-md-8 col-lg-6 d-flex offset-0 offset-md-2 offset-lg-0 pt-md-5 pt-lg-0 flex-column align-items-center justify-content-center">
             <p>
