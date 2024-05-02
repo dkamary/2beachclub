@@ -17,9 +17,20 @@
         <x-v2.gallery id="gallery" :class="['container', 'bg-white', 'py-5']" />
         <div class="container bg-white py-4"></div>
         <x-v2.contact-us id="contact-us" :class="['container', 'bg-white', 'py-5']" />
-        <div class="container bg-white py-4"></div>
+        {{-- <div class="container bg-white py-4"></div> --}}
         <x-v2.google-map id="find-us" :class="['container', 'bg-white', 'py-5']" />
 
     </x-layout.v2>
 @endsection
 
+@once
+
+    @push('head')
+        <style>
+            #contact-us.section-v2 {
+                margin-bottom: 6%;
+            }
+        </style>
+    @endpush
+
+@endonce

@@ -8,6 +8,12 @@
 
 <div @class($class) id="{{ $id ?? null }}">
 
+    <div class="row">
+        <div class="col-12">
+            <h2 class="special-heading fw-bold text-center mb-4" style="font-size: 60px;">Upcoming events</h2>
+        </div>
+    </div>
+
     <div class="row g-3">
 
         <div class="col-12 col-md-4">
