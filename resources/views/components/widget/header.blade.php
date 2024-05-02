@@ -6,7 +6,9 @@
 @endphp
 
 <header class="header-container">
+
     <nav class="header-nav">
+        {{-- HEADER --}}
         <div class="logo-container">
             <a href="{{ route('home_page') }}" class="logo-link">
                 <picture class="picture-container">
@@ -16,6 +18,8 @@
                 </picture>
             </a>
         </div>
+
+        {{-- MENU --}}
         <x-widget.menu>
             <ul>
                 <li><a href="{{ route('home') }}">Home</a></li>
@@ -27,7 +31,9 @@
                 <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
         </x-widget.menu>
+
     </nav>
+
     <div class="hero-section" id="video-2beach-club">
 
         @mobile

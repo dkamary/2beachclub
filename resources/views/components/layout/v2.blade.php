@@ -5,11 +5,7 @@
 @endphp
 
 @if($heroHeader)
-    <x-widget.header>
-
-        {{ $content ?? '' }}
-
-    </x-widget.header>
+    <x-widget.header-v2 />
 @endif
 
 {{ $slot }}
