@@ -2,14 +2,9 @@
 
 <div class="fat-nav">
     <div class="fat-nav__wrapper">
+
         {{ $slot }}
-        {{-- <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-        </ul> --}}
+
     </div>
 </div>
 
@@ -47,6 +42,12 @@
                 -ms-transform: translateY(10px) rotate(45deg);
                 -webkit-transform: translateY(10px) rotate(45deg);
                 transform: translateY(10px) rotate(45deg);
+            }
+        </style>
+
+        <style id="scroll-smooth">
+            html {
+                scroll-behavior: smooth;
             }
         </style>
 

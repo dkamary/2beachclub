@@ -10,6 +10,7 @@
     $bgImageMini = $bgImageMini ?? false;
     $bgImageAlt = $bgImageAlt ?? '';
     $bgClass = array_merge(['img-fluid'], $bgClass ?? []);
+    $bgContainerClass = array_merge(['col-12', 'overflow-hidden',], $bgContainerClass ?? ['px-0']);
 
     // Text
     $textPlacement = $textPlacement ?? 'right';
@@ -52,12 +53,12 @@
 
 @endphp
 
-<div id="{{ $id }}" @class($mainClass)>
+<section id="{{ $id }}" @class($mainClass)>
 
     @if ($bgImage)
 
-        <div class="row bg-content">
-            <div class="col-12 px-0">
+        <header class="row bg-content">
+            <div @class($bgContainerClass)>
                 <img
                     @if ($lazyload)
                         data-src="{{ $bgImage }}"
@@ -69,18 +70,18 @@
                     @endif
                 alt="{{ $bgImageAlt }}" />
             </div>
-        </div>
+        </header>
 
     @endif
 
-    <div class="row text-content">
+    <main class="row text-content">
         <div @class($textClasses)>
 
             {{ $slot }}
 
         </div>
-    </div>
-</div>
+    </main>
+</section>
 
 @once
     @push('head')
@@ -93,6 +94,8 @@
                 position: absolute;
                 bottom: -25%;
                 width: 100%;
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
     @endpush

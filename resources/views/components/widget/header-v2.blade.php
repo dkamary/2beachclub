@@ -3,6 +3,7 @@
 @php
     $videoMp4 = asset($videoMp4 ?? 'videos/2beach-club-lifestyle-video-full-2021.mp4');
     $videoWebm = asset($videoWebm ?? 'videos/2beach-club-lifestyle-video-full-2021.webm');
+    $home = route('home');
 @endphp
 
 <header class="header-container header-container-2">
@@ -10,7 +11,7 @@
     <nav class="header-nav header-nav-2">
         {{-- HEADER --}}
         <div class="logo-container">
-            <a href="{{ route('home_page') }}" class="logo-link">
+            <a href="{{ $home }}" class="logo-link">
 
                 <img
                     src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo-mini.webp') }}"
@@ -25,13 +26,14 @@
         {{-- MENU --}}
         <x-widget.menu>
             <ul>
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('restaurant') }}">Restaurant</a></li>
-                <li><a href="{{ route('beach_pool') }}">Beach & Pool</a></li>
-                <li><a href="{{ route('rooftop') }}">Rooftop</a></li>
-                <li><a href="{{ route('events') }}">Events</a></li>
-                <li><a href="{{ route('the_team') }}">The team</a></li>
-                <li><a href="{{ route('contact') }}">Contact</a></li>
+                <li><a href="{{ $home }}" class="smooth-scroll">Home</a></li>
+                <li><a href="{{ $home }}#opening-hours" class="smooth-scroll">Opening Hours</a></li>
+                <li><a href="{{ $home }}#restaurant" class="smooth-scroll">Restaurant</a></li>
+                <li><a href="{{ $home }}#beach-and-pool" class="smooth-scroll">Beach & Pool</a></li>
+                <li><a href="{{ $home }}#events" class="smooth-scroll">Events</a></li>
+                <li><a href="{{ $home }}#upcoming-events" class="smooth-scroll">Upcoming Events</a></li>
+                <li><a href="{{ $home }}#gallery" class="smooth-scroll">Gallery</a></li>
+                <li><a href="{{ $home }}#contact-us" class="smooth-scroll">Contact Us</a></li>
             </ul>
         </x-widget.menu>
 
@@ -53,31 +55,31 @@
             <div class="row w-100">
 
                 <div class="col d-flex justify-content-center align-items-center">
-                    <a href="#">
+                    <a href="{{ $home }}#restaurant">
                         <img src="{{ asset('v2/img/restaurant.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
                     </a>
                 </div>
 
                 <div class="col d-flex justify-content-center align-items-center">
-                    <a href="#">
+                    <a href="{{ $home }}#beach-and-pool">
                         <img src="{{ asset('v2/img/beach-and-pool.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
                     </a>
                 </div>
 
                 <div class="col d-flex justify-content-center align-items-center">
-                    <a href="#">
+                    <a href="{{ $home }}#events">
                         <img src="{{ asset('v2/img/events.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
                     </a>
                 </div>
 
                 <div class="col d-flex justify-content-center align-items-center">
-                    <a href="#">
+                    <a href="{{ route('booking_tracking') }}">
                         <img src="{{ asset('v2/img/reservation.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
                     </a>
                 </div>
 
                 <div class="col d-flex justify-content-center align-items-center">
-                    <a href="#">
+                    <a href="{{ $home }}#find-us">
                         <img src="{{ asset('v2/img/find-us.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
                     </a>
                 </div>

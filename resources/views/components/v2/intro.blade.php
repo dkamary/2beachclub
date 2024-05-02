@@ -7,6 +7,7 @@
 <div @class($class)>
 
     <x-widget.section
+        :id="$id ?? null"
         :lazyload="true"
         :bg-image="asset('v2/img/2bc-intro.webp')"
         :bg-image-mini="asset('v2/img/2bc-intro-mini.webp')"

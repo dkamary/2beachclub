@@ -1,23 +1,41 @@
 {{-- Footer --}}
 
 
-<footer class="page-footer">
-    <section class="text">
-        <p class="text-center">
-            More information? <br>
-            <a href="mailto:sales@2futures.com">sales@2futures.com</a>
-            {{-- or <a href="tel:+23059774880">(+230) 5977 4880</a><br>
-            <a href="http://2futures.com">2futures.com</a> --}}
-        </p>
+<footer class="page-footer p-3">
+
+    <section class="text pb-1 mb-0">
+
+        <div class="row col-10 col-sm-3 col-md-2 mx-auto overflow-hidden">
+            <img class="img-fluid lazy-load-image"
+                src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo-mini.webp') }}"
+                data-src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo.webp') }}"
+                alt="2beach-club-logo"
+            />
+        </div>
+
     </section>
+
     <section class="copyright">
-        <picture class="img-container">
-            <source media="(max-width: 699px)" srcset="{{ asset('img/2beach-club-blue-logo.webp') }}">
-            <source media="(min-width: 700px)" srcset="{{ asset('img/2beach-club-blue-logo-2x.webp') }}">
-            <img src="{{ asset('img/2beach-club-blue-logo.webp') }}" alt="2Beach-Club">
-        </picture>
-        <p class="text-center">
+
+        <p class="text-center text-white mb-1">
             {{ date('Y') }}© Two Futures Realty, Ltd. All rights reserved
         </p>
+
     </section>
 </footer>
+
+@once
+
+    @push('head')
+
+        <style id="footer-styles">
+            .page-footer {
+                background-color: #3F9CAA;
+                color: #ffffff;
+            }
+
+        </style>
+
+    @endpush
+
+@endonce

@@ -7,6 +7,7 @@
 <div @class($class)>
 
     <x-widget.section
+        :id="$id ?? null"
         :lazyload="true"
         :bg-image="asset('v2/img/restaurant-presentation.webp')"
         :bg-image-mini="asset('v2/img/restaurant-presentation-1.webp')"
@@ -42,25 +43,25 @@
 
         <div class="col-12 col-md-3">
             <a href="#">
-                <img src="{{ asset('v2/img/restaurant-001-1.webp') }}" data-src="{{ asset('v2/img/restaurant-001.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <img src="{{ asset('v2/img/restaurant-005-1.webp') }}" data-src="{{ asset('v2/img/restaurant-005.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
             </a>
         </div>
 
         <div class="col-12 col-md-3">
             <a href="#">
-                <img src="{{ asset('v2/img/restaurant-002-1.webp') }}" data-src="{{ asset('v2/img/restaurant-002.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <img src="{{ asset('v2/img/restaurant-006-1.webp') }}" data-src="{{ asset('v2/img/restaurant-006.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
             </a>
         </div>
 
         <div class="col-12 col-md-3">
             <a href="#">
-                <img src="{{ asset('v2/img/restaurant-003-1.webp') }}" data-src="{{ asset('v2/img/restaurant-003.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <img src="{{ asset('v2/img/restaurant-007-1.webp') }}" data-src="{{ asset('v2/img/restaurant-007.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
             </a>
         </div>
 
         <div class="col-12 col-md-3">
             <a href="#">
-                <img src="{{ asset('v2/img/restaurant-004-1.webp') }}" data-src="{{ asset('v2/img/restaurant-004.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <img src="{{ asset('v2/img/restaurant-008-1.webp') }}" data-src="{{ asset('v2/img/restaurant-008.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
             </a>
         </div>
 
