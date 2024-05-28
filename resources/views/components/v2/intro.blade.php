@@ -17,7 +17,7 @@
     >
         <div class="row mb-3">
             <div class="col-12">
-                <h2 class="special-heading pb-3">The 2Beach Club is more than just a destination; it’s a lifestyle.</h2>
+                <h2 class="special-heading pb-3">The 2Beach Club is more than just a destination; <br> it's a lifestyle.</h2>
             </div>
         </div>
 

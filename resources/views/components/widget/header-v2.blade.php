@@ -10,17 +10,21 @@
 
     <nav class="header-nav header-nav-2">
         {{-- HEADER --}}
-        <div class="logo-container">
-            <a href="{{ $home }}" class="logo-link">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mx-auto">
+                    <a href="{{ $home }}" class="logo-link">
 
-                <img
-                    src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo-mini.webp') }}"
-                    data-src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo.webp') }}"
-                    alt="2beach-club-logo"
-                    class="img-fluid lazy-load-image"
-                />
+                        <img
+                            src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo-mini.webp') }}"
+                            data-src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo.webp') }}"
+                            alt="2beach-club-logo"
+                            class="img-fluid lazy-load-image"
+                        />
 
-            </a>
+                    </a>
+                </div>
+            </div>
         </div>
 
         {{-- MENU --}}
@@ -39,55 +43,10 @@
 
     </nav>
 
-    <div class="hero-section hero-section-2">
+    <div class="hero-section hero-section-2" style="background-image: url({{ asset('v2/img/2beach-club-header2.webp') }});"></div>
 
-        <div class="banner-container">
-            <img
-                src="{{ asset('v2/img/2beach-club-header2-mini.webp') }}"
-                data-src="{{ asset('v2/img/2beach-club-header2.webp') }}"
-                alt="2beach-club-header2"
-                class="img-fluid lazy-load-image"
-            />
-        </div>
-
-        <div class="container bg-white above-fold-icons d-flex justify-content-center align-items-center">
-
-            <div class="row w-100">
-
-                <div class="col d-flex justify-content-center align-items-center">
-                    <a href="{{ $home }}#restaurant">
-                        <img src="{{ asset('v2/img/restaurant.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
-                    </a>
-                </div>
-
-                <div class="col d-flex justify-content-center align-items-center">
-                    <a href="{{ $home }}#beach-and-pool">
-                        <img src="{{ asset('v2/img/beach-and-pool.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
-                    </a>
-                </div>
-
-                <div class="col d-flex justify-content-center align-items-center">
-                    <a href="{{ $home }}#events">
-                        <img src="{{ asset('v2/img/events.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
-                    </a>
-                </div>
-
-                <div class="col d-flex justify-content-center align-items-center">
-                    <a href="{{ route('booking_tracking') }}">
-                        <img src="{{ asset('v2/img/reservation.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
-                    </a>
-                </div>
-
-                <div class="col d-flex justify-content-center align-items-center">
-                    <a href="{{ $home }}#find-us">
-                        <img src="{{ asset('v2/img/find-us.png') }}" alt="restaurant" width="135" height="80" class="img-fluid" />
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
+    <div class="container bg-white above-fold-icons d-flex justify-content-center align-items-center">
+        <x-v2.icons :home="$home" class="home-icons" />
     </div>
 </header>
 
@@ -98,8 +57,7 @@
         <style id="header-v2">
             .header-container.header-container-2{
                 max-width: 100%;
-                height: auto;
-                max-height: 100vh;
+                height: 100vh;
             }
 
             .header-nav.header-nav-2 {
@@ -114,6 +72,9 @@
 
             .hero-section.hero-section-2 {
                 max-width: 100%;
+                height: 80vh;
+                background-position: center;
+                background-size: cover;
             }
 
             .banner-container {
@@ -122,6 +83,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-position: center;
+                background-size: cover;
             }
 
             .banner-container img {
@@ -129,8 +92,13 @@
             }
 
             .above-fold-icons {
-                height: 30vh;
+                height: 20vh;
             }
+
+            .home-icons {
+                width: 100%;
+            }
+
         </style>
 
     @endpush

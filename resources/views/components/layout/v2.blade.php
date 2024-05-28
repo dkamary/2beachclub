@@ -2,6 +2,7 @@
 
 @php
     $heroHeader = $heroHeader ?? false;
+    $bodyClasses = array_merge(['layout-v2'], $bodyClasses ?? []);
 @endphp
 
 @if($heroHeader)
@@ -11,3 +12,5 @@
 {{ $slot }}
 
 <x-widget.footer />
+
+@push('body_class'){{ implode(' ', $bodyClasses) }}@endpush

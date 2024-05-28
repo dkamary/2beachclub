@@ -1,0 +1,56 @@
+{{-- typology styles --}}
+
+<style id="typo-styles">
+
+    :root{
+        --font_header: 'DM Serif Display', serif;
+        --color_default: #003F57;
+        --color_header: #3F9CAA;
+        --color_footer: #3F9CAA;
+        --bg_header: rgba(0, 0, 0, .1);
+        --bg_color: rgba(196, 196, 196, 0.2);
+    }
+
+    .layout-v2 {
+        font-size: 16px;
+        line-height: 126%;
+    }
+
+    .layout-v2 h1,
+    .layout-v2 h2,
+    .layout-v2 h3,
+    .layout-v2 h4,
+    .layout-v2 h5,
+    .layout-v2 h6 {
+        font-weight: 600;
+        font-family: var(--font_header);
+    }
+
+    .layout-v2 h1 {
+        font-size: 48px;
+    }
+
+    .layout-v2 h2 {
+        font-size: 28px;
+    }
+
+    .layout-v2 h3 {
+        font-size: 24px;
+    }
+
+    .layout-v2 h4 {
+        font-size: 20px;
+    }
+
+    .layout-v2 h5 {
+        font-size: 18px;
+    }
+
+    .layout-v2 h6 {
+        font-size: 16px;
+    }
+
+    .special-heading {
+        color: var(--color_header);
+    }
+</style>
