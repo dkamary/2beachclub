@@ -11,8 +11,8 @@
     <x-widget.section
         :id="$id ?? null"
         :lazyload="true"
-        :bg-image="asset('v2/img/contact-us.webp')"
-        :bg-image-mini="asset('v2/img/contact-us-1.webp')"
+        :bg-image="asset('v2/img/contact-1.webp')"
+        :bg-image-mini="asset('v2/img/contact-2.webp')"
         :bg-class="['w-100']"
 
         :text-class="['bg-white']"
@@ -64,3 +64,17 @@
     </x-widget.section>
 
 </div>
+
+@once
+
+    @push('head')
+
+        <style id="contact-us--styles">
+            #contact-us {
+                margin-bottom: 20%;
+            }
+        </style>
+
+    @endpush
+
+@endonce

@@ -22,15 +22,3 @@
 
     </x-layout.v2>
 @endsection
-
-@once
-
-    @push('head')
-        <style>
-            #contact-us.section-v2 {
-                margin-bottom: 6%;
-            }
-        </style>
-    @endpush
-
-@endonce

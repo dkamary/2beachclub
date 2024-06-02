@@ -9,8 +9,8 @@
     <x-widget.section
         :id="$id ?? null"
         :lazyload="true"
-        :bg-image="asset('v2/img/restaurant-presentation.webp')"
-        :bg-image-mini="asset('v2/img/restaurant-presentation-1.webp')"
+        :bg-image="asset('v2/img/resto-1.webp')"
+        :bg-image-mini="asset('v2/img/resto-2.webp')"
         :bg-class="['w-100']"
 
         :text-class="['bg-white']"
@@ -55,7 +55,7 @@
 
         <div class="col-12 col-md-3">
             <a href="#">
-                <img src="{{ asset('v2/img/restaurant-007-1.webp') }}" data-src="{{ asset('v2/img/restaurant-007.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <img src="{{ asset('v2/img/restaurant-009-2.webp') }}" data-src="{{ asset('v2/img/restaurant-009-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
             </a>
         </div>
 
@@ -68,3 +68,15 @@
     </div>
 
 </div>
+
+@once
+
+    @push('head')
+        <style id="restaurant-presentation--styles">
+            #{{ $id }} {
+                margin-bottom: 30%;
+            }
+        </style>
+    @endpush
+
+@endonce

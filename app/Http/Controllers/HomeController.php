@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index(): View
     {
-        if (request()->input('old')) {
+        if (request()->has('old')) {
             return view('home.index');
         }
 

@@ -11,8 +11,8 @@
     <x-widget.section
         :id="$id ?? null"
         :lazyload="true"
-        :bg-image="asset('v2/img/beach-and-pool.webp')"
-        :bg-image-mini="asset('v2/img/beach-and-pool-1.webp')"
+        :bg-image="asset('v2/img/beach-and-pool-full.webp')"
+        :bg-image-mini="asset('v2/img/beach-and-pool-thumbnail.webp')"
         :bg-class="['w-100']"
 
         :text-class="['bg-white']"
@@ -52,7 +52,7 @@
 
         <div class="col-12 col-md-3">
             <a href="#">
-                <img src="{{ asset('v2/img/restaurant-002-1.webp') }}" data-src="{{ asset('v2/img/restaurant-002.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <img src="{{ asset('v2/img/restaurant-010-2.webp') }}" data-src="{{ asset('v2/img/restaurant-010-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
             </a>
         </div>
 
@@ -71,3 +71,17 @@
     </div>
 
 </div>
+
+@once
+
+    @push('head')
+
+        <style id="beach-and-pool--styles">
+            #beach-and-pool {
+                margin-bottom: 20%;
+            }
+
+        </style>
+    @endpush
+
+@endonce

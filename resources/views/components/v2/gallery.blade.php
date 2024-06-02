@@ -16,23 +16,117 @@
 
     <div class="row g-3">
 
-        @for ($i = 1; $i <= 8; $i++)
+        <div class="col-12 col-md-3 overflow-hidden">
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <a href="#" class="d-block overflow-hidden">
 
-                <a href="#" class="d-block overflow-hidden">
+                <img class="w-100 img-fluid lazy-load-image"
+                    data-src="{{ asset('v2/img/gallery-001.webp') }}"
+                    src="{{ asset('v2/img/gallery-001-1.webp') }}"
+                    alt=""
+                />
 
-                    <img class="w-100 img-fluid lazy-load-image"
-                        data-src="{{ asset('v2/img/gallery-' . str_pad($i, 3, '0', STR_PAD_LEFT) . '.webp') }}"
-                        src="{{ asset('v2/img/gallery-' . str_pad($i, 3, '0', STR_PAD_LEFT) . '-1.webp') }}"
-                        alt=""
-                    />
+            </a>
 
-                </a>
+        </div>
 
-            </div>
+        <div class="col-12 col-md-3 overflow-hidden">
 
-        @endfor
+            <a href="#" class="d-block overflow-hidden">
+
+                <img class="w-100 img-fluid lazy-load-image"
+                    data-src="{{ asset('v2/img/gallery-002.webp') }}"
+                    src="{{ asset('v2/img/gallery-002-1.webp') }}"
+                    alt=""
+                />
+
+            </a>
+
+        </div>
+
+        <div class="col-12 col-md-3 overflow-hidden">
+
+            <a href="#" class="d-block overflow-hidden">
+
+                <img class="w-100 img-fluid lazy-load-image"
+                    data-src="{{ asset('v2/img/gallery-003.webp') }}"
+                    src="{{ asset('v2/img/gallery-003-1.webp') }}"
+                    alt=""
+                />
+
+            </a>
+
+        </div>
+
+        <div class="col-12 col-md-3 overflow-hidden">
+
+            <a href="#" class="d-block overflow-hidden">
+
+                <img class="w-100 img-fluid lazy-load-image"
+                    data-src="{{ asset('v2/img/gallery-009.webp') }}"
+                    src="{{ asset('v2/img/gallery-009-1.webp') }}"
+                    alt=""
+                />
+
+            </a>
+
+        </div>
+
+        <div class="col-12 col-md-3 overflow-hidden">
+
+            <a href="#" class="d-block overflow-hidden">
+
+                <img class="w-100 img-fluid lazy-load-image"
+                    data-src="{{ asset('v2/img/gallery-005.webp') }}"
+                    src="{{ asset('v2/img/gallery-005-1.webp') }}"
+                    alt=""
+                />
+
+            </a>
+
+        </div>
+
+        <div class="col-12 col-md-3 overflow-hidden">
+
+            <a href="#" class="d-block overflow-hidden">
+
+                <img class="w-100 img-fluid lazy-load-image"
+                    data-src="{{ asset('v2/img/gallery-006.webp') }}"
+                    src="{{ asset('v2/img/gallery-006-1.webp') }}"
+                    alt=""
+                />
+
+            </a>
+
+        </div>
+
+        <div class="col-12 col-md-3 overflow-hidden">
+
+            <a href="#" class="d-block overflow-hidden">
+
+                <img class="w-100 img-fluid lazy-load-image"
+                    data-src="{{ asset('v2/img/gallery-007.webp') }}"
+                    src="{{ asset('v2/img/gallery-007-1.webp') }}"
+                    alt=""
+                />
+
+            </a>
+
+        </div>
+
+        <div class="col-12 col-md-3 overflow-hidden">
+
+            <a href="#" class="d-block overflow-hidden">
+
+                <img class="w-100 img-fluid lazy-load-image"
+                    data-src="{{ asset('v2/img/gallery-008-large.webp') }}"
+                    src="{{ asset('v2/img/gallery-008-1.webp') }}"
+                    alt=""
+                />
+
+            </a>
+
+        </div>
 
     </div>
 

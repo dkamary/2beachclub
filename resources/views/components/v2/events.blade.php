@@ -11,8 +11,8 @@
     <x-widget.section
         :id="$id ?? null"
         :lazyload="true"
-        :bg-image="asset('v2/img/events.webp')"
-        :bg-image-mini="asset('v2/img/events-1.webp')"
+        :bg-image="asset('v2/img/events-large.webp')"
+        :bg-image-mini="asset('v2/img/events-small.webp')"
         :bg-class="['w-100']"
 
         :text-class="['bg-white']"
