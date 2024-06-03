@@ -8,7 +8,7 @@
 
 <form action="{{ $form_submit }}" method="POST" class="crm_engagebay_form position-sticky" id="form-{{ $id }}">
     <div class="form_group">
-        <p style="font-size: 20px;">Choose your membership. <a href="#membership-details" class="scroll-smooth">See details</a></p>
+        <p style="font-size: 20px;">Choose your membership. <a href="#membership-details" class="scroll-smooth d-none">See details</a></p>
         <div class="membership-container">
             @handheld
                 <label for="platinum" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum" checked> Platinum</label>&nbsp;

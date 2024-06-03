@@ -13,6 +13,11 @@ class DefaultController extends Controller
         return view('v2/home');
     }
 
+    public function become_member(): View
+    {
+        return view('v2/become-member');
+    }
+
     public function restaurant(): View
     {
         return view('v2/restaurant');
