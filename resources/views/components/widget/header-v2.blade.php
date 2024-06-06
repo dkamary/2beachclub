@@ -12,7 +12,7 @@
         {{-- HEADER --}}
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-4 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mx-auto">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mx-auto mt-3">
                     <a href="{{ $home }}" class="logo-link">
 
                         <img
@@ -72,7 +72,7 @@
 
             .hero-section.hero-section-2 {
                 max-width: 100%;
-                height: 80vh;
+                height: 60vh;
                 background-position: center;
                 background-size: cover;
             }
@@ -92,11 +92,25 @@
             }
 
             .above-fold-icons {
-                height: 20vh;
+                height: 40vh;
             }
 
             .home-icons {
                 width: 100%;
+            }
+
+            @media screen and (min-width: 576px) {
+
+                .hero-section.hero-section-2 {
+                    max-width: 100%;
+                    height: 80vh;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .above-fold-icons {
+                    height: 20vh;
+                }
             }
 
         </style>

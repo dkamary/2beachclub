@@ -91,11 +91,21 @@
             }
 
             .text-content {
-                position: absolute;
-                bottom: -25%;
+                position: relative;
+                bottom: 5%;
                 width: 100%;
                 margin-left: auto;
                 margin-right: auto;
+            }
+
+            @media screen and (min-width: 576px) {
+                .text-content {
+                    position: absolute;
+                    bottom: -25%;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
         </style>
     @endpush

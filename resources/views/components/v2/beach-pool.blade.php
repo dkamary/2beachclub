@@ -42,33 +42,63 @@
 
     </x-widget.section>
 
-    <div class="row g-3">
+    @handheld
+        <div class="slick-carousel">
 
-        <div class="col-12 col-md-3">
-            <a href="#">
-                <img src="{{ asset('v2/img/2bc-gallery-01-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-01.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
-            </a>
+            <div class="">
+                <a href="#">
+                    <img src="{{ asset('v2/img/2bc-gallery-01-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-01.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                </a>
+            </div>
+
+            <div class="">
+                <a href="#">
+                    <img src="{{ asset('v2/img/2bc-gallery-02-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-02.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                </a>
+            </div>
+
+            <div class="">
+                <a href="#">
+                    <img src="{{ asset('v2/img/restaurant-003-1.webp') }}" data-src="{{ asset('v2/img/restaurant-003.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                </a>
+            </div>
+
+            <div class="">
+                <a href="#">
+                    <img src="{{ asset('v2/img/restaurant-004-1.webp') }}" data-src="{{ asset('v2/img/restaurant-004.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                </a>
+            </div>
+
         </div>
+    @elsehandheld
+        <div class="row g-3">
 
-        <div class="col-12 col-md-3">
-            <a href="#">
-                <img src="{{ asset('v2/img/2bc-gallery-02-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-02.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
-            </a>
+            <div class="col-12 col-md-3">
+                <a href="#">
+                    <img src="{{ asset('v2/img/2bc-gallery-01-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-01.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#">
+                    <img src="{{ asset('v2/img/2bc-gallery-02-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-02.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#">
+                    <img src="{{ asset('v2/img/restaurant-003-1.webp') }}" data-src="{{ asset('v2/img/restaurant-003.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <a href="#">
+                    <img src="{{ asset('v2/img/restaurant-004-1.webp') }}" data-src="{{ asset('v2/img/restaurant-004.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                </a>
+            </div>
+
         </div>
-
-        <div class="col-12 col-md-3">
-            <a href="#">
-                <img src="{{ asset('v2/img/restaurant-003-1.webp') }}" data-src="{{ asset('v2/img/restaurant-003.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
-            </a>
-        </div>
-
-        <div class="col-12 col-md-3">
-            <a href="#">
-                <img src="{{ asset('v2/img/restaurant-004-1.webp') }}" data-src="{{ asset('v2/img/restaurant-004.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
-            </a>
-        </div>
-
-    </div>
+    @endhandheld
 
 </div>
 

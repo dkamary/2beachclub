@@ -14,3 +14,7 @@
 <link rel="stylesheet" href="{{ asset('css/lazyload.css') }}">
 @include('_partials.v2.typology')
 @include('_partials.v2.margin')
+@handheld
+    <link rel="stylesheet" href="{{ asset('v2/slick/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('v2/slick/slick-theme.css') }}">
+@endhandheld
