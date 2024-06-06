@@ -39,8 +39,8 @@
 
                     <div class="col-12 text-center">
                         <p>
-                            Friday 8th April <br>
-                            00.00 - 00.00
+                            <strong class="d-block my-2">Every Friday</strong>
+                            17.30 - 19.30
                         </p>
                     </div>
 
@@ -68,7 +68,7 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="special-heading fw-bold text-center" style="font-size: 32px;">Spanish Night</h3>
+                        <h3 class="special-heading fw-bold text-center" style="font-size: 32px;">Saturday Sounds</h3>
                     </div>
                 </div>
 
@@ -76,8 +76,8 @@
 
                     <div class="col-12 text-center">
                         <p>
-                            Friday 8th April <br>
-                            00.00 - 00.00
+                            <strong class="d-block my-2">Every Saturday</strong>
+                            17.00 - 20.00
                         </p>
                     </div>
 
@@ -113,8 +113,8 @@
 
                     <div class="col-12 text-center">
                         <p>
-                            Friday 8th April <br>
-                            00.00 - 00.00
+                            <strong class="d-block my-2">Every Sunday</strong>
+                            10.00 - 15.00
                         </p>
                     </div>
 
