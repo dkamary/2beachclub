@@ -9,8 +9,8 @@
     <x-widget.section
         :id="$id ?? null"
         :lazyload="true"
-        :bg-image="asset('v2/img/opening-hour.webp')"
-        :bg-image-mini="asset('v2/img/opening-hour-1.webp')"
+        :bg-image="asset('v2/img/2bc-open-hours.webp')"
+        :bg-image-mini="asset('v2/img/2bc-open-hours-1.webp')"
         :bg-class="['w-100']"
 
         :text-class="['bg-white']"
@@ -26,7 +26,7 @@
 
         <div class="row mb-3">
 
-            <div class="col-12 col-sm-4 d-flex justify-content-center align-items-center flex-column">
+            <div class="col-12 col-sm-4 d-flex justify-content-center align-items-center flex-column mb-3">
                 <div class="hours text-center mb-2">
                     <span class="fs-3">10</span><span class="fs-5">AM</span> - <span class="fs-3">6</span><span class="fs-5">PM</span>
                 </div>
@@ -35,7 +35,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-4 d-flex justify-content-center align-items-center flex-column">
+            <div class="col-12 col-sm-4 d-flex justify-content-center align-items-center flex-column mb-3">
                 <div class="hours text-center mb-2">
                     <span class="fs-3">10</span><span class="fs-5">AM</span> - <span class="fs-3">10</span><span class="fs-5">PM</span>
                 </div>
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-4 d-flex justify-content-center align-items-center flex-column">
+            <div class="col-12 col-sm-4 d-flex justify-content-center align-items-center flex-column mb-3">
                 <div class="hours text-center mb-2">
                     <span class="fs-3">10</span><span class="fs-5">AM</span> - <span class="fs-3">11</span><span class="fs-5">PM</span>
                 </div>

@@ -16,7 +16,7 @@
 
     <div class="row g-3">
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-sm-7 col-lg-4 mb-4 mx-auto">
             <x-widget.section
                 :lazyload="true"
                 :bg-image="asset('v2/img/sunset-session.webp')"
@@ -53,7 +53,7 @@
             </x-widget.section>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-sm-7 col-lg-4 mb-4 mx-auto">
             <x-widget.section
                 :lazyload="true"
                 :bg-image="asset('v2/img/spanish-night.webp')"
@@ -90,7 +90,7 @@
             </x-widget.section>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-sm-7 col-lg-4 mb-4 mx-auto">
             <x-widget.section
                 :lazyload="true"
                 :bg-image="asset('v2/img/sunday-brunch.webp')"
