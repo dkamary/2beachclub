@@ -43,7 +43,7 @@
 
     </nav>
 
-    <div class="hero-section hero-section-2" style="background-image: url({{ asset('v2/img/2beach-club-header2.webp') }});"></div>
+    <div class="hero-section hero-section-2" style="background-image: url({{ asset('v2/img/2beach-club-main-entrance.webp') }});"></div>
 
     <div class="container bg-white above-fold-icons d-flex justify-content-center align-items-center">
         <x-v2.icons :home="$home" class="home-icons" />

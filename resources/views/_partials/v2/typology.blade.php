@@ -53,4 +53,25 @@
     .special-heading {
         color: var(--color_header);
     }
+
+    .btn-container.contact-button.book-table {
+        background-color: #3F9CAA;
+        padding: 8px 12px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 5px #EFEFEF;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+        box-sizing: border-box;
+    }
+
+    .btn-container.contact-button.book-table a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 </style>

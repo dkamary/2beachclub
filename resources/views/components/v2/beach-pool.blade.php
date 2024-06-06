@@ -46,13 +46,13 @@
 
         <div class="col-12 col-md-3">
             <a href="#">
-                <img src="{{ asset('v2/img/restaurant-001-1.webp') }}" data-src="{{ asset('v2/img/restaurant-001.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <img src="{{ asset('v2/img/2bc-gallery-01-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-01.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
             </a>
         </div>
 
         <div class="col-12 col-md-3">
             <a href="#">
-                <img src="{{ asset('v2/img/restaurant-010-2.webp') }}" data-src="{{ asset('v2/img/restaurant-010-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <img src="{{ asset('v2/img/2bc-gallery-02-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-02.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
             </a>
         </div>
 
