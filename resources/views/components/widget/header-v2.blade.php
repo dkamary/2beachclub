@@ -4,11 +4,12 @@
     $videoMp4 = asset($videoMp4 ?? 'videos/2beach-club-lifestyle-video-full-2021.mp4');
     $videoWebm = asset($videoWebm ?? 'videos/2beach-club-lifestyle-video-full-2021.webm');
     $home = route('home');
+    $class = array_merge(['header-nav', 'header-nav-2',], $class ?? ['linear-bg']);
 @endphp
 
-<header class="header-container header-container-2">
+<header class='header-container header-container-2'>
 
-    <nav class="header-nav header-nav-2">
+    <nav @class($class)>
         {{-- HEADER --}}
         <div class="container">
             <div class="row">
@@ -97,6 +98,14 @@
 
             .home-icons {
                 width: 100%;
+            }
+
+            .linear-bg {
+                background-image: linear-gradient(
+                    to bottom,
+                    rgba(127, 127, 127, 0.5),
+                    rgba(127, 127, 127, 0.15)
+                );
             }
 
             @media screen and (min-width: 576px) {
