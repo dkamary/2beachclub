@@ -13,6 +13,11 @@
         <link rel="stylesheet" href="{{ asset('plugins/fatNav/jquery.fatNav.css') }}" />
 
         <style>
+            .hamburger {
+                right: 6%;
+                top: 5%;
+            }
+
             .hamburger__icon,
             .hamburger__icon::before,
             .hamburger__icon::after {
@@ -74,12 +79,28 @@
 
                 window.addEventListener('scroll', function() {
 
-                    menuScrollSpy();
+                    if (window.innerWidth > 576) {
+                        menuScrollSpy({
+                            breakpoint: 0.8
+                        });
+                    } else {
+                        menuScrollSpy({
+                            breakpoint: 0.6
+                        })
+                    }
 
                 });
 
                 setTimeout(() => {
-                    menuScrollSpy();
+                    if (window.innerWidth > 576) {
+                        menuScrollSpy({
+                            breakpoint: 0.8
+                        });
+                    } else {
+                        menuScrollSpy({
+                            breakpoint: 0.6
+                        })
+                    }
                 }, 2000);
 
             });
