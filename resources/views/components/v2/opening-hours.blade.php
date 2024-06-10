@@ -9,8 +9,8 @@
     <x-widget.section
         :id="$id ?? null"
         :lazyload="true"
-        :bg-image="asset('v2/img/2bc-open-hours.webp')"
-        :bg-image-mini="asset('v2/img/2bc-open-hours-1.webp')"
+        :bg-image="asset('v2/img/Opening hours.webp')"
+        :bg-image-mini="asset('v2/img/Opening hours-1.webp')"
         :bg-class="['w-100']"
 
         :text-class="['bg-white']"
