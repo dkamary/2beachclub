@@ -43,6 +43,12 @@
                 -webkit-transform: translateY(10px) rotate(45deg);
                 transform: translateY(10px) rotate(45deg);
             }
+
+            .hamburger__icon.blue,
+            .hamburger__icon.blue::before,
+            .hamburger__icon.blue::after {
+                background-color: #3f9caa;
+            }
         </style>
 
         <style id="scroll-smooth">
@@ -62,6 +68,47 @@
                 $.fatNav();
 
             }());
+        </script>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+
+                window.addEventListener('scroll', function() {
+
+                    menuScrollSpy();
+
+                });
+
+                setTimeout(() => {
+                    menuScrollSpy();
+                }, 2000);
+
+            });
+
+            function menuScrollSpy({
+                breakpoint = 0.8,
+                class_in = 'white',
+                class_out = 'blue'
+            } = {}) {
+                const menu = document.querySelector('.hamburger__icon');
+                if (!menu) {
+                    console.warn("Menu not found!");
+                    return;
+                }
+
+                const scrollThreshold = window.innerHeight * breakpoint;
+
+                if (window.scrollY > scrollThreshold) {
+                    if (!menu.classList.contains('blue')) {
+                        menu.classList.add('blue');
+                        menu.classList.remove('white');
+                    }
+                } else {
+                    if (!menu.classList.contains('white')) {
+                        menu.classList.add('white');
+                        menu.classList.remove('blue');
+                    }
+                }
+            }
         </script>
     @endpush
 @endonce

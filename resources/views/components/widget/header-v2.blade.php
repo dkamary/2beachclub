@@ -103,8 +103,8 @@
             .linear-bg {
                 background-image: linear-gradient(
                     to bottom,
-                    rgba(127, 127, 127, 0.7),
-                    rgba(127, 127, 127, 0.15)
+                    rgba(63, 156, 170, 0.7),
+                    rgba(63, 156, 170, 0.15)
                 );
             }
 
