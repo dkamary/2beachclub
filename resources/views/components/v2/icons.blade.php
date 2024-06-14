@@ -84,7 +84,7 @@
             .icon-container .icon-and-text {
                 color: #58c6cd;
                 text-decoration: none;
-                font-size: 20px;
+                font-size: 14px;
                 font-weight: 600;
             }
 
@@ -101,6 +101,10 @@
                 .icon-container .icon-item {
                     width: 50%;
                     height: auto;
+                }
+
+                .icon-container .icon-and-text {
+                    font-size: 20px;
                 }
             }
         </style>
