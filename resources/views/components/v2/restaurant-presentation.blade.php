@@ -107,7 +107,13 @@
     @push('head')
         <style id="restaurant-presentation--styles">
             #{{ $id }} {
-                margin-bottom: 30%;
+                margin-bottom: unset;
+            }
+
+            @media screen and (min-width: 576px) {
+                #{{ $id }} {
+                    margin-bottom: unset;
+                }
             }
         </style>
     @endpush

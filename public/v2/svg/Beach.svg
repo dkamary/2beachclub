@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_2"
+   data-name="Layer 2"
+   viewBox="0 0 188.66999 188.67"
+   version="1.1"
+   sodipodi:docname="Beach.svg"
+   width="188.67"
+   height="188.67"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5479949"
+     inkscape:cx="419.57501"
+     inkscape:cy="94.638552"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_2" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">&#10;      .cls-1 {&#10;        stroke-width: 2.99px;&#10;      }&#10;&#10;      .cls-1, .cls-2 {&#10;        fill: none;&#10;        stroke: #58c6cd;&#10;        stroke-linecap: round;&#10;        stroke-linejoin: round;&#10;      }&#10;&#10;      .cls-2 {&#10;        stroke-width: 2.3px;&#10;      }&#10;    </style>
+  </defs>
+  <g
+     id="Layer_1-2"
+     data-name="Layer 1"
+     transform="translate(-0.005,-0.005)">
+    <g
+       id="g1">
+      <path
+         class="cls-1"
+         d="m 27.04,122.86 c 7.2,0 7.2,-5.98 14.4,-5.98 7.2,0 7.2,5.98 14.4,5.98 7.2,0 7.2,-5.98 14.4,-5.98 7.2,0 7.2,5.98 14.4,5.98 7.2,0 7.2,-5.98 14.4,-5.98 7.2,0 7.2,5.98 14.4,5.98 7.2,0 7.2,-5.98 14.41,-5.98 7.21,0 7.2,5.98 14.4,5.98 7.2,0 7.21,-5.98 14.41,-5.98 7.2,0 7.21,5.98 14.41,5.98 m -8.13,-57.25 c 0,10.18 -8.26,18.44 -18.44,18.44 -10.18,0 -18.44,-8.26 -18.44,-18.44 0,-10.18 8.26,-18.44 18.44,-18.44 10.18,0 18.44,8.26 18.44,18.44 z M 59.14,44.69 c 0,0 9.67,5.24 8.11,17.98 M 65.41,35.46 c -8.66,-1.54 -6.28,9.23 -6.28,9.23 0,0 -15.73,1.31 -14.79,17.8 m 34.12,-7.31 c 0,0 -2.19,-18.17 -19.32,-10.49 0,0 -17.92,-14.51 -20.58,3.48 m 25.5,43.88 c 0,0 -13.59,-21.75 -4.92,-47.36 m 31.02,19.2 c 0,0 -8.37,4.46 -7.23,12.25 m 6.16,-17.87 c 2.17,2.02 1.07,5.62 1.07,5.62 0,0 10.07,2.17 9.38,12.25 M 76.03,70.3 c 0,0 1.6,-11.1 14.14,-6.41 0,0 13.68,-7.67 15.63,3.32 M 86.5,92.82 c 0,0 7.84,-18.22 3.67,-28.93 M 32.44,92.05 h 39.32 c 29.2,0 57.57,9.09 80.47,25.84 m -95.86,22.6 c 7.2,0 7.2,-5.98 14.4,-5.98 7.2,0 7.2,5.98 14.4,5.98 7.2,0 7.2,-5.98 14.4,-5.98 7.2,0 7.2,5.98 14.41,5.98 7.21,0 7.2,-5.98 14.4,-5.98 7.2,0 7.21,5.98 14.41,5.98"
+         id="path1" />
+      <circle
+         class="cls-1"
+         cx="94.339996"
+         cy="94.339996"
+         r="92.839996"
+         id="circle1" />
+    </g>
+    <g
+       id="g3" />
+  </g>
+</svg>

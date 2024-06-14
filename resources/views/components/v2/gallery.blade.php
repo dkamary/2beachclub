@@ -253,3 +253,23 @@
     @endhandheld
 
 </div>
+
+@once
+
+    @push('head')
+
+    <style id="{{ $id }}--styles">
+        #gallery {
+            margin-bottom: 10%;
+        }
+
+        @media screen and (min-width: 576px) {
+            #gallery {
+                margin-bottom: 6% !important;
+            }
+        }
+    </style>
+
+    @endpush
+
+@endonce

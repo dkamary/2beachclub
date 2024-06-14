@@ -16,13 +16,14 @@
 
     <div class="row g-3">
 
-        <div class="col-12 col-sm-7 col-lg-4 mb-4 mx-auto">
+        <div class="col-12 col-sm-7 col-lg-4 mb-4-nope mx-auto">
             <x-widget.section
                 :lazyload="true"
                 :bg-image="asset('v2/img/sunset-session.webp')"
                 :bg-image-mini="asset('v2/img/sunset-session-1.webp')"
                 :bg-class="['w-100']"
                 :bg-container-class="[]"
+                :main-class="['mb-0']"
 
                 :text-class="['bg-white']"
                 text-placement="center"
@@ -40,7 +41,7 @@
                     <div class="col-12 text-center">
                         <p>
                             <strong class="d-block my-2">Every Friday</strong>
-                            17.30 - 19.30
+                            17.30 - 20.30
                         </p>
                     </div>
 
@@ -53,13 +54,14 @@
             </x-widget.section>
         </div>
 
-        <div class="col-12 col-sm-7 col-lg-4 mb-4 mx-auto">
+        <div class="col-12 col-sm-7 col-lg-4 mb-4-nope mx-auto">
             <x-widget.section
                 :lazyload="true"
                 :bg-image="asset('v2/img/spanish-night.webp')"
                 :bg-image-mini="asset('v2/img/spanish-night-1.webp')"
                 :bg-class="['w-100']"
                 :bg-container-class="[]"
+                :main-class="['mb-0']"
 
                 :text-class="['bg-white']"
                 text-placement="center"
@@ -90,13 +92,14 @@
             </x-widget.section>
         </div>
 
-        <div class="col-12 col-sm-7 col-lg-4 mb-4 mx-auto">
+        <div class="col-12 col-sm-7 col-lg-4 mb-4-nope mx-auto">
             <x-widget.section
                 :lazyload="true"
                 :bg-image="asset('v2/img/sunday-brunch.webp')"
                 :bg-image-mini="asset('v2/img/sunday-brunch-1.webp')"
                 :bg-class="['w-100']"
                 :bg-container-class="[]"
+                :main-class="['mb-0']"
 
                 :text-class="['bg-white']"
                 text-placement="center"

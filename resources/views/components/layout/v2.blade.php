@@ -9,7 +9,7 @@
     <x-widget.header-v2 />
 @endif
 
-{{ $slot }}
+<main>{{ $slot }}</main>
 
 <x-widget.footer />
 

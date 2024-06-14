@@ -15,15 +15,15 @@
 
         :text-class="['bg-white']"
     >
-        <div class="row mb-3">
+        <div class="row">
             <div class="col-12">
                 <h2 class="special-heading pb-3">The 2Beach Club is more than just a destination; <br> it's a lifestyle.</h2>
             </div>
         </div>
 
-        <div class="row mb-3">
+        <div class="row">
 
-            <div class="col-12 p-3">
+            <div class="col-12">
                 <p>
                     The 2Beach Club is the ultimate destination for sun, sand, and luxury on the pristine shores of Pereybere.
                     Nestled along the breathtaking coastline, this club offers an unparalleled experience that combines relaxation, entertainment, <span class="text-nowrap">and natural beauty.</span>

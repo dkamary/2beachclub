@@ -31,3 +31,14 @@
     </div>
 
 </div>
+
+
+@push('head')
+    <style id="gmap--styles">
+        @media screen and (min-width: 576px) {
+            #find-us {
+                margin-bottom: 6% !important    ;
+            }
+        }
+    </style>
+@endpush

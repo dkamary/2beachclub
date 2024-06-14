@@ -87,12 +87,13 @@
     @push('head')
         <style id="section-styles">
             .section-v2 {
-                margin-bottom: 15%;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
             }
 
             .text-content {
                 position: relative;
-                bottom: 5%;
+                margin-top: 5%;
                 width: 100%;
                 margin-left: auto;
                 margin-right: auto;
@@ -100,11 +101,13 @@
 
             @media screen and (min-width: 576px) {
                 .text-content {
-                    position: absolute;
-                    bottom: -25%;
-                    width: 100%;
-                    margin-left: auto;
-                    margin-right: auto;
+                    /* position: absolute; */
+                    margin-top: -10%;
+                }
+
+                .section-v2 {
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
                 }
             }
         </style>

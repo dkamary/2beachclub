@@ -38,6 +38,7 @@
                 <li class="mb-3"><a href="{{ $home }}#events" class="smooth-scroll">Events</a></li>
                 <li class="mb-3"><a href="{{ $home }}#upcoming-events" class="smooth-scroll">Upcoming Events</a></li>
                 <li class="mb-3"><a href="{{ $home }}#gallery" class="smooth-scroll">Gallery</a></li>
+                <li class="mb-3"><a href="{{ route('become_member') }}" class="smooth-scroll">Become a member</a></li>
                 <li class="mb-3"><a href="{{ $home }}#contact-us" class="smooth-scroll">Contact Us</a></li>
             </ul>
         </x-widget.menu>

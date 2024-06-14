@@ -71,7 +71,15 @@
 
         <style id="contact-us--styles">
             #contact-us {
-                margin-bottom: 20%;
+                margin-bottom: 10%;
+                margin-top: 30%;
+            }
+
+            @media screen and (min-width: 576px) {
+                #contact-us {
+                    margin-bottom: 6%;
+                    margin-top: unset;
+                }
             }
         </style>
 

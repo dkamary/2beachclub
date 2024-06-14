@@ -43,3 +43,21 @@
     </x-widget.section>
 
 </div>
+
+@push('head')
+
+    <style id="events--styles">
+        #events {
+            margin-top: 8% !important;
+        }
+
+        @media screen and (min-width: 576px) {
+            @media screen {
+                #events {
+                    margin-top: 8% !important;
+                }
+            }
+        }
+    </style>
+
+@endpush

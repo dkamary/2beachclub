@@ -108,7 +108,15 @@
 
         <style id="beach-and-pool--styles">
             #beach-and-pool {
-                margin-bottom: 20%;
+                margin-bottom: 3%;
+                margin-top: 30% !important;
+            }
+
+            @media screen and (min-width: 576px) {
+                #beach-and-pool {
+                    margin-bottom: unset;
+                    margin-top: 8% !important;
+                }
             }
 
         </style>
