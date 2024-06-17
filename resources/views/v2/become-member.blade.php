@@ -7,12 +7,12 @@
 
         <section class="container">
 
-            <header class="row">
+            <header class="row mb-5">
                 <div class="col-12">
-                    <h1>Welcome to 2Beach Club - A Beachside Haven!</h1>
+                    <h1 class="special-heading">Welcome to 2Beach Club - <br class="d-block d-sm-none"> A Beachside Haven!</h1>
                 </div>
 
-                <p class="col-12">
+                <p class="col-12 mt-5">
                     Thank you for expressing your interest in 2Beach Club, where every moment is a treasure to behold.
                     As you step into a world of coastal luxury and indulgence, we are delighted to offer you the
                     opportunity to become a part of our esteemed membership community.
@@ -24,7 +24,7 @@
                 <div class="row">
                     <div class="col-12">
 
-                        <x-v2.membership class="my-5" />
+                        <x-v2.membership />
 
                     </div>
                 </div>

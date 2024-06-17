@@ -18,34 +18,4 @@ class DefaultController extends Controller
         return view('v2/become-member');
     }
 
-    public function restaurant(): View
-    {
-        return view('v2/restaurant');
-    }
-
-    public function beach_pool(): View
-    {
-        return view('v2/beach-pool');
-    }
-
-    public function rooftop(): View
-    {
-        return view('v2/rooftop');
-    }
-
-    public function events(): View
-    {
-        return view('v2/events');
-    }
-
-    public function the_team(): View
-    {
-        return view('v2/the-team');
-    }
-
-    public function contact(): View
-    {
-        return view('v2/contact');
-    }
-
 }
