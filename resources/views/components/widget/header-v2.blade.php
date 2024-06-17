@@ -74,7 +74,7 @@
 
             .hero-section.hero-section-2 {
                 max-width: 100%;
-                height: 60vh;
+                height: 55vh;
                 background-position: center;
                 background-size: cover;
             }
@@ -94,7 +94,7 @@
             }
 
             .above-fold-icons {
-                height: 40vh;
+                height: 45vh;
             }
 
             .home-icons {
