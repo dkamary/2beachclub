@@ -9,7 +9,7 @@
 
             <header class="row mb-5">
                 <div class="col-12">
-                    <h1 class="special-heading">Welcome to 2Beach Club - <br class="d-block d-sm-none"> A Beachside Haven!</h1>
+                    <h1 class="special-heading" id="membership-title">Welcome to 2Beach Club - <br class="d-block d-sm-none"> A Beachside Haven!</h1>
                 </div>
 
                 <p class="col-12 mt-5">
@@ -45,3 +45,18 @@
 
     </x-layout.v2>
 @endsection
+
+
+@push('foot')
+    <script id="membership--scripts">
+        window.addEventListener("DOMContentLoaded", function(){
+            const target = document.querySelector("#membership-title");
+            if (!target) {
+                console.warn("Unable to select the membership target");
+                return;
+            }
+
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+@endpush
