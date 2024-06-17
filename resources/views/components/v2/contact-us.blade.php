@@ -22,7 +22,7 @@
 
         <div class="row">
             <div class="col-12">
-                <h2 class="special-heading fw-bold text-center mb-3" style="font-size: 48px;">Contact us</h2>
+                <h2 class="special-heading fw-bold text-center mb-3">Contact us</h2>
             </div>
         </div>
 
@@ -75,10 +75,18 @@
                 margin-top: 30%;
             }
 
+            #contact-us .special-heading {
+                font-size: 32px;
+            }
+
             @media screen and (min-width: 576px) {
                 #contact-us {
                     margin-bottom: 6%;
                     margin-top: unset;
+                }
+
+                #conctact-us .special-heading {
+                    font-size: 32px;
                 }
             }
         </style>

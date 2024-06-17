@@ -147,11 +147,11 @@
         }
 
 
-        @media screen and (min-width: 576px) {
+        /* @media screen and (min-width: 576px) {
             #{{ $id }} .special-heading {
                 font-size: 60px;
             }
-        }
+        } */
 
     </style>
 

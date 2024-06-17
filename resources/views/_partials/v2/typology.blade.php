@@ -60,9 +60,10 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        border: solid 5px #EFEFEF;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
         box-sizing: border-box;
+        border-radius: 30px;
+        min-width: 12.5rem;
+        text-align: center;
     }
 
     .btn-container.contact-button.book-table a {

@@ -40,7 +40,7 @@
 
                 <div class="row mb-3">
 
-                    <div class="col-12 d-flex justify-content-evenly align-items-center">
+                    <div class="col-12 two-buttons">
                         <x-widget.book />
 
                         <div class="btn-container contact-button book-table my-4">
@@ -58,3 +58,22 @@
 
     </x-layout.v2>
 @endsection
+
+@push('head')
+    <style id="events--styles">
+        .two-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0.6s;
+        }
+
+        @media screen and (min-width: 576px) {
+            .two-buttons {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+    </style>
+@endpush

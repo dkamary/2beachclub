@@ -4,11 +4,13 @@
     width: 100%;
     height: auto;
     filter: blur(14px);
-    transition: blur 1.2s;
+    transition: 1.2s;
+    opacity: 0.4;
 }
 
 .lazy-load-image.loaded {
     width: auto;
     height: auto;
     filter: blur(0px);
+    opacity: 1;
 }

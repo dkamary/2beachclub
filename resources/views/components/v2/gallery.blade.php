@@ -10,7 +10,7 @@
 
     <div class="row">
         <div class="col-12">
-            <h2 class="special-heading fw-bold text-center mb-4" style="font-size: 60px;">Gallery</h2>
+            <h2 class="special-heading fw-bold text-center mb-4 gallery">Gallery</h2>
         </div>
     </div>
 
@@ -263,9 +263,17 @@
             margin-bottom: 10%;
         }
 
+        #gallery .special-heading {
+            font-size: 32px;
+        }
+
         @media screen and (min-width: 576px) {
             #gallery {
                 margin-bottom: 6% !important;
+            }
+
+            #gallery .special-heading {
+                font-size: 32px;
             }
         }
     </style>
