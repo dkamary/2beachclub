@@ -3,14 +3,15 @@
 @php
 
     $class = array_merge(['container'], $class ?? []);
+    $id = $id ?? uniqid('upcoming-events');
 
 @endphp
 
-<div @class($class) id="{{ $id ?? null }}">
+<div @class($class) id="{{ $id }}">
 
     <div class="row">
         <div class="col-12">
-            <h2 class="special-heading fw-bold text-center mb-4" style="font-size: 60px;">Upcoming events</h2>
+            <h2 class="special-heading fw-bold text-center mb-4">Upcoming events</h2>
         </div>
     </div>
 
@@ -133,3 +134,22 @@
     </div>
 
 </div>
+
+@push('head')
+
+    <style id="{{ $id }}--styles">
+
+        #{{ $id }} .special-heading {
+            font-size: 32px;
+        }
+
+
+        @media screen and (min-width: 576px) {
+            #{{ $id }} .special-heading {
+                font-size: 60px;
+            }
+        }
+
+    </style>
+
+@endpush

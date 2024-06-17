@@ -20,7 +20,7 @@
 
         <div class="row my-4">
             <div class="col-12">
-                <h2 class="special-heading fw-bold text-left" style="font-size: 60px;">Restaurant</h2>
+                <h2 class="special-heading fw-bold text-left">Restaurant</h2>
             </div>
         </div>
 

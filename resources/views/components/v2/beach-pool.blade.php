@@ -22,7 +22,7 @@
 
         <div class="row">
             <div class="col-12">
-                <h2 class="special-heading fw-bold text-center" style="font-size: 60px">Beach & Pool</h2>
+                <h2 class="special-heading fw-bold text-left">Beach & Pool</h2>
             </div>
         </div>
 
