@@ -6,7 +6,7 @@
 @endphp
 
 @if($heroHeader)
-    <x-widget.header-v2 />
+    <x-widget.header-v2 :bgImage="$bgImage ?? null" :title="$title ?? null" />
 @endif
 
 <main>{{ $slot }}</main>

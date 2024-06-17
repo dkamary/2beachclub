@@ -1,8 +1,9 @@
 {{-- Header V2 --}}
 
 @php
-    $videoMp4 = asset($videoMp4 ?? 'videos/2beach-club-lifestyle-video-full-2021.mp4');
-    $videoWebm = asset($videoWebm ?? 'videos/2beach-club-lifestyle-video-full-2021.webm');
+    $bgImage = $bgImage ?? asset('v2/img/2beach-club-video-preview--header.webp');
+    $videoMp4 = $videoMp4 ?? asset('videos/2beach-club-lifestyle-video-full-2021.mp4');
+    $videoWebm = $videoWebm ?? asset('videos/2beach-club-lifestyle-video-full-2021.webm');
     $home = route('home');
     $class = array_merge(['header-nav', 'header-nav-2',], $class ?? ['linear-bg']);
 @endphp
@@ -45,7 +46,11 @@
 
     </nav>
 
-    <div class="hero-section hero-section-2" style="background-image: url({{ asset('v2/img/2beach-club-video-preview--header.webp') }});"></div>
+    <div class="hero-section hero-section-2" style="background-image: url({{ $bgImage }});">
+        @isset($title)
+            <h1>{!! $title !!}</h1>
+        @endisset
+    </div>
 
     <div class="container bg-white above-fold-icons d-flex justify-content-center align-items-center">
         <x-v2.icons :home="$home" class="home-icons" />
@@ -77,6 +82,16 @@
                 height: 50vh;
                 background-position: center;
                 background-size: cover;
+                position: relative;
+            }
+
+            .hero-section.hero-section-2 h1 {
+                color: #ffffff;
+                text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+                position: absolute;
+                bottom: 3%;
+                left: 50%;
+                transform: translateX(-50%);
             }
 
             .banner-container {

@@ -59,16 +59,22 @@
 
         <header class="row bg-content">
             <div @class($bgContainerClass)>
-                <img
-                    @if ($lazyload)
-                        data-src="{{ $bgImage }}"
-                        src="{{ $bgImageMini }}"
-                        @class(array_merge($bgClass, ['lazy-load-image']))
-                    @else
-                        src="{{ $bgImage }}"
-                        @class($bgClass)
-                    @endif
-                alt="{{ $bgImageAlt }}" />
+                @isset($link)
+                    <a href="{{ $link }}" target="{{ $linkTarget ?? '_self' }}">
+                @endisset
+                    <img
+                        @if ($lazyload)
+                            data-src="{{ $bgImage }}"
+                            src="{{ $bgImageMini }}"
+                            @class(array_merge($bgClass, ['lazy-load-image']))
+                        @else
+                            src="{{ $bgImage }}"
+                            @class($bgClass)
+                        @endif
+                    alt="{{ $bgImageAlt }}" />
+                @isset($link)
+                    </a>
+                @endisset
             </div>
         </header>
 

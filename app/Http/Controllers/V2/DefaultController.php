@@ -18,4 +18,9 @@ class DefaultController extends Controller
         return view('v2/become-member');
     }
 
+    public function events():  View
+    {
+        return view('v2/events');
+    }
+
 }

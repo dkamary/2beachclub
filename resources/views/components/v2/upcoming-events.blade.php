@@ -25,6 +25,7 @@
                 :bg-class="['w-100']"
                 :bg-container-class="[]"
                 :main-class="['mb-0']"
+                link="{{ route('events') }}"
 
                 :text-class="['bg-white']"
                 text-placement="center"
@@ -63,6 +64,7 @@
                 :bg-class="['w-100']"
                 :bg-container-class="[]"
                 :main-class="['mb-0']"
+                link="{{ route('events') }}"
 
                 :text-class="['bg-white']"
                 text-placement="center"
@@ -101,6 +103,7 @@
                 :bg-class="['w-100']"
                 :bg-container-class="[]"
                 :main-class="['mb-0']"
+                link="{{ route('events') }}"
 
                 :text-class="['bg-white']"
                 text-placement="center"
