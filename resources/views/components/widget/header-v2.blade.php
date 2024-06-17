@@ -88,6 +88,7 @@
             .hero-section.hero-section-2 h1 {
                 color: #ffffff;
                 text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+                text-align: center;
                 position: absolute;
                 bottom: 3%;
                 left: 50%;
