@@ -22,5 +22,4 @@
         }(window.jQuery));
     </script>
 @endhandheld
-<x-widget.gallery-photo-modal />
 <script src="{{ asset('v2/js/gallery-photo.js') }}"></script>

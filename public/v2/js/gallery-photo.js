@@ -5,11 +5,30 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 function load_gallery_photo({ selector = '.gallery-photo'} = {}) {
+    console.debug("load_gallery_photo");
 
-    const modal = document.getElementById('gallery-modal');
-    const modalImg = document.getElementById('gallery-modal-img');
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
+    const modal = document.createElement("div");
+    modal.id = "gallery-modal";
+    modal.classList.add("gallery-modal");
+
+    const prev = document.createElement("span");
+    prev.classList.add("prev");
+    prev.innerHTML = "&#10094;"
+    modal.appendChild(prev);
+
+    const modalImg = document.createElement("img");
+    modalImg.id = "gallery-modal-img";
+    modalImg.src = "";
+    modalImg.alt = "";
+    modal.appendChild(modalImg);
+
+    const next = document.createElement("span");
+    next.classList.add("next");
+    next.innerHTML = "&#10095;";
+    modal.appendChild(next);
+
+    document.body.appendChild(modal);
+
     let currentIndex = 0;
 
     // Récupérer tous les liens d'images
