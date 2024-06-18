@@ -3,7 +3,7 @@
 @extends('_layouts.base')
 
 @section('main')
-    <x-layout.v2 :hero-header="true">
+    <x-layout.v2 :hero-header="true" title="Become a member">
 
         <section class="container">
 

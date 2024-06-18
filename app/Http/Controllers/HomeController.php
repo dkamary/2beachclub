@@ -37,7 +37,8 @@ class HomeController extends Controller
     public function landing_thankyou()
     {
         if (request()->input('old')) {
-            return view('home.thankyou');
+            // return view('home.thankyou');
+            return view('v2.thank-you');
         }
 
         return redirect()->route('home_page');
