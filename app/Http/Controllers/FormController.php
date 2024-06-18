@@ -42,7 +42,7 @@ class FormController extends Controller
 
         mail($to, $subject, $content, $headers);
 
-        return response()->redirectToRoute('landing_thankyou');
+        return response()->redirectToRoute('landing_thankyou', ['old' => uniqid()]);
     }
 
 }
