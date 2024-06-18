@@ -46,25 +46,25 @@
         <div class="slick-carousel">
 
             <div class="">
-                <a href="#">
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2bc-gallery-01.webp') }}">
                     <img src="{{ asset('v2/img/2bc-gallery-01-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-01.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
             <div class="">
-                <a href="#">
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2bc-gallery-02.webp') }}">
                     <img src="{{ asset('v2/img/2bc-gallery-02-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-02.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
             <div class="">
-                <a href="#">
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/restaurant-003.webp') }}">
                     <img src="{{ asset('v2/img/restaurant-003-1.webp') }}" data-src="{{ asset('v2/img/restaurant-003.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
             <div class="">
-                <a href="#">
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/restaurant-004.webp') }}">
                     <img src="{{ asset('v2/img/restaurant-004-1.webp') }}" data-src="{{ asset('v2/img/restaurant-004.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
@@ -74,25 +74,25 @@
         <div class="row g-3">
 
             <div class="col-12 col-md-3">
-                <a href="#">
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2bc-gallery-01.webp') }}">
                     <img src="{{ asset('v2/img/2bc-gallery-01-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-01.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
             <div class="col-12 col-md-3">
-                <a href="#">
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2bc-gallery-02.webp') }}">
                     <img src="{{ asset('v2/img/2bc-gallery-02-1.webp') }}" data-src="{{ asset('v2/img/2bc-gallery-02.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
             <div class="col-12 col-md-3">
-                <a href="#">
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/restaurant-003.webp') }}">
                     <img src="{{ asset('v2/img/restaurant-003-1.webp') }}" data-src="{{ asset('v2/img/restaurant-003.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
             <div class="col-12 col-md-3">
-                <a href="#">
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/restaurant-004.webp') }}">
                     <img src="{{ asset('v2/img/restaurant-004-1.webp') }}" data-src="{{ asset('v2/img/restaurant-004.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>

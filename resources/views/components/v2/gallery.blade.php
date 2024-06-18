@@ -9,7 +9,7 @@
 <div @class($class) id="{{ $id ?? null }}">
 
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 d-flex justify-content-center align-items-center">
             <h2 class="special-heading fw-bold text-center mb-4 gallery">Gallery</h2>
         </div>
     </div>
@@ -20,7 +20,7 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-001.webp') }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
                         data-src="{{ asset('v2/img/gallery-001.webp') }}"
@@ -34,7 +34,7 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-002.webp') }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
                         data-src="{{ asset('v2/img/gallery-002.webp') }}"
@@ -48,7 +48,7 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-003.webp') }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
                         data-src="{{ asset('v2/img/gallery-003.webp') }}"
@@ -62,7 +62,7 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-009.webp') }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
                         data-src="{{ asset('v2/img/gallery-009.webp') }}"
@@ -76,7 +76,7 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-005.webp') }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
                         data-src="{{ asset('v2/img/gallery-005.webp') }}"
@@ -90,7 +90,7 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-006.webp') }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
                         data-src="{{ asset('v2/img/gallery-006.webp') }}"
@@ -104,7 +104,7 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-007.webp') }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
                         data-src="{{ asset('v2/img/gallery-007.webp') }}"
@@ -118,7 +118,7 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-008-large.webp') }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
                         data-src="{{ asset('v2/img/gallery-008-large.webp') }}"
@@ -136,7 +136,7 @@
 
         <div class="row g-3">
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-001.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
@@ -150,7 +150,7 @@
 
             </div>
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-002.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
@@ -164,7 +164,7 @@
 
             </div>
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-003.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
@@ -178,7 +178,7 @@
 
             </div>
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-009.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
@@ -192,7 +192,7 @@
 
             </div>
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-005.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
@@ -206,7 +206,7 @@
 
             </div>
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-006.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
@@ -220,7 +220,7 @@
 
             </div>
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-007.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
@@ -234,7 +234,7 @@
 
             </div>
 
-            <div class="col-12 col-md-3 overflow-hidden">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-008-large.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 

@@ -18,3 +18,4 @@
     <link rel="stylesheet" href="{{ asset('v2/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('v2/slick/slick-theme.css') }}">
 @endhandheld
+<link rel="stylesheet" href="{{ asset('v2/css/gallery-photo.css') }}">
