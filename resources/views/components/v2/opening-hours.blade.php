@@ -20,7 +20,7 @@
 
         <div class="row mb-3">
             <div class="col-12">
-                <h2 class="special-heading fs-1 fw-bold text-center pb-3">Opening hours</h2>
+                <h2 class="special-heading fw-bold text-center pb-3">Opening hours</h2>
             </div>
         </div>
 

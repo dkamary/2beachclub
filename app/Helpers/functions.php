@@ -23,3 +23,11 @@ if (!function_exists('get_meta')) {
         return $meta;
     }
 }
+
+if (!function_exists('get_gallery')) {
+
+    function get_gallery(): array
+    {
+        return config('gallery');
+    }
+}

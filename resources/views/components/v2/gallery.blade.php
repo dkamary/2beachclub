@@ -18,7 +18,25 @@
 
         <div class="slick-carousel">
 
+            @foreach (get_gallery() as $gallery)
+
             <div class="">
+
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ $gallery['gallery'] }}">
+
+                    <img class="w-100 img-fluid lazy-load-image"
+                        data-src="{{ $gallery['image'] }}"
+                        src="{{ $gallery['mini'] }}"
+                        alt="{{ $gallery['alt'] ?? '' }}"
+                    />
+
+                </a>
+
+            </div>
+
+            @endforeach
+
+            {{-- <div class="">
 
                 <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-001.webp') }}">
 
@@ -128,7 +146,7 @@
 
                 </a>
 
-            </div>
+            </div> --}}
 
         </div>
 
@@ -136,7 +154,25 @@
 
         <div class="row g-3">
 
-            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-001.webp') }}">
+            @foreach (get_gallery() as $gallery)
+
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ $gallery['gallery'] }}">
+
+                <a href="#" class="d-block overflow-hidden">
+
+                    <img class="w-100 img-fluid lazy-load-image"
+                        data-src="{{ $gallery['image'] }}"
+                        src="{{ $gallery['mini'] }}"
+                        alt="{{ $gallery['alt'] ?? '' }}"
+                    />
+
+                </a>
+
+            </div>
+
+            @endforeach
+
+            {{-- <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset('v2/img/gallery-001.webp') }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
@@ -246,7 +282,7 @@
 
                 </a>
 
-            </div>
+            </div> --}}
 
         </div>
 

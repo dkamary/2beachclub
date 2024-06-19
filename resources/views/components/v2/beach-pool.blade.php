@@ -22,7 +22,7 @@
 
         <div class="row">
             <div class="col-12">
-                <h2 class="special-heading fw-bold text-left">Beach & Pool</h2>
+                <h2 class="special-heading fw-bold text-left mb-4">Beach & Pool</h2>
             </div>
         </div>
 
@@ -58,14 +58,14 @@
             </div>
 
             <div class="">
-                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/restaurant-003.webp') }}">
-                    <img src="{{ asset('v2/img/restaurant-003-1.webp') }}" data-src="{{ asset('v2/img/restaurant-003.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2beach-club-gallery-beach-004.webp') }}">
+                    <img src="{{ asset('v2/img/2beach-club-gallery-beach-004-2.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-beach-004-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
             <div class="">
-                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/restaurant-004.webp') }}">
-                    <img src="{{ asset('v2/img/restaurant-004-1.webp') }}" data-src="{{ asset('v2/img/restaurant-004.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2beach-club-gallery-beach-005.webp') }}">
+                    <img src="{{ asset('v2/img/2beach-club-gallery-beach-005-2.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-beach-005-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
@@ -86,14 +86,14 @@
             </div>
 
             <div class="col-12 col-md-3">
-                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/restaurant-003.webp') }}">
-                    <img src="{{ asset('v2/img/restaurant-003-1.webp') }}" data-src="{{ asset('v2/img/restaurant-003.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2beach-club-gallery-beach-004.webp') }}">
+                    <img src="{{ asset('v2/img/2beach-club-gallery-beach-004-2.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-beach-004-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
             <div class="col-12 col-md-3">
-                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/restaurant-004.webp') }}">
-                    <img src="{{ asset('v2/img/restaurant-004-1.webp') }}" data-src="{{ asset('v2/img/restaurant-004.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
+                <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2beach-club-gallery-beach-005.webp') }}">
+                    <img src="{{ asset('v2/img/2beach-club-gallery-beach-005-2.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-beach-005-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
             </div>
 
