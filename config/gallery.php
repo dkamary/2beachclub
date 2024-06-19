@@ -39,6 +39,6 @@ return [
     [
         'gallery' => asset('v2/img/gallery-008.webp'),
         'image' => asset('v2/img/gallery-008-large.webp'),
-        'mini' => asset('v2/img/gallery-008-mini.webp'),
+        'mini' => asset('v2/img/gallery-008-small.webp'),
     ],
 ];
