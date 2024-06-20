@@ -147,11 +147,11 @@
         }
 
 
-        /* @media screen and (min-width: 576px) {
-            #{{ $id }} .special-heading {
-                font-size: 60px;
+        @media screen and (min-width: 576px) {
+            #{{ $id }} .section-v2 {
+                margin-top: unset !important;
             }
-        } */
+        }
 
     </style>
 
