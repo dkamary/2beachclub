@@ -3,15 +3,15 @@
 @extends('_layouts.base')
 
 @section('main')
-    <x-layout.v2 :hero-header="true" bg-image="{{ asset('v2/img/2BC-Sunset-Header.webp') }}" title="Sunset Events">
+    <x-layout.v2 :hero-header="true" bg-image="{{ get_asset($event->header_image, asset('v2/img/2BC-Sunset-Header.webp')) }}" :title="$event->title">
 
         <div class="container bg-white my-5">
 
             <x-widget.section
                 :id="$id ?? null"
                 :lazyload="true"
-                :bg-image="asset('v2/img/2BC-sunset-session-full.webp')"
-                :bg-image-mini="asset('v2/img/2BC-sunset-session-mini.webp')"
+                :bg-image="get_asset($event->content_image, asset('v2/img/2BC-sunset-session-full.webp'))"
+                :bg-image-mini="get_asset($event->content_image_thumb, asset('v2/img/2BC-sunset-session-mini.webp'))"
                 :bg-class="['w-100']"
                 :text-class="['bg-white']"
                 text-placement="center"
@@ -20,20 +20,15 @@
 
                 <div class="row mb-3">
                     <div class="col-12">
-                        <h2 class="special-heading fs-1 fw-bold text-center pb-2">Sunset Session</h2>
-                        <h3 class="special-heading fs-5 fw-semibold text-center pb-3">Every Friday: 17.30 - 20.30</h3>
+                        <h2 class="special-heading fs-1 fw-bold text-center pb-2">{!! $event->title !!}</h2>
+                        <h3 class="special-heading fs-5 fw-semibold text-center pb-3">{{ $event->opening_days }}: {{ format_time($event->opening_time) }} - {{ format_time($event->closing_time) }}</h3>
                     </div>
                 </div>
 
                 <div class="row mb-3">
 
                     <div class="col-12">
-                        <p>The 2Beach Club is the ultimate destination for sun, sand, and luxury on the pristine shores of
-                            Pereybere. Nestled along the breathtaking coastline, this club offers an unparalleled experience
-                            that combines relaxation, entertainment, and natural beauty.</p>
-
-                        <p>With exceptional service, stunning surroundings, and a range of tailored activities, it’s the perfect
-                            haven to escape the hustle and bustle of everyday life and immerse yourself in pure bliss.</p>
+                        {!! $event->content !!}
                     </div>
 
                 </div>
@@ -41,13 +36,17 @@
                 <div class="row mb-3">
 
                     <div class="col-12 two-buttons">
-                        <x-widget.book />
+                        @unless (empty($event->book_link))
+                            <x-widget.book />
+                        @endunless
 
-                        <div class="btn-container contact-button book-table my-4">
-                            <a href="#" class="text-uppercase">
-                                Menu
-                            </a>
-                        </div>
+                        @unless (empty($event->menu_link))
+                            <div class="btn-container contact-button book-table my-4">
+                                <a href="{{ get_link($event->menu_link) }}" class="text-uppercase">
+                                    Menu
+                                </a>
+                            </div>
+                        @endunless
                     </div>
 
                 </div>

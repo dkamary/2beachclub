@@ -22,11 +22,11 @@
 
             <div class="">
 
-                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ $gallery['gallery'] }}">
+                <a href="#" class="d-block overflow-hidden gallery-photo" data-image="{{ asset($gallery['gallery']) }}">
 
                     <img class="w-100 img-fluid lazy-load-image"
-                        data-src="{{ $gallery['image'] }}"
-                        src="{{ $gallery['mini'] }}"
+                        data-src="{{ asset($gallery['image']) }}"
+                        src="{{ asset($gallery['mini']) }}"
                         alt="{{ $gallery['alt'] ?? '' }}"
                     />
 
@@ -156,13 +156,13 @@
 
             @foreach (get_gallery() as $gallery)
 
-            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ $gallery['gallery'] }}">
+            <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset($gallery['gallery']) }}">
 
                 <a href="#" class="d-block overflow-hidden">
 
                     <img class="w-100 img-fluid lazy-load-image"
-                        data-src="{{ $gallery['image'] }}"
-                        src="{{ $gallery['mini'] }}"
+                        data-src="{{ asset($gallery['image']) }}"
+                        src="{{ asset($gallery['mini']) }}"
                         alt="{{ $gallery['alt'] ?? '' }}"
                     />
 
