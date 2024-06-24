@@ -16,9 +16,9 @@
         {{-- <div class="container bg-white py-4"></div> --}}
         <x-v2.gallery id="gallery" :class="['container', 'bg-white', 'my-5']" />
         {{-- <div class="container bg-white py-4 d-none"></div> --}}
-        <x-v2.contact-us id="contact-us" :class="['container', 'bg-white', 'my-5']" />
+        <x-v2.contact-us id="contact-us" :class="['container', 'bg-white']" />
         {{-- <div class="container bg-white py-4"></div> --}}
-        <x-v2.google-map id="find-us" :class="['container', 'bg-white', 'my-5']" />
+        <x-v2.google-map id="find-us" :class="['container', 'bg-white', 'mb-5']" />
 
     </x-layout.v2>
 @endsection

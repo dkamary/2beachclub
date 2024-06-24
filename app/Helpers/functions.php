@@ -53,8 +53,8 @@ if (!function_exists('get_upcoming_events')) {
         $query->whereNull('validity_end', 'OR');
 
         $query
-        ->orderBy('rank', $order)
-        ->limit($limit);
+            ->orderBy('rank', $order)
+            ->limit($limit);
 
         return $query->get($columns);
     }
