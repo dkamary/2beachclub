@@ -78,20 +78,16 @@ if (!function_exists('get_link')) {
     {
         $link = trim($link);
         if ($link == '#') {
-            // dump('#');
             return $link;
         }
 
         if (strpos($link, 'http') !== false) {
-            // dump('http');
             return $link;
         }
 
         if (strpos($link, 'ftp') !== false) {
-            // dump('ftp');
             return $link;
         }
-        // dump(compact('link', 'parameters'));
 
         return route($link, $parameters);
     }

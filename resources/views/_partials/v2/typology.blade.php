@@ -7,6 +7,7 @@
         --color_default: #003F57;
         --color_header: #3F9CAA;
         --color_footer: #3F9CAA;
+        --color_title: #3F9CAA;
         --bg_header: rgba(0, 0, 0, .1);
         --bg_color: rgba(196, 196, 196, 0.2);
     }
@@ -74,5 +75,10 @@
         display: block;
         width: 100%;
         height: 100%;
+    }
+
+    .special-heading a {
+        color: var(--color_header);
+        text-decoration: none;
     }
 </style>

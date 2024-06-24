@@ -39,7 +39,9 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="special-heading fw-bold text-center" style="font-size: 32px;">{!! $event->title !!}</h3>
+                        <h3 class="special-heading fw-bold text-center" style="font-size: 32px;">
+                            <a href="{{ get_link('event', ['slug' => $event->slug]) }}">{!! $event->title !!}</a>
+                        </h3>
                     </div>
                 </div>
 
