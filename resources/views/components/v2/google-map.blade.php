@@ -21,7 +21,7 @@
 
                 <img class="img-fluid lazy-load-image w-100"
                     src="{{ asset('v2/img/google-map-1.webp') }}"
-                    data-src="{{ asset('v2/img/google-map.webp') }}"
+                    data-src="{{ asset('v2/img/2beach-club-gmap-location-v2.webp') }}"
                     alt=""
                 />
 
@@ -41,7 +41,7 @@
 
         @media screen and (min-width: 576px) {
             #find-us {
-                margin-bottom: 6% !important    ;
+                margin-bottom: 6% !important;
             }
         }
     </style>
