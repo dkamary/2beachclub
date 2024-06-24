@@ -40,19 +40,19 @@
             <div class="col-12 my-3 d-flex justify-content-center align-items-center">
 
                 <div class="sn-icon mx-2">
-                    <a href="#">
+                    <a href="https://wa.me/23058004713" target="_blank">
                         <img src="{{ asset('v2/img/whatsapp.webp') }}" alt="whatsapp">
                     </a>
                 </div>
 
                 <div class="sn-icon mx-2">
-                    <a href="#">
+                    <a href="https://www.facebook.com/2beachclubmauritius/" target="_blank">
                         <img src="{{ asset('v2/img/facebook.webp') }}" alt="facebook">
                     </a>
                 </div>
 
                 <div class="sn-icon mx-2">
-                    <a href="#">
+                    <a href="https://www.instagram.com/2beachclubmauritius/" target="_blank">
                         <img src="{{ asset('v2/img/instagram.webp') }}" alt="instagram">
                     </a>
                 </div>
