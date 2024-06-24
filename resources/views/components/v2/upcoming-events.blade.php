@@ -14,7 +14,7 @@
 
     <div class="row">
         <div class="col-12">
-            <h2 class="special-heading fw-bold text-center mb-4">Upcoming events</h2>
+            <h2 class="special-heading fw-bold text-center mb-n1 mb-md-4">Upcoming events</h2>
         </div>
     </div>
 

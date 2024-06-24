@@ -18,7 +18,7 @@ function load_gallery_photo({ selector = '.gallery-photo'} = {}) {
 
     const modalImg = document.createElement("img");
     modalImg.id = "gallery-modal-img";
-    modalImg.src = "";
+    modalImg.src = "/v2/svg/Spinner.svg";
     modalImg.alt = "";
     modal.appendChild(modalImg);
 
