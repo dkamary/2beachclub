@@ -9,15 +9,33 @@
 <form action="{{ $form_submit }}" method="POST" class="crm_engagebay_form position-sticky" id="form-{{ $id }}">
     <div class="form_group">
         <p style="font-size: 20px;">Choose your membership. <a href="#membership-details" class="scroll-smooth d-none">See details</a></p>
-        <div class="membership-container">
+        <div class="my-4">
             @handheld
-                <label for="platinum" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum" checked> Platinum</label>&nbsp;
-                <label for="gold" class="flex-label"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;
-                <label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label>
+                <div class="mb-3"><label for="platinum" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum (option 1)" checked> Platinum (Option 1)</label>&nbsp;</div>
+                <div class="mb-3"><label for="platinum" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum (option 2)"> Platinum (Option 2)</label>&nbsp;</div>
+                <div class="mb-3"><label for="gold" class="flex-label"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;</div>
+                <div class="mb-3"><label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label></div>
+                <div class="mb-3"><label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="tenants" value="2future's holiday tenants"> Tenants</label></div>
             @elsehandheld
-                <label for="platinum"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum" checked> Platinum</label>&nbsp;
-                <label for="gold"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;
-                <label for="silver"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label>
+                <div class="row mb-3">
+                    <div class="col-12 col-sm-6">
+                        <label for="platinum"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum (option 1)" checked> Platinum (Option 1)</label>&nbsp;
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="platinum"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum (option 2)" > Platinum (Option 2)</label>&nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <label for="gold"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <label for="silver"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <label for="tenants"><input type="radio" class="form-input" name="membership" id="tenants" value="2future's holiday tenants"> Tenants</label>
+                    </div>
+                </div>
             @endhandheld
         </div>
     </div>
@@ -118,11 +136,11 @@
                 background-color: rgb(0, 41, 72);
             }
 
-            .membership-container {
+            /* .membership-container {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-            }
+            } */
 
             .membership-container label {
                 display: inline-block;
