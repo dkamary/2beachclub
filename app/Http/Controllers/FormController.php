@@ -46,8 +46,8 @@ class FormController extends Controller
 
         mail($to, $subject, $content, $headers);
 
-        $result = $this->sendToCRM($data);
-        Log::info($result->getMessage(), $result->toArray());
+        // $result = $this->sendToCRM($data);
+        // Log::info($result->getMessage(), $result->toArray());
 
         return response()->redirectToRoute('landing_thankyou', ['old' => uniqid()]);
     }
