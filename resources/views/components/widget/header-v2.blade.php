@@ -33,12 +33,12 @@
         <x-widget.menu>
             <ul>
                 <li class="mb-3"><a href="{{ $home }}" class="smooth-scroll">Home</a></li>
-                <li class="mb-3"><a href="{{ $home }}#opening-hours" class="smooth-scroll">Opening Hours</a></li>
+                {{-- <li class="mb-3"><a href="{{ $home }}#opening-hours" class="smooth-scroll">Opening Hours</a></li> --}}
                 <li class="mb-3"><a href="{{ $home }}#restaurant" class="smooth-scroll">Restaurant</a></li>
                 <li class="mb-3"><a href="{{ $home }}#beach-and-pool" class="smooth-scroll">Beach & Pool</a></li>
                 <li class="mb-3"><a href="{{ $home }}#events" class="smooth-scroll">Events</a></li>
-                <li class="mb-3"><a href="{{ $home }}#upcoming-events" class="smooth-scroll">Upcoming Events</a></li>
-                <li class="mb-3"><a href="{{ $home }}#gallery" class="smooth-scroll">Gallery</a></li>
+                <li class="mb-3"><a href="{{ route('booking_tracking') }}" class="smooth-scroll">Reservation</a></li>
+                <li class="mb-3"><a href="{{ $home }}#find-us" class="smooth-scroll">Find us</a></li>
                 <li class="mb-3"><a href="{{ route('become_member') }}" class="smooth-scroll">Become a member</a></li>
                 <li class="mb-3"><a href="{{ $home }}#contact-us" class="smooth-scroll">Contact Us</a></li>
             </ul>
