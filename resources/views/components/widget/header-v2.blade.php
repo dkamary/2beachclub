@@ -1,7 +1,7 @@
 {{-- Header V2 --}}
 
 @php
-    $bgImage = $bgImage ?? asset('v2/img/2beach-club-video-preview--header.webp');
+    $bgImage = $bgImage ?? asset('v2/img/home-page/2beach-club-pool-view.webp');
     $videoMp4 = $videoMp4 ?? asset('videos/2beach-club-lifestyle-video-full-2021.mp4');
     $videoWebm = $videoWebm ?? asset('videos/2beach-club-lifestyle-video-full-2021.webm');
     $home = route('home');
@@ -87,7 +87,7 @@
 
             .hero-section.hero-section-2 h1 {
                 color: #ffffff;
-                text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
                 text-align: center;
                 position: absolute;
                 bottom: 3%;

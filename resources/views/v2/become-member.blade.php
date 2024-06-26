@@ -3,7 +3,7 @@
 @extends('_layouts.base')
 
 @section('main')
-    <x-layout.v2 :hero-header="true" title="Become a member">
+    <x-layout.v2 :hero-header="true" title="Become a member" :bg-image="asset('v2/img/membership/2beach-club-services.webp')">
 
         <section class="container">
 

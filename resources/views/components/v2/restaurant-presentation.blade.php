@@ -9,8 +9,8 @@
     <x-widget.section
         :id="$id ?? null"
         :lazyload="true"
-        :bg-image="asset('v2/img/resto-1.webp')"
-        :bg-image-mini="asset('v2/img/resto-2.webp')"
+        :bg-image="asset('v2/img/restaurant/2beach-club-restaurant-sea-view.webp')"
+        :bg-image-mini="asset('v2/img/restaurant/2beach-club-restaurant-sea-view-1.webp')"
         :bg-class="['w-100']"
 
         :text-class="['bg-white']"
@@ -42,7 +42,15 @@
     @handheld
         <div class="slick-carousel">
 
-            <div class="">
+            @foreach (config('restaurant') as $gallery)
+                <div class="">
+                    <a href="#" class="gallery-photo" data-image="{{ asset($gallery['large']) }}">
+                        <img src="{{ asset($gallery['thumbnail']) }}" data-src="{{ asset($gallery['preview']) }}" alt="" class="img-fluid lazy-load-image w-100" />
+                    </a>
+                </div>
+            @endforeach
+
+            {{-- <div class="">
                 <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2beach-club-gallery-restaurant-01-large.webp') }}">
                     <img src="{{ asset('v2/img/2beach-club-gallery-restaurant-01-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-restaurant-01-large.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
@@ -64,7 +72,7 @@
                 <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2beach-club-gallery-restaurant-003.webp') }}">
                     <img src="{{ asset('v2/img/2beach-club-gallery-restaurant-003-2.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-restaurant-003-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
-            </div>
+            </div> --}}
 
         </div>
 
@@ -72,7 +80,15 @@
 
         <div class="row g-3">
 
-            <div class="col-12 col-md-3">
+            @foreach (config('restaurant') as $gallery)
+                <div class="col-12 col-md-3">
+                    <a href="#" class="gallery-photo" data-image="{{ asset($gallery['large']) }}">
+                        <img src="{{ asset($gallery['thumbnail']) }}" data-src="{{ asset($gallery['preview']) }}" alt="" class="img-fluid lazy-load-image w-100" />
+                    </a>
+                </div>
+            @endforeach
+
+            {{-- <div class="col-12 col-md-3">
                 <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2beach-club-gallery-restaurant-01-large.webp') }}">
                     <img src="{{ asset('v2/img/2beach-club-gallery-restaurant-01-mini.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-restaurant-01-large.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
@@ -94,7 +110,7 @@
                 <a href="#" class="gallery-photo" data-image="{{ asset('v2/img/2beach-club-gallery-restaurant-003.webp') }}">
                     <img src="{{ asset('v2/img/2beach-club-gallery-restaurant-003-2.webp') }}" data-src="{{ asset('v2/img/2beach-club-gallery-restaurant-003-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100" />
                 </a>
-            </div>
+            </div> --}}
 
         </div>
 

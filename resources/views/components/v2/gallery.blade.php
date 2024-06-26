@@ -18,7 +18,7 @@
 
         <div class="slick-carousel">
 
-            @foreach (get_gallery() as $gallery)
+            @foreach (config('gallery') as $gallery)
 
             <div class="">
 
@@ -154,7 +154,7 @@
 
         <div class="row g-3">
 
-            @foreach (get_gallery() as $gallery)
+            @foreach (config('gallery') as $gallery)
 
             <div class="col-12 col-md-3 overflow-hidden gallery-photo" data-image="{{ asset($gallery['gallery']) }}">
 
