@@ -16,10 +16,10 @@
             border-radius: 1.5rem;
             border: none;
             box-shadow: none;
-            padding-top: 6px;
-            padding-bottom: 6px;
-            padding-left: 24px;
-            padding-right: 24px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
         }
 
     </style>

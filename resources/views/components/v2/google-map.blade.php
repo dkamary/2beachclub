@@ -20,9 +20,9 @@
             <a href="https://maps.app.goo.gl/SjDLW1kLE8xxx1mL6" target="_blank">
 
                 <img class="img-fluid lazy-load-image w-100"
-                    src="{{ asset('v2/img/google-map-1.webp') }}"
-                    data-src="{{ asset('v2/img/2beach-club-gmap-location-v2.webp') }}"
-                    alt=""
+                    src="{{ asset('v2/img/contact/2-Beach-Club-Google-map-1.webp') }}"
+                    data-src="{{ asset('v2/img/contact/2-Beach-Club-Google-map.webp') }}"
+                    alt="2-Beach-Club-Google-map"
                 />
 
             </a>

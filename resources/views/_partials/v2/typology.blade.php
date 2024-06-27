@@ -71,7 +71,7 @@
         color: #FFFFFF;
         text-decoration: none;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 16px;
         display: block;
         width: 100%;
         height: 100%;
