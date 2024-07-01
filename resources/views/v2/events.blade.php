@@ -36,17 +36,17 @@
                 <div class="row mb-3">
 
                     <div class="col-12 two-buttons">
-                        @unless (empty($event->book_link))
+                        @if (!empty($event->book_link) && $event->book_link != '#')
                             <x-widget.book />
-                        @endunless
+                        @endif
 
-                        @unless (empty($event->menu_link))
+                        @if (!empty($event->menu_link) && $event->menu_link != '#')
                             <div class="btn-container contact-button book-table my-4">
                                 <a href="{{ get_link($event->menu_link) }}" class="text-uppercase">
                                     Menu
                                 </a>
                             </div>
-                        @endunless
+                        @endif
                     </div>
 
                 </div>
