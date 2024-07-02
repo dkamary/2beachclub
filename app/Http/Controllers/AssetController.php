@@ -41,4 +41,28 @@ class AssetController extends Controller
             return response(sprintf('File `%s` not found', $filepath), 404);
         }
     }
+
+    public function menuSunday() {
+        $filepath = public_path('downloads/2beach-club-sunday-brunch-menu.pdf');
+
+        if (file_exists($filepath)) {
+
+            return response()->download($filepath);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
+
+    public function menuSunset() {
+        $filepath = public_path('downloads/2beach-club-sundowner-menu.jpg');
+
+        if (file_exists($filepath)) {
+
+            return response()->download($filepath);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
 }
