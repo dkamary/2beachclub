@@ -30,9 +30,13 @@
 
             <div class="col-12" style="">
                 <p>
-                    Whether you're sipping cocktails by the sea, enjoying delicious tapas or simply soaking up the scenery, our beachside experience promises to be nothing short of extraordinary. <br>
+                    Whether you're sipping cocktails by the sea, enjoying delicious tapas or simply soaking up the scenery, our beachside experience promises to be nothing short of extraordinary.
+                </p>
+                <p>
                     Welcome to your very own paradise by the sea!
                     Relax on our sun loungers in the shade of the parasols and let the rhythm of the waves gently seduce you as you revel in the beauty of our seaside retreat. Take advantage of our towel service to ensure you have everything you need.
+                </p>
+                <p>
                     With direct beach access from the 2Beach Club, set your foot on the warm sand and feel the touch of the sun on your skin as you explore. With convenient access just steps away, immerse yourself in the serene beauty of the coastline.
                     Escape to seaside luxury today!
                 </p>

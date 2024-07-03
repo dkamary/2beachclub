@@ -162,7 +162,7 @@
             <td>5%</td>
             <td>No</td>
         </tr>
-        <tr class="background-blue">
+        {{-- <tr class="background-blue">
             <td colspan="6" class="bg-blue-1">&nbsp</td>
         </tr>
         <tr>
@@ -176,12 +176,12 @@
             <td>2hrs monthly</td>
             <td>Exra charge</td>
             <td>No</td>
-        </tr>
+        </tr> --}}
     </tbody>
 
 </table>
 
-<div class="row mb-5">
+<div class="row mt-3 mb-5">
     <div class="col-12">
         <em>*Day membership packages will be on offer, depending on availability
             and at the discretion of the management.</em>

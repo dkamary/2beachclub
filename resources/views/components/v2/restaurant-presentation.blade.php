@@ -27,11 +27,17 @@
         <div class="row mb-3">
             <div class="col-12">
                 <p>
-                    Hungry after a refreshing dip? <br>
-                    No problem! Dive into our beach Club delights! <br>
+                    Hungry after a refreshing dip?
+                </p>
+                <p>
+                    No problem! Dive into our beach Club delights!
+                </p>
+                <p>
                     Our chef-curated menu showcases fresh salads, delectable sushi, a bounty of fresh seafood, and so much more. From lunch to dinner, our offerings will seduce your taste buds and leave you craving for more!
-                    And Sundays? They're made for indulgent brunches! <br>
-                    Complementing your culinary adventure is our exquisite wine selection, meticulously crafted by our seasoned sommelier. It's the perfect pairing to elevate your experience at the club! <br>
+                    And Sundays? They're made for indulgent brunches!
+                </p>
+                <p>
+                    Complementing your culinary adventure is our exquisite wine selection, meticulously crafted by our seasoned sommelier. It's the perfect pairing to elevate your experience at the club!
                 </p>
                 <x-widget.book />
             </div>

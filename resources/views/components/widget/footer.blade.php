@@ -18,7 +18,7 @@
     <section class="copyright">
 
         <p class="text-center text-white mb-1">
-            {{ date('Y') }}© Two Futures Realty, Ltd. All rights reserved
+            {{ date('Y') }}© Two Futures Realty, Ltd. <br>All rights reserved
         </p>
 
     </section>

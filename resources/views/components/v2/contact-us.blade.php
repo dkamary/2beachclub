@@ -33,27 +33,27 @@
                     Tel: (+230) 262 19 55
                 </p>
                 <p>
-                    Chemin Pointe d'Azur, Grand Baie, Mauritius.
+                    Impasse, Pointe D'azur, Pereybere, Mauritius.
                 </p>
             </div>
 
             <div class="col-12 my-3 d-flex justify-content-center align-items-center">
 
                 <div class="sn-icon mx-2">
-                    <a href="https://wa.me/23058004713" target="_blank">
-                        <img src="{{ asset('v2/img/whatsapp.webp') }}" alt="whatsapp">
+                    <a href="{{ config('2beachclub.whatsapp') }}" target="_blank">
+                        <img src="{{ asset('v2/svg/whatsapp.svg') }}" alt="whatsapp" height="42" width="42">
                     </a>
                 </div>
 
                 <div class="sn-icon mx-2">
-                    <a href="https://www.facebook.com/2beachclubmauritius/" target="_blank">
-                        <img src="{{ asset('v2/img/facebook.webp') }}" alt="facebook">
+                    <a href="{{ config('2beachclub.facebook') }}" target="_blank">
+                        <img src="{{ asset('v2/svg/facebook.svg') }}" alt="facebook" height="32" width="32">
                     </a>
                 </div>
 
                 <div class="sn-icon mx-2">
-                    <a href="https://www.instagram.com/2beachclubmauritius/" target="_blank">
-                        <img src="{{ asset('v2/img/instagram.webp') }}" alt="instagram">
+                    <a href="{{ config('2beachclub.instagram') }}" target="_blank">
+                        <img src="{{ asset('v2/svg/instagram.svg') }}" alt="instagram" height="32" width="32">
                     </a>
                 </div>
 
@@ -77,6 +77,11 @@
 
             #contact-us .special-heading {
                 font-size: 32px;
+            }
+
+            .sn-icon,
+            .sn-icon a {
+                text-align: center;
             }
 
             @media screen and (min-width: 576px) {

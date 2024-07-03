@@ -17,6 +17,11 @@
         line-height: 126%;
     }
 
+    .layout-v2 p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
     .layout-v2 h1,
     .layout-v2 h2,
     .layout-v2 h3,

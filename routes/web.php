@@ -35,8 +35,14 @@ Route::get('/restaurant/menu-sunday-brunch.pdf', [AssetController::class, 'menuS
 Route::get('/restaurant/menu-sundowner.pdf', [AssetController::class, 'menuSunset'])->name('menu_sunset');
 
 // Second version
+// include 'v2/routes.php';
+
 Route::prefix('new')->group(function(){
 
     include 'v2/routes.php';
+
+    // Route::get('/', function() {
+    //     return redirect()->route('home', [], 301);
+    // });
 
 });

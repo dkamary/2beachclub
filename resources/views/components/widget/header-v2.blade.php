@@ -129,13 +129,13 @@
 
                 .hero-section.hero-section-2 {
                     max-width: 100%;
-                    height: 80vh;
+                    height: 75vh;
                     background-position: center;
                     background-size: cover;
                 }
 
                 .above-fold-icons {
-                    height: 20vh;
+                    height: 25vh;
                 }
             }
 

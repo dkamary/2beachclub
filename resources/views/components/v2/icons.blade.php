@@ -107,6 +107,12 @@
                     font-size: 20px;
                 }
             }
+
+            @media screen and (min-width: 992px) and (max-width: 1400px) {
+                .icon-container .icon-and-text {
+                    font-size: 18px;
+                }
+            }
         </style>
     @endpush
 

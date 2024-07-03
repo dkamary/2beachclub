@@ -47,7 +47,7 @@
 @endsection
 
 
-@push('foot')
+{{-- @push('foot')
     <script id="membership--scripts">
         window.addEventListener("DOMContentLoaded", function(){
             const target = document.querySelector("#membership-title");
@@ -59,4 +59,4 @@
             if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
     </script>
-@endpush
+@endpush --}}
