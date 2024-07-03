@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home_page');
+// Route::get('/', [HomeController::class, 'index'])->name('home_page');
 Route::get('/coming-soon', [HomeController::class, 'coming_soon'])->name('coming_soon');
 Route::get('/landing-page', [HomeController::class, 'landing'])->name('landing_page');
 Route::get('/thank-you', [HomeController::class, 'landing_thankyou'])->name('landing_thankyou');
@@ -35,14 +35,14 @@ Route::get('/restaurant/menu-sunday-brunch.pdf', [AssetController::class, 'menuS
 Route::get('/restaurant/menu-sundowner.pdf', [AssetController::class, 'menuSunset'])->name('menu_sunset');
 
 // Second version
-// include 'v2/routes.php';
+include 'v2/routes.php';
 
 Route::prefix('new')->group(function(){
 
-    include 'v2/routes.php';
+    // include 'v2/routes.php';
 
-    // Route::get('/', function() {
-    //     return redirect()->route('home', [], 301);
-    // });
+    Route::get('/', function() {
+        return redirect()->route('home', [], 301);
+    });
 
 });
