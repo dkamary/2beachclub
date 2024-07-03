@@ -29,9 +29,6 @@
         <div class="row">
             <div class="col-12">
                 <p>
-                    2Beach Club offers an exquisite setting for your private receptions and corporate meetings.
-                </p>
-                <p>
                     2Beach Club invites guests to revel in special events and the breathtaking beachfront ambiance all year round.
                 </p>
                 <p>
