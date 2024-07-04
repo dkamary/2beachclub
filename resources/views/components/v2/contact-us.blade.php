@@ -61,6 +61,8 @@
 
         </div>
 
+        <x-widget.newsletter class="my-3" />
+
     </x-widget.section>
 
 </div>
