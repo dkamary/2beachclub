@@ -56,8 +56,8 @@ class DefaultController extends Controller
                 [
                     'verify' => false,
                     'headers' => [
-                        'Authorization' => '8qddhtf1cfmi8g6p2fmv0akg59', // Test
-                        // 'Authorization' => 'o39t0g1n0bk3h7sr0vti9t1son', // Prod
+                        // 'Authorization' => '8qddhtf1cfmi8g6p2fmv0akg59', // Test
+                        'Authorization' => 'o39t0g1n0bk3h7sr0vti9t1son', // Prod
                         'Accept' => 'application/json',
                     ]
                 ]
@@ -101,8 +101,8 @@ class DefaultController extends Controller
                         [
                             'verify' => false,
                             'headers' => [
-                                'Authorization' => '8qddhtf1cfmi8g6p2fmv0akg59', // Test
-                                // 'Authorization' => 'o39t0g1n0bk3h7sr0vti9t1son', // Prod
+                                // 'Authorization' => '8qddhtf1cfmi8g6p2fmv0akg59', // Test
+                                'Authorization' => 'o39t0g1n0bk3h7sr0vti9t1son', // Prod
                                 'Accept' => 'application/json',
                                 'Content-Type' => 'application/json',
                             ],
@@ -211,8 +211,8 @@ class DefaultController extends Controller
                         [
                             'verify' => false,
                             'headers' => [
-                                'Authorization' => '8qddhtf1cfmi8g6p2fmv0akg59', // Test
-                                // 'Authorization' => 'o39t0g1n0bk3h7sr0vti9t1son', // Prod
+                                // 'Authorization' => '8qddhtf1cfmi8g6p2fmv0akg59', // Test
+                                'Authorization' => 'o39t0g1n0bk3h7sr0vti9t1son', // Prod
                                 'Accept' => 'application/json',
                                 'Content-Type' => 'application/json',
                             ],
