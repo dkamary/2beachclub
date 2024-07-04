@@ -43,7 +43,7 @@
                     Stay connected with us! Follow us on
                     <a href="{{ config('2beachclub.facebook') }}">Facebook</a>, <a href="{{ config('2beachclub.instagram') }}">Instagram</a>,
                     join our <a href="{{ config('2beachclub.whatsapp-channel') }}">WhatsApp community</a>, or subscribe to our
-                    <a href="{{ route('home') }}">newsletter</a> to stay informed about our latest events and offers.
+                    <a href="{{ route('home') }}#newsletter">newsletter</a> to stay informed about our latest events and offers.
                 </p>
             </div>
 
