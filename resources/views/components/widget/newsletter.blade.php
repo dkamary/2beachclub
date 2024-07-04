@@ -26,6 +26,9 @@
               </div>
         </div>
     </div>
+
+    <input type="hidden" name="referral_url" value="{{ request()->headers->get('referrer', $_SERVER['HTTP_REFERER'] ?? null) }}">
+
     @csrf
 
 </form>

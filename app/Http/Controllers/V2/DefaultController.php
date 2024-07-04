@@ -195,7 +195,7 @@ class DefaultController extends Controller
                             ],
                             [
                                 'name' => 'Referral_Url',
-                                'value' => $request->headers->get('referrer', $_SERVER['HTTP_REFERER'] ?? null),
+                                'value' => $request->referral_url ?? '',
                                 'field_type' => 'TEXT',
                                 'is_searchable' => false,
                                 'type' => 'CUSTOM'
