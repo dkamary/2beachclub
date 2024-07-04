@@ -7,6 +7,7 @@
     @include('_partials.stylesheets')
     @yield('stylesheets')
     @stack('head')
+    <x-widget.google-analytics />
 </head>
 
 <body class="@stack('body_class')">
