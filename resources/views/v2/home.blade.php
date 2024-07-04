@@ -5,7 +5,7 @@
 @section('main')
     <x-layout.v2 :hero-header="true">
 
-        <x-v2.intro id="home" :class="['container', 'bg-white', 'my-5']" />
+        <x-v2.intro id="home" :class="['container', 'bg-white', 'mb-5']" />
         <x-v2.opening-hours id="opening-hours" :class="['container', 'bg-white', 'my-5']" />
         <x-v2.restaurant-presentation id="restaurant" :class="['container', 'bg-white', 'my-5']" />
         {{-- <div class="container bg-white py-4"></div> --}}
