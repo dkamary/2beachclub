@@ -8,6 +8,7 @@
     @yield('stylesheets')
     @stack('head')
     <x-widget.google-analytics />
+    <x-widget.facebook-pixel />
 </head>
 
 <body class="@stack('body_class')">
