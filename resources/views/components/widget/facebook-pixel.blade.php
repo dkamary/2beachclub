@@ -1,7 +1,7 @@
 {{-- Pixel facebook --}}
 
 @php
-    $key = $key ?? '{{ $key }}';
+    $key = $key ?? '3914190658802026';
 @endphp
 
 @once
