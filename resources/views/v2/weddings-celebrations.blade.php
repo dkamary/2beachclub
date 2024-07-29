@@ -13,10 +13,6 @@
         'v2/img/events/private-gatherings/2beach-club-private-gatherings-weddings-pereybere-mauritius-header-1.webp',
     );
 
-    // Meta
-    $meta = [
-        'title' => 'Weddings & Celebrations',
-    ];
 @endphp
 
 @extends('_layouts.base')

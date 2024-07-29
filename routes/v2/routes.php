@@ -9,7 +9,7 @@ Route::get('/become-member', [DefaultController::class, 'become_member'])->name(
 Route::prefix('/events')->group(function(){
 
     Route::get('', [DefaultController::class, 'events'])->name('events');
-    Route::get('/private-gathering', [DefaultController::class, 'private_gathering'])->name('private_gathering');
+    Route::get('/private-gatherings', [DefaultController::class, 'private_gathering'])->name('private_gathering');
     Route::get('/meetings', [DefaultController::class, 'meetings'])->name('event_meetings');
     Route::get('/weddgings-and-celebrations', [DefaultController::class, 'weddings_and_celebrations'])->name('event_weddings_and_celebrations');
 

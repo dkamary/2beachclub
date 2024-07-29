@@ -21,5 +21,23 @@ return [
             'description' => 'Live the 5 -star lifestyle everyday',
             'preview' => 'img/section-1-1-2160w.webp' /*asset('img/section-1-1-2160w.webp')*/,
         ],
+        'private-gatherings' => [
+            'title' => 'Private Gatherings',
+            'url' => 'https://2beachclub.mu/events/private-gatherings',
+            'description' => '2Beach Club in Pereybere, Mauritius, offers stunning event spaces with ocean views for weddings, corporate gatherings, and celebrations. Enjoy personalized catering and bespoke menus in our restaurant, poolside, beachfront, rooftop, or private meeting spaces for an unforgettable experience.',
+            'preview' => '/v2/img/events/private-gatherings/2beach-club-private-gatherings-weddings-pereybere-mauritius-header-page.webp',
+        ],
+        'event-meetings' => [
+            'title' => 'Meetings & Events',
+            'url' => 'https://2beachclub.mu/events/meetings',
+            'description' => 'Transform corporate events at 2Beach Club in Pereybere, Mauritius, with versatile spaces and personalized catering. Enjoy a blend of professional efficiency and coastal charm. Contact us to learn more.',
+            'preview' => '/v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-header.webp',
+        ],
+        'weddings-celebrations' => [
+            'title' => 'Weddings & Celebrations',
+            'url' => 'https://2beachclub.mu/events/weddgings-and-celebrations',
+            'description' => 'Experience luxury and romance at 2Beach Club in Pereybere, Mauritius. Ideal for dream weddings and celebrations, our exclusive venue offers exquisite spaces for both intimate gatherings and grand affairs.',
+            'preview' => '/v2/img/events/private-gatherings/2beach-club-weddings-header.webp',
+        ],
     ]
 ];

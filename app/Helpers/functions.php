@@ -16,10 +16,16 @@ if (!function_exists('get_meta')) {
 
         if ($routeName == 'home') {
             $meta = config('meta.page.index');
-        } elseif (strpos($routeName, 'event') !== false) {
-            $meta = config('meta.page.events');
         } elseif ($routeName == 'become_member' || strpos($routeName, 'membership') !== false) {
             $meta = config('meta.page.membership');
+        } elseif($routeName == 'private_gathering') {
+            $meta = config('meta.page.private-gatherings');
+        } elseif($routeName == 'event_meetings') {
+            $meta = config('meta.page.event-meetings');
+        } elseif($routeName == 'event_weddings_and_celebrations') {
+            $meta = config('meta.page.weddings-celebrations');
+        } elseif (strpos($routeName, 'event') !== false) {
+            $meta = config('meta.page.events');
         } else {
             $meta = config('meta.page.index');
         }
