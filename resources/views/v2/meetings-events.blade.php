@@ -31,7 +31,7 @@
                 <div class="row mb-3">
                     <div class="col-12">
                         <h1 class="special-heading fs-1 fw-bold text-center pb-2">{!! $headerTitle !!}</h1>
-                        <h2 class="special-heading fs-5 fw-semibold text-center py-3">Elevate Your Corporate Meetings and Events at 2Beach Club</h2>
+                        <h2 class="special-heading fs-3 fw-semibold text-center py-3">Elevate your corporate meetings and events at 2Beach Club</h2>
                     </div>
                 </div>
 
@@ -52,8 +52,15 @@
 
                         <div class="row mt-5 mb-4">
                             <img class="img-fluid w-100 lazy-load-image"
+                            @handheld
+                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-catering-square-1.webp') }}"
+                                data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-catering-square.webp') }}"
+                            @else
                                 src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-catering-header-preview-1.webp') }}"
-                                data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-catering-header-preview.webp') }}">
+                                data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-catering-header-preview.webp') }}"
+                            @endhandheld
+
+                            >
                         </div>
 
                         <p>
