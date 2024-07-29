@@ -7,9 +7,10 @@
     $home = route('home');
     $privateGathering = route('private_gathering');
     $class = array_merge(['header-nav', 'header-nav-2',], $class ?? ['linear-bg']);
+    $icon = $icon ?? true;
 @endphp
 
-<header class='header-container header-container-2'>
+<header class='header-container header-container-2 {{ !$icon ? 'no-icon' : '' }}'>
 
     <nav @class($class)>
         {{-- HEADER --}}
@@ -54,9 +55,12 @@
         @endisset
     </div>
 
-    <div class="container bg-white above-fold-icons d-flex justify-content-center align-items-center">
-        <x-v2.icons :home="$home" class="home-icons" />
-    </div>
+    @if ($icon)
+        <div class="container bg-white above-fold-icons d-flex justify-content-center align-items-center">
+            <x-v2.icons :home="$home" class="home-icons" />
+        </div>
+    @endif
+
 </header>
 
 @once
@@ -64,9 +68,13 @@
     @push('head')
 
         <style id="header-v2">
-            .header-container.header-container-2{
+            .header-container.header-container-2 {
                 max-width: 100%;
                 height: 100vh;
+            }
+
+            .header-container.header-container-2.no-icon {
+                height: auto;
             }
 
             .header-nav.header-nav-2 {
@@ -134,6 +142,10 @@
                     height: 75vh;
                     background-position: center;
                     background-size: cover;
+                }
+
+                .header-container.header-container-2.no-icon {
+                    height: auto;
                 }
 
                 .above-fold-icons {

@@ -13,15 +13,15 @@
 @extends('_layouts.base')
 
 @section('main')
-    <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" :title="$headerTitle">
+    <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" title="" :icon="false">
 
         <div class="container bg-white my-5">
 
             <x-widget.section
                 :id="$id ?? null"
                 :lazyload="true"
-                :bg-image="$contentBg"
-                :bg-image-mini="$contentBgMini"
+                {{-- :bg-image="$contentBg"
+                :bg-image-mini="$contentBgMini" --}}
                 :bg-class="['w-100']"
                 :text-class="['bg-white']"
                 text-placement="center"
@@ -30,7 +30,8 @@
 
                 <div class="row mb-3">
                     <div class="col-12">
-                        <h2 class="special-heading fs-1 fw-bold text-center pb-2">{!! $headerTitle !!}</h2>
+
+                        <h1 class="special-heading fs-1 fw-bold text-center pb-2">{!! $headerTitle !!}</h1>
 
                     </div>
                 </div>
@@ -57,21 +58,24 @@
                 </div>
 
                 <div class="row my-4 g-3">
-                    <div class="col-12 col-sm-6">
-                        <a href="{{ route('event_meetings') }}" class="text-decoration-none">
-                            <h3 class="special-heading fs-3 fw-bold text-center">Meetings & Events</h3>
-                            <img data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square.webp') }}"
-                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
-                        </a>
-                    </div>
+
                     <div class="col-12 col-sm-6">
                         <a href="{{ route('event_weddings_and_celebrations') }}" class="text-decoration-none">
-                            <h3 class="special-heading fs-3 fw-bold text-center">Weddings & Celebrations</h3>
+                            <h2 class="special-heading fs-3 fw-bold text-center">Weddings & Celebrations</h2>
                             <img
                                 data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-weddings-square.webp') }}"
                                 src="{{ asset('v2/img/events/private-gatherings/2beach-club-weddings-square-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
                         </a>
                     </div>
+
+                    <div class="col-12 col-sm-6">
+                        <a href="{{ route('event_meetings') }}" class="text-decoration-none">
+                            <h2 class="special-heading fs-3 fw-bold text-center">Meetings &<br class="d-none d-sm-block d-lg-none"> Events</h2>
+                            <img data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square.webp') }}"
+                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                        </a>
+                    </div>
+
                 </div>
 
             </x-widget.section>

@@ -13,15 +13,15 @@
 @extends('_layouts.base')
 
 @section('main')
-    <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" :title="$headerTitle">
+    <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" title="" :icon="false">
 
         <div class="container bg-white my-5">
 
             <x-widget.section
                 :id="$id ?? null"
                 :lazyload="true"
-                :bg-image="$contentBg"
-                :bg-image-mini="$contentBgMini"
+                {{-- :bg-image="$contentBg"
+                :bg-image-mini="$contentBgMini" --}}
                 :bg-class="['w-100']"
                 :text-class="['bg-white']"
                 text-placement="center"
@@ -30,8 +30,8 @@
 
                 <div class="row mb-3">
                     <div class="col-12">
-                        <h2 class="special-heading fs-1 fw-bold text-center pb-2">{!! $headerTitle !!}</h2>
-                        <h3 class="special-heading fs-5 fw-semibold text-center py-3">Elevate Your Corporate Meetings and Events at 2Beach Club</h3>
+                        <h1 class="special-heading fs-1 fw-bold text-center pb-2">{!! $headerTitle !!}</h1>
+                        <h2 class="special-heading fs-5 fw-semibold text-center py-3">Elevate Your Corporate Meetings and Events at 2Beach Club</h2>
                     </div>
                 </div>
 
@@ -49,12 +49,20 @@
                             From our elegant restaurant and stunning poolside area to our breathtaking beachfront, each venue provides a unique setting
                             that complements your event's theme and objectives.
                         </p>
+
+                        <div class="row mt-5 mb-4">
+                            <img class="img-fluid w-100 lazy-load-image"
+                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-catering-header-preview-1.webp') }}"
+                                data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-catering-header-preview.webp') }}">
+                        </div>
+
                         <p>
                             In addition to our beautiful locations, our renowned catering services offer an array of options,
                             from gourmet finger foods to lavish buffets, all crafted to delight your guests.
                             Our dedicated team works closely with you to customize every detail, ensuring that your event is not only productive
                             but also enjoyable and memorable.
                         </p>
+
                         <p>
                             Experience the perfect blend of professional efficiency and coastal charm at 2Beach Club, where every event is
                             crafted to leave a lasting impression on you and your guests.

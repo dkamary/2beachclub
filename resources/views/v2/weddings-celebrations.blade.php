@@ -18,16 +18,18 @@
 @extends('_layouts.base')
 
 @section('main')
-    <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" :title="$headerTitle">
+    <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" title="" :icon="false">
 
         <div class="container bg-white my-5">
 
-            <x-widget.section :id="$id ?? null" :lazyload="true" :bg-image="$contentBg" :bg-image-mini="$contentBgMini" :bg-class="['w-100']"
+            <x-widget.section :id="$id ?? null" :lazyload="true"
+                {{-- :bg-image="$contentBg" :bg-image-mini="$contentBgMini"  --}}
+                :bg-class="['w-100']"
                 :text-class="['bg-white']" text-placement="center" text-size="col-11 col-md-10 mx-auto">
 
                 <div class="row mb-3">
                     <div class="col-12">
-                        <h2 class="special-heading fs-1 fw-bold text-center pb-2">{!! $headerTitle !!}</h2>
+                        <h1 class="special-heading fs-1 fw-bold text-center pb-2">{!! $headerTitle !!}</h1>
                     </div>
                 </div>
 
@@ -44,15 +46,15 @@
                         </p>
 
                         <div class="row my-5 swap-section">
-                            <div class="col-12 col-md-6 img-part">
+                            <div class="col-12 col-lg-6 img-part">
                                 <img class="img-fluid lazy-load-image w-100"
                                     src="{{ asset('v2/img/events/private-gatherings/2beach-club-weddings-exclusive-spaces-1.webp') }}"
                                     data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-weddings-exclusive-spaces.webp') }}">
                             </div>
-                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center text-part">
-                                <h3 class="special-heading fs-5 fw-semibold text-start pt-3 pb-2">Exclusive Spaces for Your
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center text-part">
+                                <h2 class="special-heading fs-5 fw-semibold text-start pt-3 pb-2">Exclusive Spaces for Your
                                     Special
-                                    Occasion</h3>
+                                    Occasion</h2>
 
                                 <p>
                                     Our venue boasts a selection of refined settings, including an elegant restaurant, a
@@ -73,15 +75,15 @@
                         </div>
 
                         <div class="row my-5 swap-section">
-                            <div class="col-12 col-md-6 img-part">
+                            <div class="col-12 col-lg-6 img-part">
                                 <img class="img-fluid lazy-load-image w-100"
                                     src="{{ asset('v2/img/events/private-gatherings/2beach-club-private-gatherings-breath-taking-view-squared-1.webp') }}"
                                     data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-private-gatherings-breath-taking-view-squared.webp') }}">
                             </div>
-                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center text-part">
-                                <h3 class="special-heading fs-5 fw-semibold text-start pt-3 pb-2">Breathtaking Beachfront
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center text-part">
+                                <h2 class="special-heading fs-5 fw-semibold text-start pt-3 pb-2">Breathtaking Beachfront
                                     Ceremonies
-                                </h3>
+                                </h2>
 
                                 <p>
                                     Imagine exchanging vows with the serene sounds of waves and a captivating sunset as your
@@ -97,14 +99,14 @@
                         </div>
 
                         <div class="row my-5 swap-section">
-                            <div class="col-12 col-md-6 img-part">
+                            <div class="col-12 col-lg-6 img-part">
                                 <img class="img-fluid lazy-load-image w-100"
                                     src="{{ asset('v2/img/events/private-gatherings/2beach-club-private-gatherings-tailored-culinary-food-squared-1.webp') }}"
                                     data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-private-gatherings-tailored-culinary-food-squared.webp') }}">
                             </div>
-                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center text-part">
-                                <h3 class="special-heading fs-5 fw-semibold text-start pt-3 pb-2">Tailored Culinary
-                                    Excellence</h3>
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center text-part">
+                                <h2 class="special-heading fs-5 fw-semibold text-start pt-3 pb-2">Tailored Culinary
+                                    Excellence</h2>
 
                                 <p>
                                     At 2Beach Club, we understand that exceptional cuisine is an integral part of any
@@ -121,14 +123,14 @@
                         </div>
 
                         <div class="row my-5 swap-section">
-                            <div class="col-12 col-md-6 img-part">
+                            <div class="col-12 col-lg-6 img-part">
                                 <img class="img-fluid lazy-load-image w-100 text-part"
                                     src="{{ asset('v2/img/events/private-gatherings/2beach-club-private-gatherings-weddings-pereybere-mauritius-square-1.webp') }}"
                                     data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-private-gatherings-weddings-pereybere-mauritius-square.webp') }}">
                             </div>
-                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-                                <h3 class="special-heading fs-5 fw-semibold text-start pt-3 pb-2">Personalized Planning and
-                                    Flexibility</h3>
+                            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                                <h2 class="special-heading fs-5 fw-semibold text-start pt-3 pb-2">Personalized Planning and
+                                    Flexibility</h2>
 
                                 <p>
                                     We believe that every celebration should be as unique as the couple or individual hosting it.
@@ -180,7 +182,9 @@
             .text-overlapping {
                 margin-top: unset;
             }
+        }
 
+        @media screen and (max-width: 992px) {
             .swap-container .swap-section:nth-child(2n) > .img-part {
                 order: 1;
             }
