@@ -12,6 +12,7 @@
         <x-v2.beach-pool id="beach-and-pool" :class="['container', 'bg-white', 'my-5']" />
         {{-- <div class="container bg-white py-4 d-none"></div> --}}
         <x-v2.events id="events" :class="['container', 'bg-white', 'my-5', 'pt-4', 'pt-sm-0']" />
+        <x-section.private-gathering id="private-gathering" :class="['container', 'bg-white', 'my-5', 'pt-4', 'pt-sm-0']" />
         <x-v2.upcoming-events id="upcoming-events" :class="['container', 'bg-white', 'my-5']" />
         {{-- <div class="container bg-white py-4"></div> --}}
         <x-v2.gallery id="gallery" :class="['container', 'bg-white', 'my-5']" />

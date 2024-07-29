@@ -233,4 +233,19 @@ class DefaultController extends Controller
 
         return view('v2.thank-you');
     }
+
+    public function private_gathering(): View
+    {
+        return view('v2/private-gathering');
+    }
+
+    public function meetings(): View
+    {
+        return view('v2/meetings-events');
+    }
+
+    public function weddings_and_celebrations(): View
+    {
+        return view('v2/weddings-celebrations');
+    }
 }

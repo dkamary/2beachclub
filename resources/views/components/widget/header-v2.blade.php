@@ -5,6 +5,7 @@
     $videoMp4 = $videoMp4 ?? asset('videos/2beach-club-lifestyle-video-full-2021.mp4');
     $videoWebm = $videoWebm ?? asset('videos/2beach-club-lifestyle-video-full-2021.webm');
     $home = route('home');
+    $privateGathering = route('private_gathering');
     $class = array_merge(['header-nav', 'header-nav-2',], $class ?? ['linear-bg']);
 @endphp
 
@@ -37,6 +38,7 @@
                 <li class="mb-3"><a href="{{ $home }}#restaurant" class="smooth-scroll">Restaurant</a></li>
                 <li class="mb-3"><a href="{{ $home }}#beach-and-pool" class="smooth-scroll">Beach & Pool</a></li>
                 <li class="mb-3"><a href="{{ $home }}#events" class="smooth-scroll">Events</a></li>
+                <li class="mb-3"><a href="{{ $privateGathering }}" class="smooth-scroll">Private Gathering</a></li>
                 <li class="mb-3"><a href="{{ route('booking_tracking') }}" class="smooth-scroll">Reservation</a></li>
                 <li class="mb-3"><a href="{{ $home }}#find-us" class="smooth-scroll">Find us</a></li>
                 <li class="mb-3"><a href="{{ route('become_member') }}" class="smooth-scroll">Become a member</a></li>

@@ -1,7 +1,7 @@
 {{-- Meta data --}}
 
 @php
-    $meta = get_meta();
+    $meta = $meta ?? get_meta();
 @endphp
 
 <meta charset="UTF-8">
