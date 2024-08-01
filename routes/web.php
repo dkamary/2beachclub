@@ -46,3 +46,7 @@ Route::prefix('new')->group(function(){
     });
 
 });
+
+Route::get('/v2', function() {
+    return redirect()->route('home');
+});
