@@ -11,7 +11,11 @@ Route::prefix('/events')->group(function(){
     Route::get('', [DefaultController::class, 'events'])->name('events');
     Route::get('/private-gatherings', [DefaultController::class, 'private_gathering'])->name('private_gathering');
     Route::get('/meetings', [DefaultController::class, 'meetings'])->name('event_meetings');
-    Route::get('/weddgings-and-celebrations', [DefaultController::class, 'weddings_and_celebrations'])->name('event_weddings_and_celebrations');
+    Route::get('/weddings-and-celebrations', [DefaultController::class, 'weddings_and_celebrations'])->name('event_weddings_and_celebrations');
+    Route::get('/weddgings-and-celebrations', function() {
+        return redirect()
+            ->route('event_weddings_and_celebrations', [], 301);
+    });
 
 });
 
