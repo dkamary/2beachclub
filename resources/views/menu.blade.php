@@ -38,7 +38,7 @@
 
                     <div class="col-12">
                         <p>
-                            The restaurant at 2Beach Club invites you to indulge in a unique culinary experience where each menu is crafted to delight your taste buds. From the freshness of seafood to flavorful and authentic dishes, our chef has curated a selection that highlights the best local ingredients, blending tradition and innovation in every plate.
+                            The restaurant at 2Beach Club invites you to indulge in a unique culinary experience where each menu is crafted to delight your taste buds. From the freshness of seafood to flavourful and authentic dishes, our chef has curated a selection that highlights the best local ingredients, blending tradition and innovation in every plate.
                         </p>
                     </div>
 
@@ -48,7 +48,7 @@
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a href="{{ route('menu_all_day_dining') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">All day & dining</h2>
+                            <h2 class="special-heading fs-3 fw-bold text-center">All day dining</h2>
                             <img
                                 data-src="{{ asset('v2/img/menu/all-day-dining-preview.webp') }}"
                                 src="{{ asset('v2/img/menu/all-day-dining-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
@@ -57,7 +57,7 @@
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a href="{{ route('menu_sushi') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Sushis</h2>
+                            <h2 class="special-heading fs-3 fw-bold text-center">Sushi</h2>
                             <img data-src="{{ asset('v2/img/menu/sushis-preview.webp') }}"
                                 src="{{ asset('v2/img/menu/sushis-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
                         </a>

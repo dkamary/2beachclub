@@ -82,7 +82,7 @@ class MenuController extends Controller
     }
 
     public function kids(){
-        $filepath = public_path('downloads/2024-05-07-Kids-menu-Digital.pdf');
+        $filepath = public_path('downloads/Kids-Menu.pdf');
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_kids'));
@@ -95,7 +95,7 @@ class MenuController extends Controller
     }
 
     public function all_day(){
-        $filepath = public_path('downloads/2024-07-17-2BCmenus-All-day-dining-New-Digital.pdf');
+        $filepath = public_path('downloads/All-Day-Dining-Menu.pdf');
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_all_day_dining'));
@@ -108,7 +108,7 @@ class MenuController extends Controller
     }
 
     public function sushi(){
-        $filepath = public_path('downloads/2024-06-04-2BCmenus-sushi-Digital.pdf');
+        $filepath = public_path('downloads/Sushi-Menu.pdf');
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_sushi'));
