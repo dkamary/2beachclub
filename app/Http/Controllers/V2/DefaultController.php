@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\V2;
 
 use App\Http\Controllers\Controller;
+use App\Managers\TrackingManager;
 use App\Models\Event;
 use Exception;
 use GuzzleHttp\Client;
@@ -15,21 +16,29 @@ class DefaultController extends Controller
 {
     public function home(): View
     {
+        TrackingManager::pageView(route('home'));
+
         return view('v2/home');
     }
 
     public function become_member(): View
     {
+        TrackingManager::pageView(route('become_member'));
+
         return view('v2/become-member');
     }
 
     public function events(): View
     {
+        TrackingManager::pageView(route('events'));
+
         return view('v2/events');
     }
 
     public function event(string $slug): View
     {
+        TrackingManager::pageView(route('events'));
+
         $event = Event::query()
             ->where('slug', 'LIKE', $slug)
             ->first();
@@ -45,6 +54,8 @@ class DefaultController extends Controller
 
     public function newsletter(Request $request): View
     {
+        TrackingManager::submit(route('newsletter_subscribe'));
+
         $data = $request->validate([
             'email' => 'required|email',
         ]);
@@ -236,16 +247,22 @@ class DefaultController extends Controller
 
     public function private_gathering(): View
     {
+        TrackingManager::pageView(route('private_gathering'));
+
         return view('v2/private-gathering');
     }
 
     public function meetings(): View
     {
+        TrackingManager::pageView(route('event_meetings'));
+
         return view('v2/meetings-events');
     }
 
     public function weddings_and_celebrations(): View
     {
+        TrackingManager::pageView(route('event_weddings_and_celebrations'));
+
         return view('v2/weddings-celebrations');
     }
 }

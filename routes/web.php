@@ -4,6 +4,7 @@ use App\Http\Controllers\AssetController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\V2\MenuController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,29 +25,39 @@ Route::get('/thank-you', [HomeController::class, 'landing_thankyou'])->name('lan
 
 Route::post('/submit-contact', [FormController::class, 'submit'])->name('form_submit');
 
-Route::prefix('booking')->group(function(){
+Route::prefix('booking')->group(function () {
     Route::get('/tracking', [BookingController::class, 'tracking'])->name('booking_tracking');
 });
 
-Route::get('/restaurant/menu.pdf', [AssetController::class, 'downloadMenu'])->name('download_menu');
-Route::get('/restaurant/menu-marideal.pdf', [AssetController::class, 'menuMarideal'])->name('menu_marideal');
-Route::get('/restaurant/menu-easter-brunch.pdf', [AssetController::class, 'menuEaster'])->name('menu_easter');
-Route::get('/restaurant/menu-sunday-brunch.pdf', [AssetController::class, 'menuSunday'])->name('menu_sunday');
-Route::get('/restaurant/menu-sundowner.pdf', [AssetController::class, 'menuSunset'])->name('menu_sunset');
+Route::prefix('restaurant')->group(function () {
+
+    Route::get('/our-menus', [MenuController::class, 'index'])->name('menu_index');
+    Route::get('/menu.pdf', [MenuController::class, 'menu'])->name('download_menu');
+    Route::get('/menu-marideal.pdf', [MenuController::class, 'mari_deal'])->name('menu_marideal');
+    Route::get('/menu-easter-brunch.pdf', [MenuController::class, 'easter_brunch'])->name('menu_easter');
+    Route::get('/menu-sunday-brunch.pdf', [MenuController::class, 'sunday_brunch'])->name('menu_sunday');
+    Route::get('/menu-sundowner.pdf', [MenuController::class, 'sundowner'])->name('menu_sunset');
+    Route::get('/menu-kids.pdf', [MenuController::class, 'kids'])->name('menu_kids');
+    Route::get('/menu-all-day-dining.pdf', [MenuController::class, 'all_day'])->name('menu_all_day_dining');
+    Route::get('/menu-sushi.pdf', [MenuController::class, 'sushi'])->name('menu_sushi');
+    Route::get('/menu-cocktails.pdf', [MenuController::class, 'cocktails'])->name('menu_cocktails');
+    Route::get('/menu-drinks.pdf', [MenuController::class, 'drinks'])->name('menu_drinks');
+    Route::get('/menu-brunch-for-a-cause.pdf', [MenuController::class, 'brunch_for_cause'])->name('menu_brunch_for_a_cause');
+
+});
 
 // Second version
 include 'v2/routes.php';
 
-Route::prefix('new')->group(function(){
+Route::prefix('new')->group(function () {
 
     // include 'v2/routes.php';
 
-    Route::get('/', function() {
+    Route::get('/', function () {
         return redirect()->route('home', [], 301);
     });
-
 });
 
-Route::get('/v2', function() {
+Route::get('/v2', function () {
     return redirect()->route('home');
 });
