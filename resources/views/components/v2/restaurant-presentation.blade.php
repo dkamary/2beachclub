@@ -40,6 +40,12 @@
                     Complementing your culinary adventure is our exquisite wine selection, meticulously crafted by our seasoned sommelier. It's the perfect pairing to elevate your experience at the club!
                 </p>
                 <x-widget.book />
+
+                <div class="btn-container contact-button book-table my-4">
+                    <a href="{{ route('menu_index') }}" class="text-uppercase">
+                        See our menus
+                    </a>
+                </div>
             </div>
         </div>
 
