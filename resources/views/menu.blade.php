@@ -48,7 +48,7 @@
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a href="{{ route('menu_all_day_dining') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">All day dining</h2>
+                            <h2 class="special-heading fs-3 fw-bold text-center">The All-Day Feast</h2>
                             <img
                                 data-src="{{ asset('v2/img/menu/all-day-dining-preview.webp') }}"
                                 src="{{ asset('v2/img/menu/all-day-dining-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
@@ -57,7 +57,7 @@
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a href="{{ route('menu_sushi') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Sushi</h2>
+                            <h2 class="special-heading fs-3 fw-bold text-center">The Sushi Experience</h2>
                             <img data-src="{{ asset('v2/img/menu/sushis-preview.webp') }}"
                                 src="{{ asset('v2/img/menu/sushis-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
                         </a>
@@ -65,10 +65,10 @@
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a href="{{ route('menu_kids') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Kids</h2>
+                            <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favorites</h2>
                             <img
-                                data-src="{{ asset('v2/img/menu/kids-preview.webp') }}"
-                                src="{{ asset('v2/img/menu/kids-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                                data-src="{{ asset('v2/img/menu/Kids-burger.webp') }}"
+                                src="{{ asset('v2/img/menu/Kids-burger-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
                         </a>
                     </div>
 
