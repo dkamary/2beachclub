@@ -46,7 +46,7 @@
 
                 <div class="row my-4 g-3">
 
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    <div class="col-12 col-sm-4 mx-auto my-4">
                         <a href="{{ route('menu_all_day_dining') }}" class="text-decoration-none">
                             <h2 class="special-heading fs-3 fw-bold text-center">The All-Day Feast</h2>
                             <img
@@ -55,7 +55,7 @@
                         </a>
                     </div>
 
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    <div class="col-12 col-sm-4 mx-auto my-4">
                         <a href="{{ route('menu_sushi') }}" class="text-decoration-none">
                             <h2 class="special-heading fs-3 fw-bold text-center">The Sushi Experience</h2>
                             <img data-src="{{ asset('v2/img/menu/sushis-preview.webp') }}"
@@ -63,7 +63,7 @@
                         </a>
                     </div>
 
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    <div class="col-12 col-sm-4 mx-auto my-4">
                         <a href="{{ route('menu_kids') }}" class="text-decoration-none">
                             <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favorites</h2>
                             <img
