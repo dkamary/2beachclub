@@ -41,7 +41,7 @@
                 </p>
                 <x-widget.book />
 
-                <div class="btn-container contact-button book-table my-4">
+                <div class="btn-container contact-button book-table my-4 d-none">
                     <a href="{{ route('menu_index') }}" class="text-uppercase">
                         See our menus
                     </a>
