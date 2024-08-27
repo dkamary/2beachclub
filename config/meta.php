@@ -39,5 +39,11 @@ return [
             'description' => 'Experience luxury and romance at 2Beach Club in Pereybere, Mauritius. Ideal for dream weddings and celebrations, our exclusive venue offers exquisite spaces for both intimate gatherings and grand affairs.',
             'preview' => '/v2/img/events/private-gatherings/2beach-club-weddings-header.webp',
         ],
+        'menu_index' => [
+            'title' => 'Our menus',
+            'url' => 'https://2beachclub.mu/restaurant/our-menus',
+            'description' => 'The restaurant at 2Beach Club invites you to indulge in a unique culinary experience where each menu is crafted to delight your taste buds. From the freshness of seafood to flavourful and authentic dishes, our chef has curated a selection that highlights the best local ingredients, blending tradition and innovation in every plate.',
+            'preview' => '/v2/img/events/headers/2beach-club-events-headers-001.webp',
+        ],
     ]
 ];

@@ -2,7 +2,7 @@
 
 @php
     // header
-    $headerBg = asset('v2/img/events/headers/2beach-club-events-headers-001.webp');
+    $headerBg = asset("v2/img/events/headers/2beach-club-events-headers-001.webp");
     $headerTitle = 'Our menus';
 
     // content

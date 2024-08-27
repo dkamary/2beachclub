@@ -14,6 +14,13 @@ if (!function_exists('get_meta')) {
         $route = Route::current();
         $routeName = $route->getName();
 
+        $allMeta = config('meta.page', []);
+        $meta = $allMeta[$routeName] ?? [];
+
+        // dd(compact('routeName', 'allMeta', 'meta'));
+
+        if (!empty($meta)) return $meta;
+
         if ($routeName == 'home') {
             $meta = config('meta.page.index');
         } elseif ($routeName == 'become_member' || strpos($routeName, 'membership') !== false) {
