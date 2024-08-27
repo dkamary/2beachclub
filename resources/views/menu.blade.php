@@ -65,7 +65,7 @@
 
                     <div class="col-12 col-sm-4 mx-auto my-4">
                         <a href="{{ route('menu_kids') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favorites</h2>
+                            <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favourites</h2>
                             <img
                                 data-src="{{ asset('v2/img/menu/Kids-burger.webp') }}"
                                 src="{{ asset('v2/img/menu/Kids-burger-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
