@@ -31,6 +31,8 @@ Route::prefix('booking')->group(function () {
 
 Route::prefix('restaurant')->group(function () {
 
+    Route::redirect('{any}', '/')->where('any', '.*');
+
     Route::get('/our-menus', [MenuController::class, 'index'])->name('menu_index');
     Route::get('/menu.pdf', [MenuController::class, 'menu'])->name('download_menu');
     Route::get('/menu-marideal.pdf', [MenuController::class, 'mari_deal'])->name('menu_marideal');
