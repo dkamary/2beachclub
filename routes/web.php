@@ -31,7 +31,7 @@ Route::prefix('booking')->group(function () {
 
 Route::prefix('restaurant')->group(function () {
 
-    Route::redirect('{any}', '/')->where('any', '.*');
+    // Route::redirect('{any}', '/')->where('any', '.*'); // Used to deactivate the menu
 
     Route::get('/our-menus', [MenuController::class, 'index'])->name('menu_index');
     Route::get('/menu.pdf', [MenuController::class, 'menu'])->name('download_menu');
