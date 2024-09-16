@@ -88,7 +88,7 @@
             <th>
                 Towel service<br>
                 Locker room<br>
-                Beach transat<br>
+                Beach sunbeds<br>
             </th>
             <td>Yes</td>
             <td>Yes</td>

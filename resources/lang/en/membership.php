@@ -9,7 +9,7 @@ return [
     'restaurant' => 'Restaurant',
     'rooftop' => 'Rooftop bar',
     'pool' => 'Pool',
-    'services' => 'Towel service<br>Locker room<br>Beach transat',
+    'services' => 'Towel service<br>Locker room<br>Beach sunbeds',
     'concierge' => 'Concierge service',
     'shuttle' => 'Shuttle service: between 2Beach Club and 2Futures’ residences (Bain Boeuf to Trou aux Biches)',
     'guest' => 'Guest passes',
