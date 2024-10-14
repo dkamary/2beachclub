@@ -69,10 +69,10 @@ class MenuController extends Controller
     }
 
     public function sundowner(){
-        $filepath = public_path('downloads/2beach-club-sundowner-menu.jpg');
+        $filepath = public_path(config('2beachclub.menu.sundowner'));
 
         if (file_exists($filepath)) {
-            TrackingManager::download(route('menu_sunday'));
+            TrackingManager::download(route('menu_sunset'));
 
             return response()->download($filepath);
         } else {
@@ -82,7 +82,7 @@ class MenuController extends Controller
     }
 
     public function kids(){
-        $filepath = public_path('downloads/Kids-Menu.pdf');
+        $filepath = public_path(config('2beachclub.menu.kids-menu'));
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_kids'));
@@ -94,11 +94,24 @@ class MenuController extends Controller
         }
     }
 
-    public function all_day(){
-        $filepath = public_path('downloads/All-Day-Dining-Menu.pdf');
+    public function all_day_en(){
+        $filepath = public_path(config('2beachclub.menu.all-day-en'));
 
         if (file_exists($filepath)) {
-            TrackingManager::download(route('menu_all_day_dining'));
+            TrackingManager::download(route('menu_all_day_en'));
+
+            return response()->download($filepath);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
+
+    public function all_day_fr(){
+        $filepath = public_path(config('2beachclub.menu.all-day-fr'));
+
+        if (file_exists($filepath)) {
+            TrackingManager::download(route('menu_all_day_fr'));
 
             return response()->download($filepath);
         } else {
@@ -108,7 +121,7 @@ class MenuController extends Controller
     }
 
     public function sushi(){
-        $filepath = public_path('downloads/Sushi-Menu.pdf');
+        $filepath = public_path(config('2beachclub.menu.sushi'));
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_sushi'));

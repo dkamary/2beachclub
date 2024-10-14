@@ -46,8 +46,8 @@
 
                 <div class="row my-4 g-3">
 
-                    <div class="col-12 col-sm-4 mx-auto my-4">
-                        <a href="{{ route('menu_all_day_dining') }}" class="text-decoration-none">
+                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#all-day-menu" id="all-day-menu-link" onclick="return false;">
                             <h2 class="special-heading fs-3 fw-bold text-center">The All-Day Feast</h2>
                             <img
                                 data-src="{{ asset('v2/img/menu/all-day-dining-preview.webp') }}"
@@ -55,7 +55,16 @@
                         </a>
                     </div>
 
-                    <div class="col-12 col-sm-4 mx-auto my-4">
+                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4">
+                        <a href="{{ route('menu_sunset') }}" class="text-decoration-none">
+                            <h2 class="special-heading fs-3 fw-bold text-center">Sundowner menu</h2>
+                            <img
+                                data-src="{{ asset('v2/img/menu/sunset.webp') }}"
+                                src="{{ asset('v2/img/menu/sunset-preview.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4">
                         <a href="{{ route('menu_sushi') }}" class="text-decoration-none">
                             <h2 class="special-heading fs-3 fw-bold text-center">The Sushi Experience</h2>
                             <img data-src="{{ asset('v2/img/menu/sushis-preview.webp') }}"
@@ -63,7 +72,7 @@
                         </a>
                     </div>
 
-                    <div class="col-12 col-sm-4 mx-auto my-4">
+                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4">
                         <a href="{{ route('menu_kids') }}" class="text-decoration-none">
                             <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favourites</h2>
                             <img
@@ -121,6 +130,35 @@
         </div>
 
     </x-layout.v2>
+
+    <!-- Modal -->
+    <div class="modal fade" id="all-day-menu" tabindex="-1" aria-labelledby="#all-day-menu-link" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row my-4">
+                        <div class="col-12">
+                            <h2 class="special-heading fs-3 fw-bold text-center">The All-Day Feast</h2>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-12 col-sm-6">
+                            <a href="{{ route('menu_all_day_en') }}" class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
+                                <img src="{{ asset('v2/svg/flag-english-circle.svg') }}" alt="The All-Day Feast English" style="width: 100%;">
+                                <h4 class="special-heading fs-4 fw-bold text-center my-3">English</h4>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a href="{{ route('menu_all_day_fr') }}" class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
+                                <img src="{{ asset('v2/svg/flag-french-circle.svg') }}" alt="The All-Day Feast French" style="width: 100%;">
+                                <h4 class="special-heading fs-4 fw-bold text-center my-3">French</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('head')

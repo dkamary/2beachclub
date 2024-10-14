@@ -40,7 +40,8 @@ Route::prefix('restaurant')->group(function () {
     Route::get('/menu-sunday-brunch.pdf', [MenuController::class, 'sunday_brunch'])->name('menu_sunday');
     Route::get('/menu-sundowner.pdf', [MenuController::class, 'sundowner'])->name('menu_sunset');
     Route::get('/menu-kids.pdf', [MenuController::class, 'kids'])->name('menu_kids');
-    Route::get('/menu-all-day-dining.pdf', [MenuController::class, 'all_day'])->name('menu_all_day_dining');
+    Route::get('/menu-all-day-dining-en.pdf', [MenuController::class, 'all_day_en'])->name('menu_all_day_en');
+    Route::get('/menu-all-day-dining-fr.pdf', [MenuController::class, 'all_day_fr'])->name('menu_all_day_fr');
     Route::get('/menu-sushi.pdf', [MenuController::class, 'sushi'])->name('menu_sushi');
     Route::get('/menu-cocktails.pdf', [MenuController::class, 'cocktails'])->name('menu_cocktails');
     Route::get('/menu-drinks.pdf', [MenuController::class, 'drinks'])->name('menu_drinks');

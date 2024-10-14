@@ -30,7 +30,7 @@
                     Hungry after a refreshing dip?
                 </p>
                 <p>
-                    No problem! Dive into our beach Club delights!
+                    No problem! Dive into our beach club delights!
                 </p>
                 <p>
                     Our chef-curated menu showcases fresh salads, delectable sushi, a bounty of fresh seafood, and so much more. From lunch to dinner, our offerings will seduce your taste buds and leave you craving for more!
