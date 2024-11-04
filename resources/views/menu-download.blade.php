@@ -38,7 +38,7 @@
 
                     <div class="col-12">
                         <p>
-                            The restaurant at 2Beach Club invites you to indulge in a unique culinary experience where each menu is crafted to delight your taste buds. From the freshness of seafood to flavourful and authentic dishes, our chef has curated a selection that highlights the best local ingredients, blending tradition and innovation in every plate.
+                            The restaurant at 2Beach Club invites you to indulge in a unique culinary experience where each menu is crafted to delight your taste buds, presented in both English and French versions.
                         </p>
                     </div>
 
@@ -117,6 +117,7 @@
             background-size: cover;
             background-position: center;
             z-index: 10;
+            margin-top: 5%;
         }
 
         .english::after {
