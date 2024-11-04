@@ -34,6 +34,7 @@ Route::prefix('restaurant')->group(function () {
     // Route::redirect('{any}', '/')->where('any', '.*'); // Used to deactivate the menu
 
     Route::get('/our-menus', [MenuController::class, 'index'])->name('menu_index');
+    Route::get('/download-menus', [MenuController::class, 'menu_download'])->name('menu_download');
     Route::get('/menu.pdf', [MenuController::class, 'menu'])->name('download_menu');
     Route::get('/menu-marideal.pdf', [MenuController::class, 'mari_deal'])->name('menu_marideal');
     Route::get('/menu-easter-brunch.pdf', [MenuController::class, 'easter_brunch'])->name('menu_easter');

@@ -16,6 +16,13 @@ class MenuController extends Controller
         return view('menu');
     }
 
+    public function menu_download(): View
+    {
+        TrackingManager::pageView(route('menu_download'));
+
+        return view('menu-download');
+    }
+
     public function menu(){
         $filePath = public_path('downloads/2024-03-18-2BC-menus_Marideal.pdf');
 
