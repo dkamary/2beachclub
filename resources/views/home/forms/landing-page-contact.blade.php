@@ -11,18 +11,18 @@
         <p style="font-size: 20px;">Choose your membership. <a href="#membership-details" class="scroll-smooth d-none">See details</a></p>
         <div class="my-4">
             @handheld
-                <div class="mb-3"><label for="platinum" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum (option 1)" checked> Platinum (Option 1)</label>&nbsp;</div>
-                <div class="mb-3"><label for="platinum" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum (option 2)"> Platinum (Option 2)</label>&nbsp;</div>
+                <div class="mb-3"><label for="platinum-1" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum-1' value="platinum (option 1)" checked> Platinum (Option 1)</label>&nbsp;</div>
+                <div class="mb-3"><label for="platinum-2" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum-2' value="platinum (option 2)"> Platinum (Option 2)</label>&nbsp;</div>
                 <div class="mb-3"><label for="gold" class="flex-label"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;</div>
                 <div class="mb-3"><label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label></div>
                 <div class="mb-3"><label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="tenants" value="2future's holiday tenants"> Tenants</label></div>
             @elsehandheld
                 <div class="row mb-3">
                     <div class="col-12 col-sm-6">
-                        <label for="platinum"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum (option 1)" checked> Platinum (Option 1)</label>&nbsp;
+                        <label for="platinum-1"><input type="radio" class="form-input" name="membership" id='platinum-1' value="platinum (option 1)" checked> Platinum (Option 1)</label>&nbsp;
                     </div>
                     <div class="col-12 col-sm-6">
-                        <label for="platinum"><input type="radio" class="form-input" name="membership" id='platinum' value="platinum (option 2)" > Platinum (Option 2)</label>&nbsp;
+                        <label for="platinum-2"><input type="radio" class="form-input" name="membership" id='platinum-2' value="platinum (option 2)" > Platinum (Option 2)</label>&nbsp;
                     </div>
                 </div>
                 <div class="row">
@@ -63,7 +63,7 @@
     </div>
     <div class="form_group">
         <div class="input-container">
-            <select id="residence" name="residence" class="form-input" required>
+            <select id="residence" name="residence" class="form-input">
                 <option value="">Place of residence</option>
                 {{-- <option value="2Beach Club">2Beach Club</option> --}}
                 <option value="2Beach Residences">2Beach Residences</option>
@@ -90,13 +90,14 @@
                 <option value="Ocean Point Beachfront Residences">Ocean Point Beachfront Residences</option>
                 <option value="Serenity Villas">Serenity Villas</option>
                 <option value="Sunset Cove">Sunset Cove</option>
+                <option value="Gemstone">Sunset Cove</option>
 
             </select>
         </div>
     </div>
     <div class="form_group">
         <div class="input-container">
-            <input class="form-input" data-type="text" type="text" id="unit_number" name="unit_number" placeholder="Unit number" required="">
+            <input class="form-input" data-type="text" type="text" id="unit_number" name="unit_number" placeholder="Unit number">
         </div>
     </div>
     <div class="form_group button_row">
