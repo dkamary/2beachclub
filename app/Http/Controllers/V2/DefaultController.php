@@ -63,11 +63,13 @@ class DefaultController extends Controller
             $data = $request->validate([
                 'email' => 'required|email',
                 'name' => 'required|string|max:150',
+                'last_name' => 'required|string|max:150',
             ]);
         } catch (ValidationException $ex) {
             $data = [
                 'email' => $request->input('email'),
                 'name' => $request->input('name'),
+                'last_name' => $request->input('last_name'),
             ];
         }
 
@@ -147,11 +149,9 @@ class DefaultController extends Controller
             if ($ex1->getCode() == 400 && Str::of($ex1->getMessage())->contains(['There is no contact exists with email'])) {
 
                 try {
-                    $names = explode(' ', trim($data['name']));
-                    $name = $names[0] ?? trim($data['name']);
-                    $lastname = count($names) < 2 ? '' : (implode(' ', array_map(function($elt) use ($name){
-                        return $elt != $name ? $elt : false;
-                    }, $names)));
+                    // $names = explode(' ', trim($data['name']));
+                    $name = trim($data['name']);
+                    $lastname = trim($data['last_name']);
 
                     // On crèe le contact
                     $createContact = new Client();

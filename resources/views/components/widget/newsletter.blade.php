@@ -14,12 +14,19 @@
     </div>
 
     <div class="row mb-2">
-        <div class="col-12">
+        <div class="col-6 pe-1">
             <input type="text" name="name"
                 required
                 class="form-control"
-                placeholder="{{ $placeholder ?? 'Your name' }}"
-                aria-label="{{ $placeholder ?? 'Your name' }}">
+                placeholder="{{ $placeholder ?? 'Your first name' }}"
+                aria-label="{{ $placeholder ?? 'Your first name' }}">
+        </div>
+        <div class="col-6 ps-1">
+            <input type="text" name="last_name"
+                required
+                class="form-control"
+                placeholder="{{ $placeholder ?? 'Your last name' }}"
+                aria-label="{{ $placeholder ?? 'Your last name' }}">
         </div>
     </div>
 
