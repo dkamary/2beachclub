@@ -7,6 +7,21 @@
 @endphp
 
 <form action="{{ $form_submit }}" method="POST" class="crm_engagebay_form position-sticky" id="form-{{ $id }}">
+
+    @if ($errors->any())
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        </div>
+    @endif
+
     <div class="form_group">
         <p style="font-size: 20px;">Choose your membership. <a href="#membership-details" class="scroll-smooth d-none">See details</a></p>
         <div class="my-4">
@@ -41,24 +56,24 @@
     </div>
     <div class="form_group">
         <div class="input-container">
-            <input class="form-input" data-type="text" type="text" id="name" name="name"
-                placeholder="First name" required="">
+            <input class="form-input" data-type="text" type="text" id="name" name="name" value="{{ old('name') }}"
+                placeholder="First name" required>
         </div>
     </div>
     <div class="form_group">
         <div class="input-container">
-            <input class="form-input" data-type="text" type="text" id="last_name" name="last_name" placeholder="Last name" required="">
+            <input class="form-input" data-type="text" type="text" id="last_name" name="last_name" placeholder="Last name" value="{{ old('last_name') }}" required>
         </div>
     </div>
     <div class="form_group">
         <div class="input-container">
-            <input class="form-input" data-type="email" type="email" id="email" name="email" placeholder="Email address" required="">
+            <input class="form-input" data-type="email" type="email" id="email" name="email" placeholder="Email address" value="{{ old('email') }}" required>
         </div>
     </div>
     <div class="form_group">
         <div class="input-container">
-            <input class="form-input" data-type="phone" type="phone" id="phone" name="phone" placeholder="Phone number" required="">
-            <input type="hidden" name="phone_number" id="phone_number" value="">
+            <input class="form-input" data-type="phone" type="phone" id="phone" name="phone" placeholder="Phone number" value="{{ old('phone') }}" required>
+            <input type="hidden" name="phone_number" id="phone_number" value="{{ old('phone_number') }}">
         </div>
     </div>
     <div class="form_group">
@@ -97,7 +112,7 @@
     </div>
     <div class="form_group">
         <div class="input-container">
-            <input class="form-input" data-type="text" type="text" id="unit_number" name="unit_number" placeholder="Unit number">
+            <input class="form-input" data-type="text" type="text" id="unit_number" name="unit_number" placeholder="Unit number" value="{{ old('name') }}">
         </div>
     </div>
     <div class="form_group button_row">

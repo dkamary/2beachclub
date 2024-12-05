@@ -11,6 +11,7 @@ use GuzzleHttp\Exception\ClientException;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Illuminate\Support\Str;
+use Illuminate\Validation\ValidationException;
 
 class DefaultController extends Controller
 {
@@ -56,9 +57,19 @@ class DefaultController extends Controller
     {
         TrackingManager::submit(route('newsletter_subscribe'));
 
-        $data = $request->validate([
-            'email' => 'required|email',
-        ]);
+        $data = [];
+
+        try {
+            $data = $request->validate([
+                'email' => 'required|email',
+                'name' => 'required|string|max:150',
+            ]);
+        } catch (ValidationException $ex) {
+            $data = [
+                'email' => $request->input('email'),
+                'name' => $request->input('name'),
+            ];
+        }
 
         $client = new Client();
         try {
@@ -136,6 +147,12 @@ class DefaultController extends Controller
             if ($ex1->getCode() == 400 && Str::of($ex1->getMessage())->contains(['There is no contact exists with email'])) {
 
                 try {
+                    $names = explode(' ', trim($data['name']));
+                    $name = $names[0] ?? trim($data['name']);
+                    $lastname = count($names) < 2 ? '' : (implode(' ', array_map(function($elt) use ($name){
+                        return $elt != $name ? $elt : false;
+                    }, $names)));
+
                     // On crèe le contact
                     $createContact = new Client();
                     $body = [
@@ -147,6 +164,20 @@ class DefaultController extends Controller
                                 'field_type' => 'TEXT',
                                 'is_searchable' => false,
                                 'type' => 'SYSTEM'
+                            ],
+                            [
+                                'name' => 'name',
+                                'value' => $name,
+                                'field_type' => 'TEXT',
+                                'is_searchable' => true,
+                                'type' => 'SYSTEM',
+                            ],
+                            [
+                                'name' => 'last_name',
+                                'value' => $lastname,
+                                'field_type' => 'TEXT',
+                                'is_searchable' => true,
+                                'type' => 'SYSTEM',
                             ],
                             [
                                 'name' => 'Lead_Source',

@@ -13,17 +13,29 @@
         </div>
     </div>
 
+    <div class="row mb-2">
+        <div class="col-12">
+            <input type="text" name="name"
+                required
+                class="form-control"
+                placeholder="{{ $placeholder ?? 'Your name' }}"
+                aria-label="{{ $placeholder ?? 'Your name' }}">
+        </div>
+    </div>
+
     <div class="row mb-3">
         <div class="col-12">
-            <div class="input-group">
-                <input type="email" name="email"
-                    required
-                    class="form-control"
-                    placeholder="{{ $placeholder ?? 'Your email address' }}"
-                    aria-label="{{ $placeholder ?? 'Your email address' }}"
-                    aria-describedby="btn-submit">
-                <button class="btn btn-outline-primary" type="submit" id="btn-submit">{!! $butttonLabel ?? 'Subscribe' !!}</button>
-              </div>
+            <input type="email" name="email" class="form-control"
+                required
+                class="form-control"
+                placeholder="{{ $placeholder ?? 'Your email address' }}"
+                aria-label="{{ $placeholder ?? 'Your email address' }}">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <button class="btn btn-primary w-100 text-uppercase" type="submit" id="btn-submit">{!! $butttonLabel ?? 'Subscribe' !!}</button>
         </div>
     </div>
 
@@ -41,7 +53,9 @@
 
             .form-newsletter button[type="submit"] {
                 border-color: #3f9caa !important;
-                color: #3f9caa !important;
+                background-color: #3f9caa !important;
+                color: #fff;
+                font-size: 1.1em;
                 transition: 0.6s;
             }
 
@@ -50,9 +64,9 @@
                 color: #ffffff !important;
             }
 
-            .form-newsletter input[type="email"] {
+            .form-newsletter input {
                 border-color: #3f9caa !important;
-                border-right: none !important;
+                /* border-right: none !important; */
             }
 
         </style>
