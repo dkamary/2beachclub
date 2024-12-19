@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\V2;
 
 use App\Http\Controllers\Controller;
+use App\Managers\CRMManager;
+use App\Managers\MailManager;
 use App\Managers\TrackingManager;
 use App\Models\Event;
+use App\Models\Transaction\Result;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
@@ -89,7 +92,8 @@ class DefaultController extends Controller
 
             if ($response->getStatusCode() != 200) {
 
-                ddd($client, $response);
+                // ddd($client, $response);
+                throw new Exception(sprintf('Unexpected error: %s [%d]', $response->getReasonPhrase(), $response->getStatusCode()));
             }
 
             $contact = json_decode($response->getBody()->getContents(), true, 512, JSON_THROW_ON_ERROR);
@@ -136,7 +140,8 @@ class DefaultController extends Controller
 
                     if ($addNoteResponse->getStatusCode() != 200) {
 
-                        dd($addNote, $addNoteResponse);
+                        // dd($addNote, $addNoteResponse);
+                        throw new Exception(sprintf('Unexpected error: %s [%d]', $addNoteResponse->getReasonPhrase(), $addNoteResponse->getStatusCode()));
                     }
                 } catch (ClientException $ex3) {
                     throw $ex3;
@@ -264,7 +269,8 @@ class DefaultController extends Controller
 
                     if ($createContactResponse->getStatusCode() != 200) {
 
-                        ddd($createContact, $createContactResponse);
+                        // ddd($createContact, $createContactResponse);
+                        throw new Exception(sprintf('Unexpected error: %s [%d]', $createContactResponse->getReasonPhrase(), $createContactResponse->getStatusCode()));
                     }
                 } catch (ClientException $ex2) {
 
@@ -272,6 +278,11 @@ class DefaultController extends Controller
                 }
             }
         }
+
+        // We send email here
+        $email = trim($data['email']);
+        $content = view('v2.mail.thank-you', ['email' => $email])->render();
+        MailManager::send($email, 'Thank you for joining the 2Beach Club community!', $content);
 
         return view('v2.thank-you');
     }
@@ -295,5 +306,143 @@ class DefaultController extends Controller
         TrackingManager::pageView(route('event_weddings_and_celebrations'));
 
         return view('v2/weddings-celebrations');
+    }
+
+    public function thankyou(): View
+    {
+        return view('v2.mail.thank-you');
+    }
+
+    public function unsubscribe(string $email): View
+    {
+        // ddd($email);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+            return view('v2.exception', [
+                'title' => 'Non well formed email',
+                'exception' => 'Non well formed email',
+            ]);
+        }
+
+        $contact = null;
+        $client = new Client();
+        try {
+            $response = $client->get(
+                sprintf('https://app.engagebay.com/dev/api/panel/subscribers/contact-by-email/%s', $email),
+                [
+                    'verify' => false,
+                    'headers' => [
+                        // 'Authorization' => '8qddhtf1cfmi8g6p2fmv0akg59', // Test
+                        'Authorization' => 'o39t0g1n0bk3h7sr0vti9t1son', // Prod
+                        'Accept' => 'application/json',
+                    ]
+                ]
+            );
+
+            if ($response->getStatusCode() != 200) {
+                ddd($response);
+                return view('v2.exception', [
+                    'title' => sprintf('Error: %d', $response->getStatusCode()),
+                    'exception' => sprintf('Unexpected error during the request to the CRM: %s [%d]', $response->getReasonPhrase(), $response->getStatusCode()),
+                ]);
+            }
+
+            $contact = json_decode($response->getBody()->getContents(), true, 512, JSON_THROW_ON_ERROR);
+
+            if (!empty($contact)) {
+                // On ajoute une note
+                $addNote = new Client();
+                $displayName = '';
+
+                if (!empty($contact['fullname'])) {
+                    $displayName = trim($contact['fullname']);
+                } else {
+                    if (!empty($contact['firstname'])) {
+                        $displayName = trim($contact['firstname']);
+                    }
+                    if (!empty($contact['lastname'])) {
+                        $displayName .= (!empty($displayName) ? ' ' : '') . trim($contact['lastname']);
+                    }
+                    if (empty($displayName)) {
+                        $displayName = $email;
+                    }
+                }
+
+                try {
+                    $body = [
+                        'parentId' => $contact['id'] ?? 0,
+                        'subject' => sprintf('Contact `%s` unsubscribe from our 2Beach Club newsletter', $displayName),
+                        'content' => sprintf('Contact `%s` unsubscribe from our 2Beach Club newsletter', $displayName)
+                    ];
+
+                    $addNoteResponse = $addNote->post(
+                        'https://app.engagebay.com/dev/api/panel/notes',
+                        [
+                            'verify' => false,
+                            'headers' => [
+                                // 'Authorization' => '8qddhtf1cfmi8g6p2fmv0akg59', // Test
+                                'Authorization' => 'o39t0g1n0bk3h7sr0vti9t1son', // Prod
+                                'Accept' => 'application/json',
+                                'Content-Type' => 'application/json',
+                            ],
+                            'json' => $body,
+                        ]
+                    );
+
+                    if ($addNoteResponse->getStatusCode() != 200) {
+
+                        ddd($addNote, $addNoteResponse);
+                        return view('v2.exception', [
+                            'title' => sprintf('Error: %d', $addNoteResponse->getStatusCode()),
+                            'exception' => sprintf('Unexpected error during adding note: %s [%d]', $addNoteResponse->getReasonPhrase(), $addNoteResponse->getStatusCode()),
+                        ]);
+                    }
+                } catch (ClientException $ex3) {
+                    ddd($ex3);
+                    return view('v2.exception', [
+                        'title' => sprintf('Error: %d', $ex3->getCode()),
+                        'exception' => sprintf(
+                            'Error Code: %d<br>Error Message: %s<br>File: %s<br>Line: %d',
+                            $ex3->getCode(),
+                            $ex3->getMessage(),
+                            $ex3->getFile(),
+                            $ex3->getLine()
+                        ),
+                    ]);
+                }
+            } else {
+                ddd('Contact not found ????');
+                throw new Exception('Contact not found ????');
+            }
+        } catch (ClientException $ex1) {
+
+            if ($ex1->getCode() == 400 && Str::of($ex1->getMessage())->contains(['There is no contact exists with email'])) {
+
+                return view('v2.unsubscribed', [
+                    'contact' => $contact,
+                    'result' => new Result(
+                        status: Result::DONE,
+                        message: 'You have been unsubscribed from 2Beach Club newsletters',
+                        data: $contact,
+                    ),
+                ]);
+            }
+
+
+            // throw $ex1;
+            // Don't do anything: He/She wants to unsubscribe and he is not in the CRM so it's OK
+        }
+
+        if ($contact) {
+            // Unsubscribe
+        }
+
+        // ddd($contact);
+        $result = CRMManager::unsubscribe($contact);
+
+        return view('v2.unsubscribed', [
+            'contact' => $contact,
+            'result' => $result,
+        ]);
     }
 }

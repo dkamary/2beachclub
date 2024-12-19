@@ -296,111 +296,43 @@ class CRMManager
         return $result;
     }
 
-    // public static function changeOwner(int|Contact $contact, string $ownerEmail): Result
-    // {
-    //     debug_app(__METHOD__, [
-    //         'contact' => $contact,
-    //         'owner_email' => $ownerEmail,
-    //     ]);
+    public static function unsubscribe($contact): Result
+    {
+        if (is_null($contact)) {
+            $contact = (object)['id' => 0];
+        } elseif (is_array($contact)) {
+            $contact = (object)$contact;
+        }
 
-    //     $contactId = is_int($contact) ? $contact : (int)$contact->id;
+        Log::debug(__METHOD__, [
+            'contact_id' => $contact->id ?? null,
+        ]);
 
-    //     if ($contactId == 0) {
-    //         log_error("delete Contact => contactId can't be 0", [
-    //             'contact' => $contact,
-    //         ]);
+        $contactId = (int)($contact->id ?? null);
+        if (!$contactId) {
 
-    //         return new Result(
-    //             status: Result::FAILED,
-    //             message: 'Contact ID can not be 0',
-    //             data: $contact
-    //         );
-    //     }
+            return new Result(
+                status: Result::DONE,
+                message: 'No contact ID',
+                data: $contact
+            );
+        }
 
-    //     $uri = sprintf(config('engagebay.contact_change_owner'), $contactId, $ownerEmail);
-    //     $result = RequestManager::post(
-    //         uri: $uri,
-    //         headers: self::getHeaders(),
-    //         data2send: []
-    //     );
+        $result = self::updateContact($contactId, [
+            [
+                'name' => 'Can_We_Contact?',
+                'value' => 'No',
+                'field_type' => self::FIELD_TYPE_LIST,
+                'type' => self::TYPE_CUSTOM,
+                'is_searchable' => true,
+            ]
+        ]);
 
-    //     return $result;
-    // }
+        if ($result->isSuccess()) {
 
-    // public static function addContactNote(int|Contact $contact, string $subject, string $content): Result
-    // {
-    //     debug_app(__METHOD__, [
-    //         'contact' => $contact,
-    //         'subject' => $subject,
-    //         'content' => $content,
-    //     ]);
+            $result->setMessage('You have been unsubscribed from 2Beach Club newsletters.');
+        }
 
-    //     $contactId = is_int($contact) ? $contact : (int)$contact->id;
-
-    //     if ($contactId == 0) {
-    //         log_error("addContactNote => contactId can't be 0", [
-    //             'contact' => $contact,
-    //             'subject' => $subject,
-    //             'content' => $content,
-    //         ]);
-
-    //         return new Result(
-    //             status: Result::FAILED,
-    //             message: 'Contact ID can not be 0',
-    //             data: $contact
-    //         );
-    //     }
-
-    //     $uri = config('engagebay.contact_add_note');
-
-    //     $result = RequestManager::post(
-    //         uri: $uri,
-    //         headers: self::getHeaders(),
-    //         data2send: [
-    //             'parentId' => $contactId,
-    //             'subject' => $subject,
-    //             'content' => $content,
-    //         ]
-    //     );
-
-    //     return $result;
-    // }
-
-    // public static function getAllContactNotes(int|Contact $contact): Result
-    // {
-    //     debug_app(__METHOD__, [
-    //         'contact' => $contact,
-    //     ]);
-
-    //     $contactId = is_int($contact) ? $contact : (int)$contact->id;
-
-    //     if ($contactId == 0) {
-    //         log_error("Get All Contact Notes => contactId can't be 0", [
-    //             'contact' => $contact,
-    //         ]);
-
-    //         return new Result(
-    //             status: Result::FAILED,
-    //             message: 'Contact ID can not be 0',
-    //             data: $contact
-    //         );
-    //     }
-
-    //     $uri = sprintf(config('engagebay.contact_notes'), $contactId);
-    //     $result = RequestManager::get(
-    //         uri: $uri,
-    //         headers: self::getHeaders()
-    //     );
-
-    //     if (!$result->isSuccess()) return $result;
-
-    //     $notes = [];
-    //     foreach ($result->getData() as $data) {
-    //         $notes[] = new ContactNote($data);
-    //     }
-
-    //     $result->setData($notes);
-
-    //     return $result;
-    // }
+        return $result;
+    }
 }

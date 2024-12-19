@@ -4,6 +4,7 @@ use App\Http\Controllers\AssetController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\V2\DefaultController;
 use App\Http\Controllers\V2\MenuController;
 use Illuminate\Support\Facades\Route;
 
