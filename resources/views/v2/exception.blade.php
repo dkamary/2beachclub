@@ -14,7 +14,7 @@
     <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" :title="$headerTitle" :icon="false">
 
         <div class="container bg-white my-5">
-            {!! $exception ?? 'Unexpected error *' !!}
+            <h3 class="text-center">{!! $exception ?? 'Unexpected error *' !!}</h3>
         </div>
 
     </x-layout.v2>
