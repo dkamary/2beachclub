@@ -340,7 +340,7 @@ class DefaultController extends Controller
             );
 
             if ($response->getStatusCode() != 200) {
-                ddd($response);
+                // ddd($response);
                 return view('v2.exception', [
                     'title' => sprintf('Error: %d', $response->getStatusCode()),
                     'exception' => sprintf('Unexpected error during the request to the CRM: %s [%d]', $response->getReasonPhrase(), $response->getStatusCode()),
@@ -391,14 +391,14 @@ class DefaultController extends Controller
 
                     if ($addNoteResponse->getStatusCode() != 200) {
 
-                        ddd($addNote, $addNoteResponse);
+                        // ddd($addNote, $addNoteResponse);
                         return view('v2.exception', [
                             'title' => sprintf('Error: %d', $addNoteResponse->getStatusCode()),
                             'exception' => sprintf('Unexpected error during adding note: %s [%d]', $addNoteResponse->getReasonPhrase(), $addNoteResponse->getStatusCode()),
                         ]);
                     }
                 } catch (ClientException $ex3) {
-                    ddd($ex3);
+                    // ddd($ex3);
                     return view('v2.exception', [
                         'title' => sprintf('Error: %d', $ex3->getCode()),
                         'exception' => sprintf(
@@ -411,7 +411,7 @@ class DefaultController extends Controller
                     ]);
                 }
             } else {
-                ddd('Contact not found ????');
+                // ddd('Contact not found ????');
                 throw new Exception('Contact not found ????');
             }
         } catch (ClientException $ex1) {
@@ -435,10 +435,10 @@ class DefaultController extends Controller
 
         if ($contact) {
             // Unsubscribe
+            $result = CRMManager::unsubscribe($contact);
         }
 
         // ddd($contact);
-        $result = CRMManager::unsubscribe($contact);
 
         return view('v2.unsubscribed', [
             'contact' => $contact,

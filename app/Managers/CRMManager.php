@@ -45,6 +45,10 @@ class CRMManager
 
     public static function getHeaders(): array
     {
+        if (!isset(self::$_headers['Authorization']) || is_null(self::$_headers['Authorization'])) {
+            self::$_headers['Authorization'] = config('engagebay.api_key');
+        }
+
         return self::$_headers;
     }
 
@@ -255,13 +259,15 @@ class CRMManager
         }
 
         $uri = config('engagebay.contact_update');
+        self::setHeader('Content-Type', 'application/json');
         $result = RequestManager::put(
             $uri,
             [
                 'id' => $contactId,
                 'properties' => $data
             ],
-            self::getHeaders()
+            self::getHeaders(),
+            false
         );
 
         return $result;

@@ -14,8 +14,10 @@
     <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" :title="$headerTitle" :icon="false">
 
         <div class="container bg-white my-5">
-            <h3 class="text-center">{!! $exception ?? 'Unexpected error *' !!}</h3>
+            <h2 class="mb-5 pb-5 text-center text-muted">{!! $exception ?? 'Unexpected error *' !!}</h2>
         </div>
+
+        <x-v2.upcoming-events id="upcoming-events" :class="['container', 'bg-white', 'my-5']" />
 
     </x-layout.v2>
 @endsection
