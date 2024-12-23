@@ -12,6 +12,7 @@ use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
@@ -453,17 +454,24 @@ class DefaultController extends Controller
             ];
             // dd($payload);
 
-            $response = $client->put(
-                'https://app.engagebay.com/dev/api/panel/subscribers/update-partial',
-                [
-                    'headers' => [
-                        'Authorization' => config('engagebay.api_key_prod'),
-                        'Accept' => 'application/json',
-                        'Content-Type' => 'application/json'
-                    ],
-                    'json' => $payload
-                ]
-            );
+            try {
+                $response = $client->put(
+                    'https://app.engagebay.com/dev/api/panel/subscribers/update-partial',
+                    [
+                        'headers' => [
+                            'Authorization' => config('engagebay.api_key_prod'),
+                            'Accept' => 'application/json',
+                            'Content-Type' => 'application/json'
+                        ],
+                        'json' => $payload
+                    ]
+                );
+            } catch (Exception $ex) {
+                Log::debug($ex->getMessage(), [
+                    'payload' => $payload,
+                    'key' => config('engagebay.api_key_prod'),
+                ]);
+            }
         }
 
         // ddd($contact);
