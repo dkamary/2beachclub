@@ -435,14 +435,42 @@ class DefaultController extends Controller
 
         if ($contact) {
             // Unsubscribe
-            $result = CRMManager::unsubscribe($contact);
+            $client = new Client([
+                'verify' => false
+            ]);
+
+            $payload = [
+                'id' => (int)($contact['id'] ?? null),
+                'properties' => [
+                    [
+                        'name' => 'Can_We_Contact?',
+                        'value' => 'Yes',
+                        'field_type' => 'LIST',
+                        'is_searchable' => false,
+                        'type' => 'CUSTOM'
+                    ],
+                ]
+            ];
+            // dd($payload);
+
+            $response = $client->put(
+                'https://app.engagebay.com/dev/api/panel/subscribers/update-partial',
+                [
+                    'headers' => [
+                        'Authorization' => config('engagebay.api_key_prod'),
+                        'Accept' => 'application/json',
+                        'Content-Type' => 'application/json'
+                    ],
+                    'json' => $payload
+                ]
+            );
         }
 
         // ddd($contact);
 
         return view('v2.unsubscribed', [
             'contact' => $contact,
-            'result' => $result,
+            // 'result' => $result,
         ]);
     }
 }

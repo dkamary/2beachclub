@@ -330,7 +330,7 @@ class CRMManager
                 'value' => 'No',
                 'field_type' => self::FIELD_TYPE_LIST,
                 'type' => self::TYPE_CUSTOM,
-                'is_searchable' => true,
+                'is_searchable' => false,
             ]
         ]);
 

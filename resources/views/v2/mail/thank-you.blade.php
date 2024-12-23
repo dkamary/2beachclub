@@ -68,9 +68,9 @@
                             <td align="center" style="padding: 10px 20px;">
                                 <p style="Margin: 0; font-size: 14px; color: #333333;">Follow us on social media</p>
                                 <p>
-                                    <a href="{{ config('2beachclub.facebook') }}" target="_blank"><img src="{{ asset('v2/svg/facebook.svg') }}" alt="facebook" height="32" width="32"></a>
+                                    <a href="{{ config('2beachclub.facebook') }}" target="_blank"><img src="{{ asset('v2/svg/facebook.svg') }}" alt="facebook" height="32" width="32" style="width: 32px; height: 32px;"></a>
                                     &nbsp;
-                                    <a href="{{ config('2beachclub.instagram') }}" target="_blank"><img src="{{ asset('v2/svg/instagram.svg') }}" alt="instagram" height="32" width="32"></a>
+                                    <a href="{{ config('2beachclub.instagram') }}" target="_blank"><img src="{{ asset('v2/svg/instagram.svg') }}" alt="instagram" height="32" width="32" style="width: 32px; height: 32px;"></a>
 
                                 </p>
                             </td>
