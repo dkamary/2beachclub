@@ -71,6 +71,34 @@ class DefaultController extends Controller
             return view('v2.thank-you');
         }
 
+        // Google recaptcha
+        $secret = config('2beachclub.recaptcha.secret');
+        $response = $_POST['g-recaptcha-response'];
+        $remoteip = $_SERVER['REMOTE_ADDR'];
+
+        $url = 'https://www.google.com/recaptcha/api/siteverify';
+        $data = array('secret' => $secret, 'response' => $response, 'remoteip' => $remoteip);
+
+        $options = array(
+            'http' => array(
+                'method' => 'POST',
+                'content' => http_build_query($data)
+            )
+        );
+
+        $context = stream_context_create($options);
+        $verify = file_get_contents($url, false, $context);
+        $captcha_success = json_decode($verify);
+
+        if (!$captcha_success->success) {
+            // Le reCAPTCHA est invalide, affichez un message d'erreur
+
+            // Robots trap
+            Log::warning('reCAPTCHA not valid', $request->all());
+
+            return view('v2.thank-you');
+        }
+
         $data = [];
 
         try {
@@ -162,12 +190,22 @@ class DefaultController extends Controller
                 throw new Exception('Contact not found ????');
             }
         } catch (ClientException $ex1) {
+
             if ($ex1->getCode() == 400 && Str::of($ex1->getMessage())->contains(['There is no contact exists with email'])) {
 
                 try {
                     // $names = explode(' ', trim($data['name']));
                     $name = trim($data['name']);
                     $lastname = trim($data['last_name']);
+                    $email = trim($data['email']);
+
+                    // Custom spam filter
+                    if (is_spam($name . ' ' . $lastname, $email)) {
+
+                        Log::warning('Lead submission detected as spam', $request->all());
+
+                        return view('v2.thank-you');
+                    }
 
                     // On crèe le contact
                     $createContact = new Client();
@@ -176,7 +214,7 @@ class DefaultController extends Controller
                         'properties' => [
                             [
                                 'name' => 'email',
-                                'value' => trim($data['email']),
+                                'value' => $email,
                                 'field_type' => 'TEXT',
                                 'is_searchable' => false,
                                 'type' => 'SYSTEM'

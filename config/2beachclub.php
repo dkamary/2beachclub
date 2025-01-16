@@ -18,4 +18,8 @@ return [
         'sushi' => 'downloads/Sushi-Menu-2024-10-14.pdf',
         'sundowner' => 'downloads/Sundowner-Menu-2024-10-14.pdf',
     ],
+    'recaptcha' => [
+        'key' => '6LccbLkqAAAAAOT34v6h0TRLxy_qsCliDkCts0-l',
+        'secret' => '6LccbLkqAAAAAIlD38tny7xZ5iqOr4ZH_baDWY53',
+    ],
 ];
