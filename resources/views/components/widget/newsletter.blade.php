@@ -40,6 +40,15 @@
         </div>
     </div>
 
+    <div class="row mb-3" style="display: none;">
+        <div class="col-12">
+            <input type="text" name="reflex" class="form-control"
+                class="form-control"
+                placeholder="{{ $placeholder ?? 'Your comment' }}"
+                aria-label="{{ $placeholder ?? 'Your comment' }}">
+        </div>
+    </div>
+
     <div class="row mb-3">
         <div class="col-12">
             <button class="btn btn-primary w-100 text-uppercase" type="submit" id="btn-submit">{!! $butttonLabel ?? 'Subscribe' !!}</button>

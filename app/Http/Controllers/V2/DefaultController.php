@@ -61,6 +61,16 @@ class DefaultController extends Controller
     {
         TrackingManager::submit(route('newsletter_subscribe'));
 
+        // honey pot verification
+        $honeyPot = trim($request->input('reflex', ''));
+        if (!empty($honeyPot)) {
+
+            // Robots trap
+            Log::warning('Robots spammeur detecté', $request->all());
+
+            return view('v2.thank-you');
+        }
+
         $data = [];
 
         try {
