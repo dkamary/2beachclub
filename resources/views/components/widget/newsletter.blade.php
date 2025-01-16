@@ -57,7 +57,7 @@
 
     <input type="hidden" name="referral_url" value="{{ request()->headers->get('referrer', $_SERVER['HTTP_REFERER'] ?? null) }}">
 
-    <div class="g-recaptcha" data-sitekey="{{ config('2beachclub.recaptcha.key') }}" data-callback="onSubmit"></div>
+    {{-- <div class="g-recaptcha" data-sitekey="{{ config('2beachclub.recaptcha.key') }}" data-callback="onSubmit"></div> --}}
 
     @csrf
 
@@ -89,7 +89,7 @@
 
         </style>
 
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        {{-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
 
     @endpush
 
