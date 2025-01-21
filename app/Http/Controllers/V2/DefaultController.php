@@ -346,6 +346,8 @@ class DefaultController extends Controller
         $content = view('v2.mail.thank-you', ['email' => $email])->render();
         MailManager::send($email, 'Thank you for joining the 2Beach Club community!', $content);
 
+        Log::info(sprintf('Subscriber "%s" <%s>', $data['name'] . ' ' . $data['last_name'], $data['email']), $data);
+
         return view('v2.thank-you');
     }
 
