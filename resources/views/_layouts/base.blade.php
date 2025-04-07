@@ -9,6 +9,7 @@
     @stack('head')
     <x-widget.google-analytics />
     <x-widget.facebook-pixel />
+    <x-widget.cookie-consent />
 </head>
 
 <body class="@stack('body_class')">

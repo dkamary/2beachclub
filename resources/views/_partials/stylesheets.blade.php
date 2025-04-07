@@ -19,3 +19,33 @@
     <link rel="stylesheet" href="{{ asset('v2/slick/slick-theme.css') }}">
 @endhandheld
 <link rel="stylesheet" href="{{ asset('v2/css/gallery-photo.css') }}">
+<style id="cookie-consent-styles">
+    body {
+        position: relative;
+    }
+
+    .cookie-consent-banner {
+        display: none;
+        position: fixed;
+        bottom: 2rem;
+        left: 49%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background-color: #fff;
+        color: #333;
+        padding: 1rem;
+        width: 400px;
+        max-width: 90%;
+        box-shadow: 3px 2px 12px -4px rgba(0, 0, 0, 0.5);
+        border-radius: 14px;
+        border: solid 1.5px #666;
+    }
+
+    @media (min-width: 576px) {
+        .cookie-consent-banner {
+            left: unset;
+            right: 2rem;
+            transform: unset;
+        }
+    }
+</style>
