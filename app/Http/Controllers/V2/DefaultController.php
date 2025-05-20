@@ -11,7 +11,9 @@ use App\Models\Transaction\Result;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
 use Illuminate\Support\Str;
@@ -349,6 +351,12 @@ class DefaultController extends Controller
         Log::info(sprintf('Subscriber "%s" <%s>', $data['name'] . ' ' . $data['last_name'], $data['email']), $data);
 
         return view('v2.thank-you');
+    }
+
+    public function newsletter_get(): RedirectResponse
+    {
+        return redirect()
+            ->route('home', [], 301);
     }
 
     public function private_gathering(): View

@@ -25,6 +25,9 @@ Route::prefix('/newsletter')->group(function () {
     Route::post('/subscribe', [DefaultController::class, 'newsletter'])
         ->name('newsletter_subscribe');
 
+    Route::get('/subscribe', [DefaultController::class, 'newsletter_get'])
+        ->name('newsletter_subscribe_get');
+
     Route::get('/thankyou', [DefaultController::class, 'thankyou'])
         ->name('newsletter_thankyou');
 
