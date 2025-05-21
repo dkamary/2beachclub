@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\V2\DefaultController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,7 @@ Route::prefix('/events')->group(function () {
         return redirect()
             ->route('event_weddings_and_celebrations', [], 301);
     });
+
 });
 
 Route::get('/event/{slug}', [DefaultController::class, 'event'])->name('event');
@@ -34,3 +36,5 @@ Route::prefix('/newsletter')->group(function () {
     Route::get('/unsubscribe/{email}', [DefaultController::class, 'unsubscribe'])
         ->name('newsletter_unsubscribe');
 });
+
+Route::get('/generate-sitemap', [SitemapController::class, 'generate'])->name('sitemap.generator');
