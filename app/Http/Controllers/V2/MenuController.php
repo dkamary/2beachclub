@@ -63,7 +63,7 @@ class MenuController extends Controller
     }
 
     public function sunday_brunch(){
-        $filepath = public_path('downloads/2beach-club-sunday-brunch-menu.pdf');
+        $filepath = public_path('downloads/' . config('2beachclub.menu.sunday'));
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_sunday'));

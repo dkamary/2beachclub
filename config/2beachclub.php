@@ -17,6 +17,7 @@ return [
         'all-day-fr' => 'downloads/All-day-dining-FR-2025-05.pdf',
         'sushi' => 'downloads/Sushi-Menu-2024-10-14.pdf',
         'sundowner' => 'downloads/Sundowner-Menu-2025-05.pdf',
+        'sunday' => '2025-06-12-Brunch-Menu-Sunday.jpg',
     ],
     'recaptcha' => [
         'key' => '6LccbLkqAAAAAOT34v6h0TRLxy_qsCliDkCts0-l',

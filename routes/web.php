@@ -36,18 +36,18 @@ Route::prefix('restaurant')->group(function () {
 
     Route::get('/our-menus', [MenuController::class, 'index'])->name('menu_index');
     Route::get('/download-menus', [MenuController::class, 'menu_download'])->name('menu_download');
-    Route::get('/menu.pdf', [MenuController::class, 'menu'])->name('download_menu');
-    Route::get('/menu-marideal.pdf', [MenuController::class, 'mari_deal'])->name('menu_marideal');
-    Route::get('/menu-easter-brunch.pdf', [MenuController::class, 'easter_brunch'])->name('menu_easter');
-    Route::get('/menu-sunday-brunch.pdf', [MenuController::class, 'sunday_brunch'])->name('menu_sunday');
-    Route::get('/menu-sundowner.pdf', [MenuController::class, 'sundowner'])->name('menu_sunset');
-    Route::get('/menu-kids.pdf', [MenuController::class, 'kids'])->name('menu_kids');
-    Route::get('/menu-all-day-dining-en.pdf', [MenuController::class, 'all_day_en'])->name('menu_all_day_en');
-    Route::get('/menu-all-day-dining-fr.pdf', [MenuController::class, 'all_day_fr'])->name('menu_all_day_fr');
-    Route::get('/menu-sushi.pdf', [MenuController::class, 'sushi'])->name('menu_sushi');
-    Route::get('/menu-cocktails.pdf', [MenuController::class, 'cocktails'])->name('menu_cocktails');
-    Route::get('/menu-drinks.pdf', [MenuController::class, 'drinks'])->name('menu_drinks');
-    Route::get('/menu-brunch-for-a-cause.pdf', [MenuController::class, 'brunch_for_cause'])->name('menu_brunch_for_a_cause');
+    Route::get('/menu', [MenuController::class, 'menu'])->name('download_menu');
+    Route::get('/menu-marideal', [MenuController::class, 'mari_deal'])->name('menu_marideal');
+    Route::get('/menu-easter-brunch', [MenuController::class, 'easter_brunch'])->name('menu_easter');
+    Route::get('/menu-sunday-brunch', [MenuController::class, 'sunday_brunch'])->name('menu_sunday');
+    Route::get('/menu-sundowner', [MenuController::class, 'sundowner'])->name('menu_sunset');
+    Route::get('/menu-kids', [MenuController::class, 'kids'])->name('menu_kids');
+    Route::get('/menu-all-day-dining-en', [MenuController::class, 'all_day_en'])->name('menu_all_day_en');
+    Route::get('/menu-all-day-dining-fr', [MenuController::class, 'all_day_fr'])->name('menu_all_day_fr');
+    Route::get('/menu-sushi', [MenuController::class, 'sushi'])->name('menu_sushi');
+    Route::get('/menu-cocktails', [MenuController::class, 'cocktails'])->name('menu_cocktails');
+    Route::get('/menu-drinks', [MenuController::class, 'drinks'])->name('menu_drinks');
+    Route::get('/menu-brunch-for-a-cause', [MenuController::class, 'brunch_for_cause'])->name('menu_brunch_for_a_cause');
 
 });
 
