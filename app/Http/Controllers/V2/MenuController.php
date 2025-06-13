@@ -5,6 +5,7 @@ namespace App\Http\Controllers\V2;
 use App\Http\Controllers\Controller;
 use App\Managers\TrackingManager;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Illuminate\View\View;
 
 class MenuController extends Controller
@@ -29,7 +30,11 @@ class MenuController extends Controller
         if (file_exists($filePath)) {
             TrackingManager::download(route('download_menu'));
 
-            return response()->download($filePath);
+            // return response()->download($filePath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filePath), 404);
@@ -42,7 +47,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_marideal'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -55,7 +64,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_easter'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -68,7 +81,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_sunday'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -81,7 +98,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_sunset'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -94,7 +115,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_kids'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -107,7 +132,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_all_day_en'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -120,7 +149,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_all_day_fr'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -133,7 +166,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_sushi'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -146,7 +183,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_cocktails'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -159,7 +200,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_drinks'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
@@ -172,7 +217,11 @@ class MenuController extends Controller
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_brunch_for_a_cause'));
 
-            return response()->download($filepath);
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
         } else {
 
             return response(sprintf('File `%s` not found', $filepath), 404);
