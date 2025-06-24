@@ -55,7 +55,7 @@
                         </a>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4">
+                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4" style="display: none !important;">
                         <a href="{{ route('menu_sunset') }}" class="text-decoration-none">
                             <h2 class="special-heading fs-3 fw-bold text-center">Sundowner menu</h2>
                             <img
@@ -80,49 +80,6 @@
                                 src="{{ asset('v2/img/menu/Kids-burger-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
                         </a>
                     </div>
-
-                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('event_meetings') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Meetings &<br class="d-none d-sm-block d-lg-none"> Events</h2>
-                            <img data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square.webp') }}"
-                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('event_weddings_and_celebrations') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Weddings & Celebrations</h2>
-                            <img
-                                data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-weddings-square.webp') }}"
-                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-weddings-square-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('event_meetings') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Meetings &<br class="d-none d-sm-block d-lg-none"> Events</h2>
-                            <img data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square.webp') }}"
-                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('event_weddings_and_celebrations') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Weddings & Celebrations</h2>
-                            <img
-                                data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-weddings-square.webp') }}"
-                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-weddings-square-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
-                        </a>
-                    </div>
-
-                    <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('event_meetings') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Meetings &<br class="d-none d-sm-block d-lg-none"> Events</h2>
-                            <img data-src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square.webp') }}"
-                                src="{{ asset('v2/img/events/private-gatherings/2beach-club-meetings-and-events-corporate-square-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
-                        </a>
-                    </div> --}}
-
                 </div>
 
             </x-widget.section>

@@ -31,9 +31,9 @@ class MenuController extends Controller
             TrackingManager::download(route('download_menu'));
 
             // return response()->download($filePath);
-            return Response::file($filepath, [
-                'Content-Type' => mime_content_type($filepath),
-                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            return Response::file($filePath, [
+                'Content-Type' => mime_content_type($filePath),
+                'Content-Disposition' => 'inline; filename="' . basename($filePath) . '"',
             ]);
         } else {
 
