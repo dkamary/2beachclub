@@ -46,38 +46,99 @@
 
                 <div class="row my-4 g-3">
 
-                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4">
-                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#all-day-menu" id="all-day-menu-link" onclick="return false;">
-                            <h2 class="special-heading fs-3 fw-bold text-center">The All-Day Feast</h2>
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a href="#" class="text-decoration-none new-menu" data-bs-toggle="modal" data-bs-target="#all-day-menu" id="all-day-menu-link" onclick="return false;">
                             <img
-                                data-src="{{ asset('v2/img/menu/all-day-dining-preview.webp') }}"
-                                src="{{ asset('v2/img/menu/all-day-dining-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            data-src="{{ asset('v2/img/menu/all-day-dining-preview.webp') }}"
+                            src="{{ asset('v2/img/menu/all-day-dining-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">The All-Day Feast</h2>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4" style="display: none !important;">
-                        <a href="{{ route('menu_sunset') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Sundowner menu</h2>
+                    <div class="col-12 col-sm-6 mx-auto my-4" style="display: none !important;">
+                        <a href="{{ route('menu_sunset') }}" class="text-decoration-none new-menu">
+
                             <img
                                 data-src="{{ asset('v2/img/menu/sunset.webp') }}"
                                 src="{{ asset('v2/img/menu/sunset-preview.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Sundowner menu</h2>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4">
-                        <a href="{{ route('menu_sushi') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">The Sushi Experience</h2>
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a href="{{ route('menu_sushi') }}" class="text-decoration-none new-menu">
+
                             <img data-src="{{ asset('v2/img/menu/sushis-preview.webp') }}"
                                 src="{{ asset('v2/img/menu/sushis-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">The Sushi Experience</h2>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-xl-3x mx-auto my-4">
-                        <a href="{{ route('menu_kids') }}" class="text-decoration-none">
-                            <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favourites</h2>
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a href="{{ route('menu_kids') }}" class="text-decoration-none new-menu">
+
                             <img
                                 data-src="{{ asset('v2/img/menu/Kids-burger.webp') }}"
                                 src="{{ asset('v2/img/menu/Kids-burger-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favourites</h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    {{-- New menu --}}
+
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a href="{{ route('menu_aurora') }}" class="text-decoration-none new-menu">
+
+                            <img
+                                data-src="{{ asset('v2/img/menu/2Beach-Club-Aurora-Fridays.webp') }}"
+                                src="{{ asset('v2/img/menu/2Beach-Club-Aurora-Fridays-preview.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Aurora Fridays</h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a href="{{ route('menu_saturday') }}" class="text-decoration-none new-menu">
+
+                            <img
+                                data-src="{{ asset('v2/img/menu/2Beach-Club-Saturday-Tides-Flavours.webp') }}"
+                                src="{{ asset('v2/img/menu/2Beach-Club-Saturday-Tides-Flavours-preview.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Saturday Tides & Flavours</h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a href="{{ route('menu_sunday_fiesta') }}" class="text-decoration-none new-menu">
+
+                            <img
+                                data-src="{{ asset('v2/img/menu/2Beach-Club-Sunday-Surf-Selection.webp') }}"
+                                src="{{ asset('v2/img/menu/2Beach-Club-Sunday-Surf-Selection-preview.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Sunday Fiesta Selection</h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a href="{{ route('menu_tropical_winter') }}" class="text-decoration-none new-menu">
+
+                            <img
+                                data-src="{{ asset('v2/img/menu/2Beach-Club-Tropical-Winter-Specials.webp') }}"
+                                src="{{ asset('v2/img/menu/2Beach-Club-Tropical-Winter-Specials-preview.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Tropical Winter Mood</h2>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -122,6 +183,55 @@
     <style id="private-gathering--styles">
         .text-overlapping {
             margin-top: -10rem;
+        }
+
+        .new-menu {
+            position: relative;
+            display: block;
+        }
+
+        .new-menu::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            z-index: 10;
+            opacity: 0;
+            transition: .6s ease-in-out;
+            filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.5));
+            background-repeat: no-repeat;
+            background-size: 33%;
+            background-position: center;
+            background-image: url({{ asset('v2/svg/download.svg') }});
+        }
+
+        .new-menu:hover::before {
+            opacity: 1;
+        }
+
+        .new-menu .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 1rem .5rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: linear-gradient( to top, rgba(63, 156, 170, 0.7), rgba(63, 156, 170, 0.15) );
+        }
+
+        .new-menu .title-container .special-heading {
+            color: #ffffff;
+            text-shadow: 0 0 4px rgba(63, 156, 170, .9);
         }
 
         @media screen and (max-width: 576px) {

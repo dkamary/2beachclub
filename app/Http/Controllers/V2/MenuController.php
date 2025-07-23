@@ -228,4 +228,72 @@ class MenuController extends Controller
         }
     }
 
+    public function aurora(){
+        $filepath = public_path(config('2beachclub.menu.aurora'));
+
+        if (file_exists($filepath)) {
+            TrackingManager::download(route('menu_aurora'));
+
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
+
+    public function saturday(){
+        $filepath = public_path(config('2beachclub.menu.saturday'));
+
+        if (file_exists($filepath)) {
+            TrackingManager::download(route('menu_saturday'));
+
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
+
+    public function sunday(){
+        $filepath = public_path(config('2beachclub.menu.sunday-fiesta'));
+
+        if (file_exists($filepath)) {
+            TrackingManager::download(route('menu_sunday_fiesta'));
+
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
+
+    public function tropical(){
+        $filepath = public_path(config('2beachclub.menu.tropical-winter'));
+
+        if (file_exists($filepath)) {
+            TrackingManager::download(route('menu_tropical_winter'));
+
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
+
 }

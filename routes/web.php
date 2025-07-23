@@ -48,6 +48,10 @@ Route::prefix('restaurant')->group(function () {
     Route::get('/menu-cocktails', [MenuController::class, 'cocktails'])->name('menu_cocktails');
     Route::get('/menu-drinks', [MenuController::class, 'drinks'])->name('menu_drinks');
     Route::get('/menu-brunch-for-a-cause', [MenuController::class, 'brunch_for_cause'])->name('menu_brunch_for_a_cause');
+    Route::get('/menu-aurora', [MenuController::class, 'aurora'])->name('menu_aurora');
+    Route::get('/menu-saturday', [MenuController::class, 'saturday'])->name('menu_saturday');
+    Route::get('/menu-sunday-fiesta', [MenuController::class, 'sunday'])->name('menu_sunday_fiesta');
+    Route::get('/menu-tropical-winter', [MenuController::class, 'tropical'])->name('menu_tropical_winter');
 
 });
 

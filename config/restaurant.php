@@ -26,4 +26,13 @@ return [
     //     'preview' => 'v2/img/restaurant/gallery/Restaurant-05-preview.webp',
     //     'thumbnail' => 'v2/img/restaurant/gallery/Restaurant-05-preview-1.webp',
     // ],
+    'menus' => [
+        'xxx' => [
+            'name' => 'XXX',
+            'route' => 'xxx',
+            'image' => 'xxx',
+            'image_preview' => 'xxx',
+            'modal' => [],
+        ],
+    ],
 ];

@@ -18,6 +18,10 @@ return [
         'sushi' => 'downloads/Sushi-Menu-2024-10-14.pdf',
         'sundowner' => 'downloads/Sundowner-Menu-2025-05.pdf',
         'sunday' => '2025-06-12-Brunch-Menu-Sunday.jpg',
+        'aurora' => 'downloads/2Beach-Club-Aurora-Fridays-Menu.pdf',
+        'saturday' => 'downloads/2Beach-Club-Saturday-Tides-Flavours-Menu.pdf',
+        'sunday-fiesta' => 'downloads/2Beach-Club-Sunday-Fiesta-Selection-Menu.pdf',
+        'tropical-winter' => 'downloads/2Beach-Club-Tropical-Winter-Mood-Menu.pdf',
     ],
     'recaptcha' => [
         'key' => '6LccbLkqAAAAAOT34v6h0TRLxy_qsCliDkCts0-l',
