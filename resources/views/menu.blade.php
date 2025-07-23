@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mx-auto my-4" style="display: none !important;">
-                        <a href="{{ route('menu_sunset') }}" class="text-decoration-none new-menu">
+                        <a target="_blank" href="{{ route('menu_sunset') }}" class="text-decoration-none new-menu">
 
                             <img
                                 data-src="{{ asset('v2/img/menu/sunset.webp') }}"
@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('menu_sushi') }}" class="text-decoration-none new-menu">
+                        <a target="_blank" href="{{ route('menu_sushi') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/sushis-preview.webp') }}"
                                 src="{{ asset('v2/img/menu/sushis-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('menu_kids') }}" class="text-decoration-none new-menu">
+                        <a target="_blank" href="{{ route('menu_kids') }}" class="text-decoration-none new-menu">
 
                             <img
                                 data-src="{{ asset('v2/img/menu/Kids-burger.webp') }}"
@@ -95,7 +95,7 @@
                     {{-- New menu --}}
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('menu_aurora') }}" class="text-decoration-none new-menu">
+                        <a target="_blank" href="{{ route('menu_aurora') }}" class="text-decoration-none new-menu">
 
                             <img
                                 data-src="{{ asset('v2/img/menu/2Beach-Club-Aurora-Fridays.webp') }}"
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('menu_saturday') }}" class="text-decoration-none new-menu">
+                        <a target="_blank" href="{{ route('menu_saturday') }}" class="text-decoration-none new-menu">
 
                             <img
                                 data-src="{{ asset('v2/img/menu/2Beach-Club-Saturday-Tides-Flavours.webp') }}"
@@ -119,7 +119,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('menu_sunday_fiesta') }}" class="text-decoration-none new-menu">
+                        <a target="_blank" href="{{ route('menu_sunday_fiesta') }}" class="text-decoration-none new-menu">
 
                             <img
                                 data-src="{{ asset('v2/img/menu/2Beach-Club-Sunday-Surf-Selection.webp') }}"
@@ -131,7 +131,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="{{ route('menu_tropical_winter') }}" class="text-decoration-none new-menu">
+                        <a target="_blank" href="{{ route('menu_tropical_winter') }}" class="text-decoration-none new-menu">
 
                             <img
                                 data-src="{{ asset('v2/img/menu/2Beach-Club-Tropical-Winter-Specials.webp') }}"
@@ -161,13 +161,13 @@
                     </div>
                     <div class="row my-4">
                         <div class="col-12 col-sm-6">
-                            <a href="{{ route('menu_all_day_en') }}" class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
+                            <a target="_blank" href="{{ route('menu_all_day_en') }}" class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
                                 <img src="{{ asset('v2/svg/flag-english-circle.svg') }}" alt="The All-Day Feast English" style="width: 100%;">
                                 <h4 class="special-heading fs-4 fw-bold text-center my-3">English</h4>
                             </a>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <a href="{{ route('menu_all_day_fr') }}" class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
+                            <a target="_blank" href="{{ route('menu_all_day_fr') }}" class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
                                 <img src="{{ asset('v2/svg/flag-french-circle.svg') }}" alt="The All-Day Feast French" style="width: 100%;">
                                 <h4 class="special-heading fs-4 fw-bold text-center my-3">French</h4>
                             </a>
