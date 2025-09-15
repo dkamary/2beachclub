@@ -52,6 +52,8 @@ Route::prefix('restaurant')->group(function () {
     Route::get('/menu-saturday', [MenuController::class, 'saturday'])->name('menu_saturday');
     Route::get('/menu-sunday-fiesta', [MenuController::class, 'sunday'])->name('menu_sunday_fiesta');
     Route::get('/menu-tropical-winter', [MenuController::class, 'tropical'])->name('menu_tropical_winter');
+    Route::get('/menu-coffee', [MenuController::class, 'tropical'])->name('menu_coffee');
+    Route::get('/menu-wine', [MenuController::class, 'tropical'])->name('menu_wine');
 
 });
 

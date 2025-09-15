@@ -76,7 +76,7 @@ class MenuController extends Controller
     }
 
     public function sunday_brunch(){
-        $filepath = public_path('downloads/' . config('2beachclub.menu.sunday'));
+        $filepath = public_path(config('2beachclub.menu.sunday'));
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_sunday'));
@@ -178,7 +178,7 @@ class MenuController extends Controller
     }
 
     public function cocktails(){
-        $filepath = public_path('downloads/2024-07-08-2BCmenus-new-COCKTAILS-Digital.pdf');
+        $filepath = public_path(config('2beachclub.menu.cocktail'));
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_cocktails'));
@@ -195,7 +195,7 @@ class MenuController extends Controller
     }
 
     public function drinks(){
-        $filepath = public_path('downloads/2024-07-17-2BCmenus-new-DRINK-Digital.pdf');
+        $filepath = public_path(config('2beachclub.menu.drink'));
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_drinks'));
@@ -284,6 +284,40 @@ class MenuController extends Controller
 
         if (file_exists($filepath)) {
             TrackingManager::download(route('menu_tropical_winter'));
+
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
+
+    public function coffee(){
+        $filepath = public_path(config('2beachclub.menu.coffee'));
+
+        if (file_exists($filepath)) {
+            TrackingManager::download(route('menu_coffee'));
+
+            // return response()->download($filepath);
+            return Response::file($filepath, [
+                'Content-Type' => mime_content_type($filepath),
+                'Content-Disposition' => 'inline; filename="' . basename($filepath) . '"',
+            ]);
+        } else {
+
+            return response(sprintf('File `%s` not found', $filepath), 404);
+        }
+    }
+
+    public function wine(){
+        $filepath = public_path(config('2beachclub.menu.wine'));
+
+        if (file_exists($filepath)) {
+            TrackingManager::download(route('menu_wine'));
 
             // return response()->download($filepath);
             return Response::file($filepath, [

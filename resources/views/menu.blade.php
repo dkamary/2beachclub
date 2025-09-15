@@ -46,8 +46,9 @@
 
                 <div class="row my-4 g-3">
 
+                    {{-- All-day feat --}}
                     <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a href="#" class="text-decoration-none new-menu" data-bs-toggle="modal" data-bs-target="#all-day-menu" id="all-day-menu-link" onclick="return false;">
+                        <a target="_blank" href="{{ route('menu_all_day_en') }}" class="text-decoration-none new-menu" {{-- data-bs-toggle="modal" data-bs-target="#all-day-menu" id="all-day-menu-link" onclick="return false;" --}}>
                             <img
                             data-src="{{ asset('v2/img/menu/all-day-dining-preview.webp') }}"
                             src="{{ asset('v2/img/menu/all-day-dining-preview-1.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
@@ -56,7 +57,7 @@
                             </div>
                         </a>
                     </div>
-
+{{-- 
                     <div class="col-12 col-sm-6 mx-auto my-4" style="display: none !important;">
                         <a target="_blank" href="{{ route('menu_sunset') }}" class="text-decoration-none new-menu">
 
@@ -67,9 +68,22 @@
                                 <h2 class="special-heading fs-3 fw-bold text-center">Sundowner menu</h2>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
 
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 mx-auto my-4" style="display: none !important;">
+                        <a target="_blank" href="{{ route('menu_sunset') }}" class="text-decoration-none new-menu">
+
+                            <img
+                                data-src="{{ asset('v2/img/menu/sunset.webp') }}"
+                                src="{{ asset('v2/img/menu/sunset-preview.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Sundowner menu</h2>
+                            </div>
+                        </a>
+                    </div> --}}
+
+                    {{-- Sushi --}}
+                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_sushi') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/sushis-preview.webp') }}"
@@ -78,8 +92,21 @@
                                 <h2 class="special-heading fs-3 fw-bold text-center">The Sushi Experience</h2>
                             </div>
                         </a>
+                    </div> --}}
+
+                    {{-- Coffee --}}
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a target="_blank" href="{{ route('menu_coffee') }}" class="text-decoration-none new-menu">
+
+                            <img data-src="{{ asset('v2/img/menu/2Beach-Club-Coffee-Banner-Website.webp') }}"
+                                src="{{ asset('v2/img/menu/2Beach-Club-Coffee-Banner-Website-preview.webp') }}" alt="" class="img-fluid lazy-load-image w-100">
+                            <div class="title-container">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Coffee Menu</h2>
+                            </div>
+                        </a>
                     </div>
 
+                    {{-- Kids --}}
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_kids') }}" class="text-decoration-none new-menu">
 
@@ -92,8 +119,7 @@
                         </a>
                     </div>
 
-                    {{-- New menu --}}
-
+                    {{-- Aurora --}}
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_aurora') }}" class="text-decoration-none new-menu">
 
@@ -106,6 +132,7 @@
                         </a>
                     </div>
 
+                    {{-- Saturday --}}
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_saturday') }}" class="text-decoration-none new-menu">
 
@@ -118,6 +145,7 @@
                         </a>
                     </div>
 
+                    {{-- Sunday --}}
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_sunday_fiesta') }}" class="text-decoration-none new-menu">
 
@@ -130,6 +158,7 @@
                         </a>
                     </div>
 
+                    {{-- Tropical Winter --}}
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_tropical_winter') }}" class="text-decoration-none new-menu">
 
@@ -232,6 +261,11 @@
         .new-menu .title-container .special-heading {
             color: #ffffff;
             text-shadow: 0 0 4px rgba(63, 156, 170, .9);
+        }
+
+        .new-menu img {
+            aspect-ratio: 1/1;
+            object-fit: cover;
         }
 
         @media screen and (max-width: 576px) {
