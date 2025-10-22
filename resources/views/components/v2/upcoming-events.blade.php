@@ -4,7 +4,8 @@
 
     $class = array_merge(['container'], $class ?? []);
     $id = $id ?? uniqid('upcoming-events');
-    $events = get_upcoming_events(['*'], date('Y-m-d'), 3, 'ASC');
+    $events = get_upcoming_events(['*'], null, 3, 'ASC');
+    $count = $events->count();
 
 @endphp
 
@@ -22,7 +23,11 @@
 
         @foreach ($events as $event)
 
-        <div class="col-12 col-sm-7 col-lg-4 mb-4-nope mx-auto">
+        <div @class([
+            'col-12 col-sm-7 mb-4-nope mx-auto',
+            'col-lg-4' => $count == 3,
+            'col-md-6' => $count == 2,
+        ])>
             <x-widget.section
                 :lazyload="true"
                 :bg-image="get_asset($event->preview_image)"

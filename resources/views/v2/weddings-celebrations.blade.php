@@ -195,3 +195,7 @@
         }
     </style>
 @endpush
+
+@section('popup')
+    @include('_partials.popup')
+@endsection

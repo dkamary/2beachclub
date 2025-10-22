@@ -58,6 +58,10 @@
     </x-layout.v2>
 @endsection
 
+@section('popup')
+    @include('_partials.popup')
+@endsection
+
 @push('head')
     <style id="events--styles">
         .two-buttons {

@@ -25,11 +25,11 @@ if (!function_exists('get_meta')) {
             $meta = config('meta.page.index');
         } elseif ($routeName == 'become_member' || strpos($routeName, 'membership') !== false) {
             $meta = config('meta.page.membership');
-        } elseif($routeName == 'private_gathering') {
+        } elseif ($routeName == 'private_gathering') {
             $meta = config('meta.page.private-gatherings');
-        } elseif($routeName == 'event_meetings') {
+        } elseif ($routeName == 'event_meetings') {
             $meta = config('meta.page.event-meetings');
-        } elseif($routeName == 'event_weddings_and_celebrations') {
+        } elseif ($routeName == 'event_weddings_and_celebrations') {
             $meta = config('meta.page.weddings-celebrations');
         } elseif (strpos($routeName, 'event') !== false) {
             $meta = config('meta.page.events');
@@ -47,7 +47,6 @@ if (!function_exists('get_gallery')) {
     {
         return config('gallery');
     }
-
 }
 
 if (!function_exists('get_upcoming_events')) {
@@ -55,23 +54,30 @@ if (!function_exists('get_upcoming_events')) {
     function get_upcoming_events(array $columns = ['*'], ?string $date = null, int $limit = 3, ?string $order = 'ASC'): array|Collection
     {
         $query = Event::query();
-        $date = is_null($date) ? date('Y-m-d') : $date;
+        // $date = is_null($date) ? date('Y-m-d') : $date;
 
-        $query->where(function(Builder $builder) use($date) {
-            $builder->whereDate('validity_start', '<=', $date);
-            $builder->whereDate('validity_end', '>=', $date);
+        $query->where('is_active', 1);
+
+        if (!empty($date)) {
+            $query->where(function (Builder $builder) use ($date) {
+                $builder->whereDate('validity_start', '<=', $date);
+                $builder->whereDate('validity_end', '>=', $date);
+            });
+        }
+
+        $query->where(function (Builder $builder) {
+            $builder->whereNull('validity_start', 'OR');
+            $builder->whereNull('validity_end', 'OR');
         });
-
-        $query->whereNull('validity_start', 'OR');
-        $query->whereNull('validity_end', 'OR');
 
         $query
             ->orderBy('rank', $order)
             ->limit($limit);
 
+        dump($query->getQuery()->toSql());
+
         return $query->get($columns);
     }
-
 }
 
 if (!function_exists('get_asset')) {

@@ -20,6 +20,9 @@
         <x-v2.contact-us id="contact-us" :class="['container', 'bg-white']" />
         {{-- <div class="container bg-white py-4"></div> --}}
         <x-v2.google-map id="find-us" :class="['container', 'bg-white', 'mb-5']" />
-
     </x-layout.v2>
+@endsection
+
+@section('popup')
+    @include('_partials.popup')
 @endsection

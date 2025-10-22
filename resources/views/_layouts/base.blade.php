@@ -16,6 +16,7 @@
     @yield('header')
     @yield('main')
     @yield('footer')
+    @yield('popup')
     @include('_partials.javascripts')
     @yield('javascripts')
     @stack('foot')

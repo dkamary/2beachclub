@@ -10,6 +10,10 @@
 
 @extends('_layouts.base')
 
+@section('popup')
+    @include('_partials.popup')
+@endsection
+
 @section('main')
     <x-layout.v2 :hero-header="true" bg-image="{{ $headerBg }}" :title="$headerTitle" :icon="true">
 

@@ -48,6 +48,7 @@ class DefaultController extends Controller
 
         $event = Event::query()
             ->where('slug', 'LIKE', $slug)
+            ->where('is_active', 1)
             ->first();
 
         if (!$event) {
