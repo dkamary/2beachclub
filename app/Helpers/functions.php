@@ -74,7 +74,7 @@ if (!function_exists('get_upcoming_events')) {
             ->orderBy('rank', $order)
             ->limit($limit);
 
-        dump($query->getQuery()->toSql());
+        // dump($query->getQuery()->toSql());
 
         return $query->get($columns);
     }
