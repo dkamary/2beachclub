@@ -17,7 +17,6 @@ Route::prefix('/events')->group(function () {
         return redirect()
             ->route('event_weddings_and_celebrations', [], 301);
     });
-
 });
 
 Route::get('/event/{slug}', [DefaultController::class, 'event'])->name('event');
@@ -38,3 +37,7 @@ Route::prefix('/newsletter')->group(function () {
 });
 
 Route::get('/generate-sitemap', [SitemapController::class, 'generate'])->name('sitemap.generator');
+
+Route::get('/whatsapp-reservation', function () {
+    return redirect('https://lnk.2futures.com?url=2bc-reservation-whatsapp', 301);
+})->name('whatsapp_reservation');
