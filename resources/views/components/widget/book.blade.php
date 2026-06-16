@@ -4,7 +4,7 @@
     {{-- <a href="{{ route($link ?? 'booking_tracking') }}" class="text-uppercase">
         Book a table
     </a> --}}
-    <a href="https://eatapp.co/reserve/2beachclub?source=iframe" onclick="eatapp_ShowWidget.apply(this, arguments)" target="_blank">
+    <a href="https://eatapp.co/reserve/2beachclub" onclick="eatapp_ShowWidget.apply(this, arguments)" target="_blank">
         BOOK TABLE
     </a>
 </div>
@@ -38,8 +38,8 @@
 
     @endpush
 
-    @push('footer')
+    {{-- @push('foot')
         <script type="text/javascript" src="https://d183cnjuwjcs99.cloudfront.net/assets/widget/widget-iframe.min.js" async></script>
-    @endpush
+    @endpush --}}
 
 @endonce

@@ -41,3 +41,8 @@ Route::get('/generate-sitemap', [SitemapController::class, 'generate'])->name('s
 Route::get('/whatsapp-reservation', function () {
     return redirect('https://lnk.2futures.com?url=2bc-reservation-whatsapp', 301);
 })->name('whatsapp_reservation');
+
+// New reservation link
+Route::get('/restaurant/reservation', function () {
+    return redirect('https://lnk.2futures.com/eatapp-reservation', 301);
+})->name('restaurant_reservation');

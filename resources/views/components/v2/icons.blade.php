@@ -30,7 +30,7 @@
         </div>
 
         <div class="col-4 col-sm-2 d-flex my-3 align-items-center">
-            <a href="{{ route('whatsapp_reservation') }}" class="text-center d-flex flex-column align-items-center justify-content-center w-100 icon-and-text">
+            <a href="{{ route('restaurant_reservation') }}" class="text-center d-flex flex-column align-items-center justify-content-center w-100 icon-and-text">
                 <img src="{{ asset('v2/svg/Reservation.svg') }}" alt="restaurant" width="135" class="icon-item" />
                 <span>Reservation</span>
             </a>
