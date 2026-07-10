@@ -13,19 +13,16 @@
 <header class='header-container header-container-2 {{ !$icon ? 'no-icon' : '' }}'>
 
     <nav @class($class)>
+
         {{-- HEADER --}}
         <div class="container">
             <div class="row">
-                <div class="col-6 col-sm-4 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mx-auto mt-3">
+                <div
+                    class="col-6 col-sm-4 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mx-auto mt-3">
                     <a href="{{ $home }}" class="logo-link">
-
-                        <img
-                            src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo-mini.webp') }}"
-                            data-src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo.webp') }}"
-                            alt="2beach-club-logo"
-                            class="img-fluid lazy-load-image"
-                        />
-
+                        <img src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo-mini.webp') }}"
+                            data-src="{{ asset('v2/img/2Beach-Club-by-2F-Final-logo.webp') }}" alt="2beach-club-logo"
+                            class="img-fluid lazy-load-image" />
                     </a>
                 </div>
             </div>
@@ -35,7 +32,6 @@
         <x-widget.menu>
             <ul>
                 <li class="mb-3"><a href="{{ $home }}" class="smooth-scroll">Home</a></li>
-                {{-- <li class="mb-3"><a href="{{ $home }}#opening-hours" class="smooth-scroll">Opening Hours</a></li> --}}
                 <li class="mb-3"><a href="{{ $home }}#restaurant" class="smooth-scroll">Restaurant</a></li>
                 <li class="mb-3"><a href="{{ $home }}#beach-and-pool" class="smooth-scroll">Beach & Pool</a></li>
                 <li class="mb-3"><a href="{{ $home }}#events" class="smooth-scroll">Events</a></li>
@@ -128,11 +124,9 @@
             }
 
             .linear-bg {
-                background-image: linear-gradient(
-                    to bottom,
-                    rgba(63, 156, 170, 0.7),
-                    rgba(63, 156, 170, 0.15)
-                );
+                background-image: linear-gradient(to bottom,
+                        rgba(63, 156, 170, 0.7),
+                        rgba(63, 156, 170, 0.15));
             }
 
             @media screen and (min-width: 576px) {
@@ -152,7 +146,6 @@
                     height: 25vh;
                 }
             }
-
         </style>
 
     @endpush
