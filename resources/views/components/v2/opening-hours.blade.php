@@ -52,7 +52,7 @@
 
             <div class="col-12 col-sm-3 d-flex justify-content-center align-items-center flex-column mb-3">
                 <div class="hours text-center mb-2">
-                    <span class="fs-3">11</span><span class="fs-5">AM</span> - <span class="fs-3">6</span><span
+                    <span class="fs-3">11</span><span class="fs-5">AM</span> - <span class="fs-3">7</span><span
                         class="fs-5">PM</span>
                 </div>
                 <div class="days text-center mb-2">
