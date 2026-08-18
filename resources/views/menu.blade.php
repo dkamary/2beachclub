@@ -44,10 +44,9 @@
                 <div class="row my-4 g-3">
 
                     {{-- All-day feat --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a target="_blank" href="{{ route('menu_all_day_en') }}" class="text-decoration-none new-menu" {{--
-                            data-bs-toggle="modal" data-bs-target="#all-day-menu" id="all-day-menu-link"
-                            onclick="return false;" --}}>
+                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a target="_blank" href="{{ route('menu_all_day_en') }}" class="text-decoration-none new-menu">
+
                             <img data-src="{{ asset('v2/img/menu/all-day-dining-preview.webp') }}"
                                 src="{{ asset('v2/img/menu/all-day-dining-preview-1.webp') }}" alt=""
                                 class="img-fluid lazy-load-image w-100">
@@ -55,7 +54,7 @@
                                 <h2 class="special-heading fs-3 fw-bold text-center">The All-Day Feast</h2>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
 
                     {{-- Coffee --}}
                     <div class="col-12 col-sm-6 mx-auto my-4">
