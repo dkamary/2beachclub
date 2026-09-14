@@ -83,7 +83,7 @@
                     </div>
 
                     {{-- Aurora --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_aurora') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Aurora-Fridays.webp') }}"
@@ -93,10 +93,10 @@
                                 <h2 class="special-heading fs-3 fw-bold text-center">Aurora Fridays</h2>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
 
                     {{-- Saturday --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_saturday') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Saturday-Tides-Flavours.webp') }}"
@@ -106,10 +106,10 @@
                                 <h2 class="special-heading fs-3 fw-bold text-center">Saturday Tides & Flavours</h2>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
 
                     {{-- Sunday --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_sunday_fiesta') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Sunday-Surf-Selection.webp') }}"
@@ -119,7 +119,7 @@
                                 <h2 class="special-heading fs-3 fw-bold text-center">Sunday Fiesta Selection</h2>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
 
                     {{-- Tropical Winter --}}
                     <div class="col-12 col-sm-6 mx-auto my-4">
