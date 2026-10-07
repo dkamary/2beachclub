@@ -13,8 +13,8 @@ return [
     'whatsapp-channel' => 'https://whatsapp.com/channel/0029VaDhFGQ4dTnLrv1vl83l',
     'menu' => [
         'kids-menu' => 'downloads/2026-10-05-kids-menu.pdf',
-        'all-day-en' => 'downloads/2026-10-05-2beach-club-menu.pdf',
-        'all-day-fr' => 'downloads/2026-10-05-2beach-club-menu.pdf',
+        'all-day-en' => 'downloads/2026-10-07_Food-Menu_MQ.pdf',
+        'all-day-fr' => 'downloads/2026-10-07_Food-Menu_MQ.pdf',
         'sushi' => 'downloads/Sushi-Menu-2024-10-14.pdf',
         'sundowner' => 'downloads/Sundowner-Menu-2025-05.pdf',
         'sunday' => 'downloads/2025-06-12-Brunch-Menu-Sunday.jpg',

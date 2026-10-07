@@ -47,11 +47,24 @@
                     <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_all_day_en') }}" class="text-decoration-none new-menu">
 
-                            <img data-src="{{ asset('v2/img/menu/2Beach-Menu.webp') }}"
-                                src="{{ asset('v2/img/menu/2Beach-Menu-1.webp') }}" alt=""
+                            <img data-src="{{ asset('v2/img/menu/2beach-club-food-menu.webp') }}"
+                                src="{{ asset('v2/img/menu/2beach-club-food-menu-preview.webp') }}" alt=""
                                 class="img-fluid lazy-load-image w-100">
-                            <div class="title-container">
+                            <div class="title-container opacity-0">
                                 <h2 class="special-heading fs-3 fw-bold text-center">The All-Day Feast</h2>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    {{-- Kids --}}
+                    <div class="col-12 col-sm-6 mx-auto my-4">
+                        <a target="_blank" href="{{ route('menu_kids') }}" class="text-decoration-none new-menu">
+
+                            <img data-src="{{ asset('v2/img/menu/2beach-club-kids-menu.webp') }}"
+                                src="{{ asset('v2/img/menu/2beach-club-kids-menu-preview.webp') }}" alt=""
+                                class="img-fluid lazy-load-image w-100">
+                            <div class="title-container opacity-0">
+                                <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favourites</h2>
                             </div>
                         </a>
                     </div>
@@ -69,18 +82,7 @@
                         </a>
                     </div>
 
-                    {{-- Kids --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
-                        <a target="_blank" href="{{ route('menu_kids') }}" class="text-decoration-none new-menu">
-
-                            <img data-src="{{ asset('v2/img/menu/kids-preview.webp') }}"
-                                src="{{ asset('v2/img/menu/Kids-Menu.webp') }}" alt=""
-                                class="img-fluid lazy-load-image w-100">
-                            <div class="title-container">
-                                <h2 class="special-heading fs-3 fw-bold text-center">Kids’ Favourites</h2>
-                            </div>
-                        </a>
-                    </div>
+                    
 
                     {{-- Aurora --}}
                     {{-- <div class="col-12 col-sm-6 mx-auto my-4">
@@ -122,7 +124,7 @@
                     </div> --}}
 
                     {{-- Tropical Winter --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_tropical_winter') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Tropical-Winter-Specials.webp') }}"
@@ -132,7 +134,7 @@
                                 <h2 class="special-heading fs-3 fw-bold text-center">Tropical Winter Mood</h2>
                             </div>
                         </a>
-                    </div>
+                    </div> --}}
                 </div>
 
             </x-widget.section>
