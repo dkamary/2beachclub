@@ -22,6 +22,13 @@
         </div>
     @endif
 
+    @if (!empty($membership))
+    {{-- Tier page: options hidden, tier preselected --}}
+    <div class="form_group">
+        <p style="font-size: 20px;">Your membership: <strong>{{ $membershipLabel ?? $membership }}</strong></p>
+        <input type="hidden" name="membership" value="{{ $membership }}">
+    </div>
+    @else
     <div class="form_group">
         <p style="font-size: 20px;">Choose your membership. <a href="#membership-details" class="scroll-smooth d-none">See details</a></p>
         <div class="my-4">
@@ -54,6 +61,7 @@
             @endhandheld
         </div>
     </div>
+    @endif
     <div class="form_group">
         <div class="input-container">
             <input class="form-input" data-type="text" type="text" id="name" name="name" value="{{ old('name') }}"
