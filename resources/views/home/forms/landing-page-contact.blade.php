@@ -37,7 +37,7 @@
                 <div class="mb-3"><label for="platinum-2" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum-2' value="platinum (option 2)"> Platinum (Option 2)</label>&nbsp;</div>
                 <div class="mb-3"><label for="gold" class="flex-label"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;</div>
                 <div class="mb-3"><label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label></div>
-                <div class="mb-3"><label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="tenants" value="2future's holiday tenants"> Tenants</label></div>
+                <div class="mb-3"><label for="tenants" class="flex-label"><input type="radio" class="form-input" name="membership" id="tenants" value="2future's holiday tenants"> Tenants</label></div>
             @elsehandheld
                 <div class="row mb-3">
                     <div class="col-12 col-sm-6">
@@ -89,38 +89,38 @@
             <select id="residence" name="residence" class="form-input">
                 <option value="">Place of residence</option>
                 {{-- <option value="2Beach Club">2Beach Club</option> --}}
-                <option value="2Beach Residences">2Beach Residences</option>
-                <option value="AO Residences">AO Residences</option>
-                <option value="Cape Bay">Cape Bay</option>
-                <option value="Casa Alegria">Casa Alegria</option>
-                <option value="Element Bay Beach">Element Bay Beach</option>
-                <option value="Element Bay II">Element Bay II</option>
+                <option value="2Beach Residences"{{ old('residence') === '2Beach Residences' ? ' selected' : '' }}>2Beach Residences</option>
+                <option value="AO Residences"{{ old('residence') === 'AO Residences' ? ' selected' : '' }}>AO Residences</option>
+                <option value="Cape Bay"{{ old('residence') === 'Cape Bay' ? ' selected' : '' }}>Cape Bay</option>
+                <option value="Casa Alegria"{{ old('residence') === 'Casa Alegria' ? ' selected' : '' }}>Casa Alegria</option>
+                <option value="Element Bay Beach"{{ old('residence') === 'Element Bay Beach' ? ' selected' : '' }}>Element Bay Beach</option>
+                <option value="Element Bay II"{{ old('residence') === 'Element Bay II' ? ' selected' : '' }}>Element Bay II</option>
                 {{-- <option value="Grand Baie Business Quarters">Grand Baie Business Quarters</option> --}}
-                <option value="Infinity by the Sea">Infinity by the Sea</option>
-                <option value="Ki Residences">Ki Residences</option>
-                <option value="Ki Resort">Ki Resort</option>
-                <option value="La Pirogue Residences">La Pirogue Residences</option>
-                <option value="La Residence">La Residence</option>
-                <option value="Le Barachois Beachfront Residences">Le Barachois Beachfront Residences</option>
-                <option value="Le Domaine de Grand Baie">Le Domaine de Grand Baie</option>
-                <option value="Les Residences de Mont Choisy">Les Residences de Mont Choisy</option>
-                <option value="Manta Cove">Manta Cove</option>
-                <option value="Marina Bay">Marina Bay</option>
+                <option value="Infinity by the Sea"{{ old('residence') === 'Infinity by the Sea' ? ' selected' : '' }}>Infinity by the Sea</option>
+                <option value="Ki Residences"{{ old('residence') === 'Ki Residences' ? ' selected' : '' }}>Ki Residences</option>
+                <option value="Ki Resort"{{ old('residence') === 'Ki Resort' ? ' selected' : '' }}>Ki Resort</option>
+                <option value="La Pirogue Residences"{{ old('residence') === 'La Pirogue Residences' ? ' selected' : '' }}>La Pirogue Residences</option>
+                <option value="La Residence"{{ old('residence') === 'La Residence' ? ' selected' : '' }}>La Residence</option>
+                <option value="Le Barachois Beachfront Residences"{{ old('residence') === 'Le Barachois Beachfront Residences' ? ' selected' : '' }}>Le Barachois Beachfront Residences</option>
+                <option value="Le Domaine de Grand Baie"{{ old('residence') === 'Le Domaine de Grand Baie' ? ' selected' : '' }}>Le Domaine de Grand Baie</option>
+                <option value="Les Residences de Mont Choisy"{{ old('residence') === 'Les Residences de Mont Choisy' ? ' selected' : '' }}>Les Residences de Mont Choisy</option>
+                <option value="Manta Cove"{{ old('residence') === 'Manta Cove' ? ' selected' : '' }}>Manta Cove</option>
+                <option value="Marina Bay"{{ old('residence') === 'Marina Bay' ? ' selected' : '' }}>Marina Bay</option>
                 {{-- <option value="Mont Choisy Business Quarter - IQ">Mont Choisy Business Quarter - IQ</option>
-                <option value="Mont Choisy Business Quarter - iQ 2">Mont Choisy Business Quarter - iQ 2</option> --}}
-                <option value="Mont Choisy Le Parc">Mont Choisy Le Parc</option>
-                <option value="Ocean Grand Gaube">Ocean Grand Gaube</option>
-                <option value="Ocean Point Beachfront Residences">Ocean Point Beachfront Residences</option>
-                <option value="Serenity Villas">Serenity Villas</option>
-                <option value="Sunset Cove">Sunset Cove</option>
-                <option value="Gemstone">Sunset Cove</option>
+                <option value="Mont Choisy Business Quarter - iQ 2"{{ old('residence') === 'Mont Choisy Business Quarter - iQ 2' ? ' selected' : '' }}>Mont Choisy Business Quarter - iQ 2</option> --}}
+                <option value="Mont Choisy Le Parc"{{ old('residence') === 'Mont Choisy Le Parc' ? ' selected' : '' }}>Mont Choisy Le Parc</option>
+                <option value="Ocean Grand Gaube"{{ old('residence') === 'Ocean Grand Gaube' ? ' selected' : '' }}>Ocean Grand Gaube</option>
+                <option value="Ocean Point Beachfront Residences"{{ old('residence') === 'Ocean Point Beachfront Residences' ? ' selected' : '' }}>Ocean Point Beachfront Residences</option>
+                <option value="Serenity Villas"{{ old('residence') === 'Serenity Villas' ? ' selected' : '' }}>Serenity Villas</option>
+                <option value="Sunset Cove"{{ old('residence') === 'Sunset Cove' ? ' selected' : '' }}>Sunset Cove</option>
+                <option value="Gemstone"{{ old('residence') === 'Gemstone' ? ' selected' : '' }}>Gemstone</option>
 
             </select>
         </div>
     </div>
     <div class="form_group">
         <div class="input-container">
-            <input class="form-input" data-type="text" type="text" id="unit_number" name="unit_number" placeholder="Unit number" value="{{ old('name') }}">
+            <input class="form-input" data-type="text" type="text" id="unit_number" name="unit_number" placeholder="Unit number" value="{{ old('unit_number') }}">
         </div>
     </div>
     <div class="form_group button_row">
