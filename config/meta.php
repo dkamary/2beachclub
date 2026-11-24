@@ -15,6 +15,36 @@ return [
             'description' => 'Become a member and live the 5 -star lifestyle everyday',
             'preview' => 'v2/img/events/headers/2beach-club-saturday-sounds-sea-sunset-view-boats.webp' /*asset('img/section-1-1-2160w.webp')*/,
         ],
+        'membership_platinum_permanent' => [
+            'title' => 'Platinum Membership (Permanent) - 2Beach Club by 2Futures Mauritius',
+            'url' => 'https://2beachclub.mu/become-member/platinum-permanent',
+            'description' => 'Permanent Platinum membership at 2Beach Club, Mauritius: every club area and service, shuttle, 15% off food and beverages.',
+            'preview' => 'v2/img/2BC-Sunset-Header.webp',
+        ],
+        'membership_platinum_annual' => [
+            'title' => 'Platinum Membership (Annual) - 2Beach Club by 2Futures Mauritius',
+            'url' => 'https://2beachclub.mu/become-member/platinum-annual',
+            'description' => 'Annual Platinum membership at 2Beach Club, Mauritius: every club area and service, shuttle, 15% off food and beverages.',
+            'preview' => 'v2/img/2beach-club-areal-view.webp',
+        ],
+        'membership_gold' => [
+            'title' => 'Gold Membership - 2Beach Club by 2Futures Mauritius',
+            'url' => 'https://2beachclub.mu/become-member/gold',
+            'description' => 'Gold membership at 2Beach Club, Mauritius: restaurant, rooftop bar, pool and beach services, 10% off food and beverages.',
+            'preview' => 'v2/img/2beach-club-beach-pool.webp',
+        ],
+        'membership_silver' => [
+            'title' => 'Silver Membership - 2Beach Club by 2Futures Mauritius',
+            'url' => 'https://2beachclub.mu/become-member/silver',
+            'description' => 'Silver membership at 2Beach Club, Mauritius: restaurant, rooftop bar and pool access, 5% off food and beverages.',
+            'preview' => 'v2/img/2beach-club-restaurant-view.webp',
+        ],
+        'membership_holiday_tenants' => [
+            'title' => '2Futures Holidays Tenants - 2Beach Club by 2Futures Mauritius',
+            'url' => 'https://2beachclub.mu/become-member/holiday-tenants',
+            'description' => '2Futures Holidays tenants enjoy 2Beach Club restaurant, rooftop bar, pool and shuttle during their stay in Mauritius.',
+            'preview' => 'v2/img/2beach-club-lifestyle.webp',
+        ],
         'events' => [
             'title' => 'Events - 2Beach Club by 2Futures Mauritius',
             'url' => 'https://2beachclub.mu/events',

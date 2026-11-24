@@ -16,6 +16,11 @@ class SitemapController extends Controller
         // Add your URLs here
         $sitemap .= $this->addUrl(route('home'), date('Y-m-d'), 'monthly', '1.0');
         $sitemap .= $this->addUrl(route('become_member'), date('Y-m-d'), 'monthly', '1.0');
+        $sitemap .= $this->addUrl(route('membership_platinum_permanent'), date('Y-m-d'), 'monthly', '0.9');
+        $sitemap .= $this->addUrl(route('membership_platinum_annual'), date('Y-m-d'), 'monthly', '0.9');
+        $sitemap .= $this->addUrl(route('membership_gold'), date('Y-m-d'), 'monthly', '0.9');
+        $sitemap .= $this->addUrl(route('membership_silver'), date('Y-m-d'), 'monthly', '0.9');
+        $sitemap .= $this->addUrl(route('membership_holiday_tenants'), date('Y-m-d'), 'monthly', '0.9');
         $sitemap .= $this->addUrl(route('events'), date('Y-m-d'), 'monthly', '1.0');
         $sitemap .= $this->addUrl(route('event_meetings'), date('Y-m-d'), 'monthly', '1.0');
         $sitemap .= $this->addUrl(route('private_gathering'), date('Y-m-d'), 'monthly', '1.0');
