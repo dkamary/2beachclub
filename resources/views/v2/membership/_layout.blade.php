@@ -99,7 +99,7 @@
             <div class="row g-2 membership-tier-gallery">
                 @foreach ($tier['gallery'] as $i => $image)
                     <div class="{{ $i === 0 ? 'col-12 col-md-6' : 'col-6 col-md-3' }}">
-                        <img src="{{ asset($image) }}" alt="2Beach Club - {{ $tier['title'] }}" loading="lazy" class="img-fluid w-100">
+                        <img src="{{ asset($image['src'] ?? $image) }}" alt="{{ $image['alt'] ?? '2Beach Club - ' . $tier['title'] }}" loading="lazy" class="img-fluid w-100">
                     </div>
                 @endforeach
             </div>
