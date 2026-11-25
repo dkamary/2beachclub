@@ -92,7 +92,7 @@ return [
             'value'    => 'platinum (option 2)',
             'title'    => 'Platinum Membership',
             'subtitle' => 'Annual membership',
-            'hero'     => 'v2/img/membership/2beach-club-platinum-annual-hero.webp',
+            'hero'     => 'v2/img/membership/2beach-club-platinum-annual-hero-updated.webp',
             'band'     => '#3d4752',
             'gallery'  => [
                 ['src' => 'v2/img/membership/2beach-club-platinum-annual-gallery-1.webp', 'alt' => 'Beach lounge at 2Beach Club at sunset'],
