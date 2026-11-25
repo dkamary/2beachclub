@@ -26,6 +26,7 @@
                         <h2 class="special-heading fs-2">Discover each membership</h2>
                     </div>
                     @foreach (config('membership_tiers.tiers') as $tierCard)
+                        @continue(!($tierCard['enabled'] ?? true))
                         <div class="col-12">
                             <div class="membership-banner"
                                  style="background-image: url({{ asset($tierCard['hero']) }}); --band: {{ $tierCard['band'] }};">
@@ -43,6 +44,13 @@
                             </div>
                         </div>
                     @endforeach
+                </div>
+
+                {{-- Membership table, new presentation (previous: x-v2.membership) --}}
+                <div class="row">
+                    <div class="col-12">
+                        <x-v2.membership-comparison />
+                    </div>
                 </div>
 
             </main>

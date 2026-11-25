@@ -11,7 +11,7 @@
         Platinum Annual gives you the full Platinum experience without an entrance fee. You simply renew each year.
     </p>
     <p>
-        Five members share all club areas and services, including towels, lockers, sunbeds, the concierge and the shuttle between 2Beach Club and 2Futures residences.
+        Five members share all club areas and services, including towels, lockers, sunbeds and the shuttle between 2Beach Club and 2Futures residences from Bain Boeuf to Trou aux Biches.
     </p>
     <p>
         Enjoy 15% off food and beverages, five guest passes, and club access for your tenants when your property is rented through 2Futures Holidays.

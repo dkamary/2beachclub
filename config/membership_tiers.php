@@ -11,6 +11,7 @@
 | (resources/views/home/forms/landing-page-contact.blade.php).
 |
 | Benefit status: yes | cond (included under condition) | no
+| Tiers with 'enabled' => false are hidden and their URL redirects.
 |
 */
 
@@ -19,8 +20,7 @@ $benefits = [
     'rooftop'    => 'Rooftop bar',
     'pool'       => 'Pool',
     'beach'      => 'Towel service, locker room & beach sunbeds',
-    'concierge'  => 'Concierge service',
-    'shuttle'    => 'Shuttle between 2Beach Club and 2Futures residences (Bain Boeuf to Trou aux Biches)',
+    'shuttle'    => 'Shuttle between 2Beach Club and 2Futures residences, from Bain Boeuf to Trou aux Biches only',
     'guests'     => 'Guest passes',
     'tenants'    => 'Access for tenants (if rented through 2Futures Holidays)',
     'discount'   => 'Discount on food & beverages',
@@ -30,9 +30,25 @@ return [
 
     'benefits' => $benefits,
 
+    /*
+    | Rights of the tenants of a Platinum member (property rented through
+    | 2Futures Holidays). Source: "2Futures Holiday's tenants" column of the
+    | membership table.
+    */
+    'tenant_benefits' => [
+        'restaurant' => ['yes'],
+        'rooftop'    => ['yes'],
+        'pool'       => ['yes'],
+        'beach'      => ['cond', 'Min. spend USD 35 / person'],
+        'shuttle'    => ['yes'],
+        'guests'     => ['no'],
+        'discount'   => ['no'],
+    ],
+
     'tiers' => [
 
         'platinum-permanent' => [
+            'enabled'  => true,
             'route'    => 'membership_platinum_permanent',
             'view'     => 'v2/membership/platinum-permanent',
             'name'     => 'Platinum',
@@ -59,7 +75,6 @@ return [
                 'rooftop'    => ['yes'],
                 'pool'       => ['yes'],
                 'beach'      => ['yes'],
-                'concierge'  => ['yes'],
                 'shuttle'    => ['yes'],
                 'guests'     => ['yes', '5 per year'],
                 'tenants'    => ['yes'],
@@ -68,6 +83,7 @@ return [
         ],
 
         'platinum-annual' => [
+            'enabled'  => true,
             'route'    => 'membership_platinum_annual',
             'view'     => 'v2/membership/platinum-annual',
             'name'     => 'Platinum',
@@ -94,7 +110,6 @@ return [
                 'rooftop'    => ['yes'],
                 'pool'       => ['yes'],
                 'beach'      => ['yes'],
-                'concierge'  => ['yes'],
                 'shuttle'    => ['yes'],
                 'guests'     => ['yes', '5 per year'],
                 'tenants'    => ['yes'],
@@ -103,6 +118,7 @@ return [
         ],
 
         'gold' => [
+            'enabled'  => true,
             'route'    => 'membership_gold',
             'view'     => 'v2/membership/gold',
             'name'     => 'Gold',
@@ -129,7 +145,6 @@ return [
                 'rooftop'    => ['yes'],
                 'pool'       => ['yes'],
                 'beach'      => ['yes'],
-                'concierge'  => ['yes'],
                 'shuttle'    => ['no'],
                 'guests'     => ['yes', '5 per year'],
                 'tenants'    => ['no'],
@@ -138,6 +153,7 @@ return [
         ],
 
         'silver' => [
+            'enabled'  => true,
             'route'    => 'membership_silver',
             'view'     => 'v2/membership/silver',
             'name'     => 'Silver',
@@ -164,7 +180,6 @@ return [
                 'rooftop'    => ['yes'],
                 'pool'       => ['yes'],
                 'beach'      => ['cond', 'Min. spend USD 25 / person'],
-                'concierge'  => ['cond', 'Extra charge'],
                 'shuttle'    => ['no'],
                 'guests'     => ['yes', '2 per year'],
                 'tenants'    => ['no'],
@@ -173,6 +188,8 @@ return [
         ],
 
         'holiday-tenants' => [
+            // No longer a membership tier: tenants are included in Platinum memberships
+            'enabled'  => false,
             'route'    => 'membership_holiday_tenants',
             'view'     => 'v2/membership/holiday-tenants',
             'name'     => '2Futures Holidays Tenants',
@@ -199,7 +216,6 @@ return [
                 'rooftop'    => ['yes'],
                 'pool'       => ['yes'],
                 'beach'      => ['cond', 'Min. spend USD 35 / person'],
-                'concierge'  => ['cond', 'Extra charge'],
                 'shuttle'    => ['yes'],
                 'guests'     => ['no'],
                 'discount'   => ['no'],

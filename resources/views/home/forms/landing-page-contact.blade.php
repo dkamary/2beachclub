@@ -37,7 +37,8 @@
                 <div class="mb-3"><label for="platinum-2" class="flex-label"><input type="radio" class="form-input" name="membership" id='platinum-2' value="platinum (option 2)"> Platinum (Option 2)</label>&nbsp;</div>
                 <div class="mb-3"><label for="gold" class="flex-label"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;</div>
                 <div class="mb-3"><label for="silver" class="flex-label"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label></div>
-                <div class="mb-3"><label for="tenants" class="flex-label"><input type="radio" class="form-input" name="membership" id="tenants" value="2future's holiday tenants"> Tenants</label></div>
+                {{-- Tenants: no longer a tier (included in Platinum memberships) --}}
+                {{-- <div class="mb-3"><label for="tenants" class="flex-label"><input type="radio" class="form-input" name="membership" id="tenants" value="2future's holiday tenants"> Tenants</label></div> --}}
             @elsehandheld
                 <div class="row mb-3">
                     <div class="col-12 col-sm-6">
@@ -48,15 +49,16 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-sm-4">
+                    <div class="col-12 col-sm-6">
                         <label for="gold"><input type="radio" class="form-input" name="membership" id="gold" value="gold"> Gold</label>&nbsp;
                     </div>
-                    <div class="col-12 col-sm-4">
+                    <div class="col-12 col-sm-6">
                         <label for="silver"><input type="radio" class="form-input" name="membership" id="silver" value="silver"> Silver</label>
                     </div>
+                    {{-- Tenants: no longer a tier (included in Platinum memberships)
                     <div class="col-12 col-sm-4">
                         <label for="tenants"><input type="radio" class="form-input" name="membership" id="tenants" value="2future's holiday tenants"> Tenants</label>
-                    </div>
+                    </div> --}}
                 </div>
             @endhandheld
         </div>

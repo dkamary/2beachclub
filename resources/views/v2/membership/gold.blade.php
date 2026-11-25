@@ -8,7 +8,7 @@
 
 @section('overview')
     <p>
-        Gold is made for families and friends who come to the club often. Towels, lockers, sunbeds and the concierge are all included.
+        Gold is made for families and friends who come to the club often. Towels, lockers and sunbeds are all included.
     </p>
     <p>
         Five members enjoy 10% off food and beverages and five guest passes to share the club with the people they love.

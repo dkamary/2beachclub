@@ -4,6 +4,7 @@ namespace App\Http\Controllers\V2;
 
 use App\Http\Controllers\Controller;
 use App\Managers\TrackingManager;
+use Illuminate\Http\RedirectResponse; // used by the disabled tenants redirect
 use Illuminate\View\View;
 
 class MembershipController extends Controller
@@ -28,15 +29,24 @@ class MembershipController extends Controller
         return $this->tier('silver');
     }
 
+    /**
+     * 2Futures Holidays tenants are no longer a tier: their access is
+     * included in Platinum memberships. Page still reachable by its URL
+     * (hidden from banners and "Other memberships").
+     */
     public function holiday_tenants(): View
     {
+        // Redirect temporarily disabled for review:
+        // return redirect()->route('become_member', [], 301);
+
         return $this->tier('holiday-tenants');
     }
 
     private function tier(string $slug): View
     {
-        $tiers = config('membership_tiers.tiers');
-        $tier = $tiers[$slug];
+        $allTiers = config('membership_tiers.tiers');
+        $tier = $allTiers[$slug];
+        $tiers = array_filter($allTiers, fn ($tier) => $tier['enabled'] ?? true);
 
         TrackingManager::pageView(route($tier['route']));
 
@@ -45,6 +55,7 @@ class MembershipController extends Controller
             'tier'     => $tier,
             'tiers'    => $tiers,
             'benefits' => config('membership_tiers.benefits'),
+            'tenantBenefits' => config('membership_tiers.tenant_benefits'),
         ]);
     }
 }

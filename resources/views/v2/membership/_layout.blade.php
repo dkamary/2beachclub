@@ -54,9 +54,45 @@
                             </li>
                         @endforeach
                     </ul>
+
                 </div>
             </div>
         </section>
+
+        {{-- Tenants of the member (rented through 2Futures Holidays): full-width band --}}
+        @if (($tier['benefits']['tenants'][0] ?? 'no') === 'yes' && !empty($tenantBenefits))
+            <section class="membership-tenants mb-5">
+                <div class="container">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-12 col-lg-4">
+                            <span class="membership-tenants__tag">Platinum exclusive</span>
+                            <h2 class="special-heading fs-2 mb-3">Your tenants' access</h2>
+                            <p class="mb-0">When your property is rented through 2Futures Holidays, your tenants enjoy the club too.</p>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <ul class="membership-tenants__grid">
+                                @foreach ($tenantBenefits as $key => $benefit)
+                                    @php
+                                        [$status, $note] = array_pad($benefit, 2, null);
+                                        $icon = ['yes' => '&#10003;', 'cond' => '!', 'no' => '&ndash;'][$status];
+                                        $note = $note ?? ($status === 'no' ? 'Not included' : null);
+                                    @endphp
+                                    <li class="is-{{ $status }}">
+                                        <span class="icon" aria-hidden="true">{!! $icon !!}</span>
+                                        <span>
+                                            {{ $benefits[$key] }}
+                                            @if ($note)
+                                                <small>{{ $note }}</small>
+                                            @endif
+                                        </span>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        @endif
 
         {{-- Gallery --}}
         <section class="container">
@@ -122,6 +158,17 @@
         .membership-tier-benefits .is-no { color: #8b979f; }
         .membership-tier-benefits .is-no .icon { background: #cfd7dc; }
         .membership-tier-benefits em { font-style: normal; font-size: .85rem; color: #6b7c87; text-align: right; }
+        .membership-tenants { background: #eef5f4; padding: 3rem 0; }
+        .membership-tenants__tag { display: inline-block; margin-bottom: .75rem; padding: .25rem .6rem; background: #2f7f8a; color: #fff; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+        .membership-tenants__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+        .membership-tenants__grid li { display: grid; grid-template-columns: 24px 1fr; gap: .7rem; align-items: start; padding: .8rem .9rem; background: #fff; border: 1px solid #dbe8e6; font-size: .95rem; }
+        .membership-tenants__grid .icon { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: .75rem; font-weight: 700; color: #fff; background: #2f8a6b; }
+        .membership-tenants__grid .is-cond .icon { background: #b7791f; }
+        .membership-tenants__grid .is-no { color: #8b979f; }
+        .membership-tenants__grid .is-no .icon { background: #cfd7dc; }
+        .membership-tenants__grid small { display: block; margin-top: .15rem; font-size: .8rem; color: #7a5212; }
+        .membership-tenants__grid .is-no small { color: #8b979f; }
+        @media (max-width: 575px) { .membership-tenants__grid { grid-template-columns: 1fr; } }
         .membership-tier-gallery img { aspect-ratio: 4 / 3; object-fit: cover; }
         .membership-tier-gallery .col-md-6 img { aspect-ratio: auto; height: 100%; }
         .membership-tier-card { display: flex; flex-direction: column; height: 100%; padding: 1rem; border: 1px solid #dfe7ea; color: #1d2b36; text-decoration: none; transition: border-color .3s; }
