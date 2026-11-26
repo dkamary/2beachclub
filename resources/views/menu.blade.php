@@ -44,7 +44,7 @@
                 <div class="row my-4 g-3">
 
                     {{-- All-day feat --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    <div class="col-12 col-sm-6 col-lg-4 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_all_day_en') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2beach-club-food-menu.webp') }}"
@@ -57,7 +57,7 @@
                     </div>
                     
                     {{-- Kids --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    <div class="col-12 col-sm-6 col-lg-4 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_kids') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2beach-club-kids-menu.webp') }}"
@@ -70,7 +70,7 @@
                     </div>
 
                     {{-- Coffee --}}
-                    <div class="col-12 col-sm-6 mx-auto my-4">
+                    <div class="col-12 col-sm-6 col-lg-4 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_coffee') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Coffee-Banner-Website.webp') }}"
@@ -85,7 +85,7 @@
                     
 
                     {{-- Aurora --}}
-                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 col-lg-4 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_aurora') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Aurora-Fridays.webp') }}"
@@ -98,7 +98,7 @@
                     </div> --}}
 
                     {{-- Saturday --}}
-                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 col-lg-4 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_saturday') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Saturday-Tides-Flavours.webp') }}"
@@ -111,7 +111,7 @@
                     </div> --}}
 
                     {{-- Sunday --}}
-                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 col-lg-4 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_sunday_fiesta') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Sunday-Surf-Selection.webp') }}"
@@ -124,7 +124,7 @@
                     </div> --}}
 
                     {{-- Tropical Winter --}}
-                    {{-- <div class="col-12 col-sm-6 mx-auto my-4">
+                    {{-- <div class="col-12 col-sm-6 col-lg-4 mx-auto my-4">
                         <a target="_blank" href="{{ route('menu_tropical_winter') }}" class="text-decoration-none new-menu">
 
                             <img data-src="{{ asset('v2/img/menu/2Beach-Club-Tropical-Winter-Specials.webp') }}"
